@@ -355,7 +355,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
             }
 
             let tileClasses =
-              'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 shadow-xs dark:bg-slate-850 dark:hover:bg-slate-800 dark:border-slate-750 dark:text-slate-200';
+              'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 shadow-xs dark:bg-slate-800 dark:hover:bg-slate-700 dark:border-slate-700 dark:text-slate-200';
 
             if (isSelected) {
               tileClasses =

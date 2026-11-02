@@ -260,7 +260,7 @@ export const SpellingMode: FC<SpellingModeProps> = ({ words, unitNumber }) => {
                 type="button"
                 onClick={handleBackspaceTile}
                 disabled={selectedLetterIds.length === 0 || status === 'correct'}
-                className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-300 text-xs font-bold border border-slate-200 dark:border-slate-700 cursor-pointer disabled:opacity-40 transition-all"
+                className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold border border-slate-200 dark:border-slate-700 cursor-pointer disabled:opacity-40 transition-all"
               >
                 ⌫ Backspace
               </button>
@@ -268,7 +268,7 @@ export const SpellingMode: FC<SpellingModeProps> = ({ words, unitNumber }) => {
               <button
                 type="button"
                 onClick={handleReveal}
-                className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-300 text-xs font-bold border border-slate-200 dark:border-slate-700 flex items-center gap-1.5 cursor-pointer transition-all"
+                className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold border border-slate-200 dark:border-slate-700 flex items-center gap-1.5 cursor-pointer transition-all"
               >
                 <Eye className="w-3.5 h-3.5" />
                 <span>Reveal</span>

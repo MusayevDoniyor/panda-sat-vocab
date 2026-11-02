@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 interface NavbarProps {
-  currentUnit: number; // 0 means all, -1 means starred
+  currentUnit: number;
   onSelectUnit: (unit: number) => void;
   currentMode: StudyMode;
   onSelectMode: (mode: StudyMode) => void;
@@ -68,7 +68,7 @@ export const Navbar: FC<NavbarProps> = ({
 
   const getUnitLabel = (u: number) => {
     if (u === 0) return 'All 400 Words';
-    if (u === -1) return `Starred Words (${totalStarred})`;
+    if (u === -1) return `Starred (${totalStarred})`;
     const start = (u - 1) * 25 + 1;
     const end = Math.min(u * 25, 400);
     return `Unit ${u} (${start}–${end})`;
@@ -84,7 +84,7 @@ export const Navbar: FC<NavbarProps> = ({
   ];
 
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md sticky top-0 z-50 transition-colors duration-200 shadow-sm">
+    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md sticky top-0 z-50 transition-colors duration-200 shadow-xs">
       {/* Top Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
         {/* Left: Brand Identity */}
@@ -108,24 +108,24 @@ export const Navbar: FC<NavbarProps> = ({
         </div>
 
         {/* Center: Quick Unit Stepper & Selector */}
-        <div className="flex items-center space-x-1.5 bg-slate-100 dark:bg-slate-800/90 p-1 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs">
+        <div className="flex items-center space-x-1.5 bg-slate-100 dark:bg-slate-800 p-1 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs">
           {/* Prev Unit Button */}
           <button
             onClick={handlePrevUnit}
             title="Previous Unit"
-            className="p-1.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shadow-xs"
+            className="p-1.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
 
-          {/* Unit Dropdown Button */}
+          {/* Unit Dropdown Button (Fixed Dark & Light background contrast) */}
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center space-x-2 bg-white dark:bg-slate-750 text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-600 shadow-xs hover:border-indigo-400 transition-all cursor-pointer"
+              className="flex items-center space-x-2 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-700/80 text-slate-900 dark:text-white text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs transition-all cursor-pointer"
             >
-              <span>{getUnitLabel(currentUnit)}</span>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+              <span className="font-bold">{getUnitLabel(currentUnit)}</span>
+              <ChevronDown className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
             </button>
 
             {dropdownOpen && (
@@ -134,14 +134,14 @@ export const Navbar: FC<NavbarProps> = ({
                   className="fixed inset-0 z-40" 
                   onClick={() => setDropdownOpen(false)} 
                 />
-                <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-2xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-700/60">
+                <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-2xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-700">
                   <div className="pb-1.5 space-y-1">
                     <button
                       onClick={() => { onSelectUnit(0); setDropdownOpen(false); }}
                       className={`w-full text-left px-3 py-2 rounded-xl text-xs font-semibold flex items-center justify-between cursor-pointer ${
                         currentUnit === 0 
                           ? 'bg-indigo-600 text-white' 
-                          : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/70'
+                          : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
                       }`}
                     >
                       <span className="flex items-center gap-2">
@@ -155,7 +155,7 @@ export const Navbar: FC<NavbarProps> = ({
                       className={`w-full text-left px-3 py-2 rounded-xl text-xs font-semibold flex items-center justify-between cursor-pointer ${
                         currentUnit === -1 
                           ? 'bg-amber-600 text-white' 
-                          : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/70'
+                          : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
                       }`}
                     >
                       <span className="flex items-center gap-2">
@@ -169,7 +169,7 @@ export const Navbar: FC<NavbarProps> = ({
                   </div>
 
                   <div className="pt-2 space-y-0.5">
-                    <div className="px-3 py-1 text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                    <div className="px-3 py-1 text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
                       Teacher Units (25 words each)
                     </div>
                     <div className="grid grid-cols-2 gap-1 pt-1">
@@ -184,11 +184,11 @@ export const Navbar: FC<NavbarProps> = ({
                             className={`px-2.5 py-1.5 rounded-xl text-xs font-semibold flex items-center justify-between cursor-pointer transition-all ${
                               isSelected 
                                 ? 'bg-indigo-600 text-white shadow-xs' 
-                                : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/60'
+                                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
                             }`}
                           >
                             <span>Unit {u}</span>
-                            <span className="text-[10px] opacity-60">#{start}-{end}</span>
+                            <span className="text-[10px] opacity-60 font-mono">#{start}-{end}</span>
                           </button>
                         );
                       })}
@@ -203,7 +203,7 @@ export const Navbar: FC<NavbarProps> = ({
           <button
             onClick={handleNextUnit}
             title="Next Unit"
-            className="p-1.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shadow-xs"
+            className="p-1.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -220,7 +220,7 @@ export const Navbar: FC<NavbarProps> = ({
           {/* Light / Dark Mode Toggle */}
           <button
             onClick={onToggleTheme}
-            className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer shadow-xs"
+            className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer shadow-xs"
             title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           >
             {theme === 'dark' ? (
@@ -236,7 +236,7 @@ export const Navbar: FC<NavbarProps> = ({
             className={`p-2 rounded-xl border transition-all cursor-pointer shadow-xs ${
               soundEnabled
                 ? 'border-indigo-200 dark:border-indigo-500/40 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400'
-                : 'border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 text-slate-400 hover:text-slate-600'
+                : 'border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
             }`}
             title={soundEnabled ? 'Sound Effects Enabled (Click to Mute)' : 'Sound Effects Muted (Click to Unmute)'}
           >
@@ -248,7 +248,7 @@ export const Navbar: FC<NavbarProps> = ({
             href="/College_Panda_400_SAT_Words.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:flex items-center space-x-1.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 transition-colors shadow-xs"
+            className="hidden sm:flex items-center space-x-1.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 transition-colors shadow-xs"
             title="Download Original College Panda PDF"
           >
             <FileDown className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
@@ -258,7 +258,7 @@ export const Navbar: FC<NavbarProps> = ({
       </div>
 
       {/* Bottom Mode Navigation Tabs */}
-      <div className="border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/50">
+      <div className="border-t border-slate-100 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex overflow-x-auto gap-1.5 py-1.5 no-scrollbar">
           {navItems.map((item) => {
             const isActive = currentMode === item.mode;
@@ -269,7 +269,7 @@ export const Navbar: FC<NavbarProps> = ({
                 className={`flex items-center space-x-2 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
                   isActive
                     ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/25 scale-[1.01]'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/60 dark:hover:bg-slate-800/80'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-200/60 dark:hover:bg-slate-800'
                 }`}
               >
                 {item.icon}

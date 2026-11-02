@@ -207,7 +207,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
           }`}
         >
           {/* FRONT OF CARD */}
-          <div className="absolute inset-0 w-full h-full bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-850 dark:to-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg dark:shadow-2xl backface-hidden transition-colors duration-200">
+          <div className="absolute inset-0 w-full h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg dark:shadow-2xl backface-hidden transition-colors duration-200">
             {/* Top row */}
             <div className="flex items-center justify-between" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center space-x-2">
@@ -358,7 +358,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
       <div className="flex items-center justify-between gap-3 sm:gap-4 mt-6">
         <button
           onClick={handlePrev}
-          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-750 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
+          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Prev (←)</span>
@@ -374,7 +374,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
 
         <button
           onClick={handleNext}
-          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-750 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
+          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
         >
           <span>Next (→)</span>
           <ArrowRight className="w-4 h-4" />

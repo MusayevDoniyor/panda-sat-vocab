@@ -1,16 +1,13 @@
 export type Theme = 'dark' | 'light';
 
 export const getInitialTheme = (): Theme => {
-  if (typeof window === 'undefined') return 'dark';
+  if (typeof window === 'undefined') return 'light';
   try {
     const saved = localStorage.getItem('panda_sat_theme');
     if (saved === 'light' || saved === 'dark') return saved;
-    // Check system preference
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
-    }
   } catch {}
-  return 'dark';
+  // Default to light mode as requested!
+  return 'light';
 };
 
 export const applyTheme = (theme: Theme) => {

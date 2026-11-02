@@ -162,17 +162,17 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950/60 py-6 text-center text-xs text-slate-500 dark:text-slate-400 print:hidden transition-colors duration-200">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 font-medium">
+      <footer className="border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 py-4 text-center text-xs text-slate-500 dark:text-slate-400 print:hidden transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 font-medium">
           <div className="flex items-center space-x-2">
             <span>🐼 Panda SAT 400</span>
-            <span>•</span>
-            <span>The College Panda Vocabulary List</span>
-            <span>•</span>
-            <span className="text-emerald-600 dark:text-emerald-400 font-bold">16 Units of 25 Words</span>
+            <span className="text-slate-300 dark:text-slate-700">•</span>
+            <span>The College Panda</span>
+            <span className="text-slate-300 dark:text-slate-700">•</span>
+            <span className="text-indigo-600 dark:text-indigo-400 font-semibold">16 Units (25 words each)</span>
           </div>
-          <div>
-            Active Recall & Spaced Repetition • Offline LocalStorage Enabled
+          <div className="text-[11px] text-slate-400 dark:text-slate-500">
+            Digital SAT Vocabulary
           </div>
         </div>
       </footer>

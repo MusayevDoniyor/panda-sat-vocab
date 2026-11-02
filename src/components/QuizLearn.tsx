@@ -400,7 +400,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
               );
             }
 
-            let optionStyles = 'bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-750 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200';
+            let optionStyles = 'bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200';
 
             if (isAnswered) {
               if (opt.isCorrect) {
