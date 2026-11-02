@@ -35,10 +35,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "hard to reach, hidden away",
     "synonyms": [
+      "hard to reach",
+      "hidden away",
       "isolated",
       "hidden",
-      "remote",
-      "cloistered"
+      "remote"
     ],
     "uzbek": "xilvat, chekka, odam oyog'i yetmas",
     "example": "The monk lived in a secluded hermitage deep within the mountain forest."
@@ -67,8 +68,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to praise, to worship",
     "synonyms": [
-      "glorify",
       "praise",
+      "worship",
+      "glorify",
       "extol",
       "revere"
     ],
@@ -101,6 +103,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "synonyms": [
       "sudden",
       "unexpected",
+      "without warning",
       "hasty",
       "precipitous"
     ],
@@ -130,10 +133,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "uncommon, strange",
     "synonyms": [
+      "uncommon",
+      "strange",
       "peculiar",
       "unconventional",
-      "odd",
-      "quirky"
+      "odd"
     ],
     "uzbek": "g'alati, antiqa, noodatiy",
     "example": "Her eccentric habit of collecting antique keys amused all her colleagues."
@@ -146,6 +150,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "stuck in mud",
     "synonyms": [
+      "stuck in mud",
       "entangled",
       "bogged down",
       "trapped"
@@ -176,10 +181,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "settle one's differences, make compatible, bring back to peace",
     "synonyms": [
+      "settle one's differences",
+      "make compatible",
       "harmonize",
       "settle",
-      "accommodate",
-      "reunite"
+      "accommodate"
     ],
     "uzbek": "yarashtirmoq, murosaga keltirmoq",
     "example": "The diplomat worked tirelessly to reconcile the conflicting demands of both factions."
@@ -223,8 +229,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "sufficient, enough, acceptable",
     "synonyms": [
       "sufficient",
-      "satisfactory",
-      "acceptable"
+      "enough",
+      "acceptable",
+      "satisfactory"
     ],
     "uzbek": "yetarli, talabga javob beradigan",
     "example": "The emergency shelters were equipped with adequate supplies of water and food."
@@ -253,6 +260,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "having doubts",
     "synonyms": [
+      "having doubts",
       "dubious",
       "incredulous",
       "distrustful"
@@ -299,9 +307,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "1) thorough, complete, extensive 2) fundamental, essential 3) revolutionary, extreme",
     "synonyms": [
-      "revolutionary",
-      "fundamental",
-      "drastic"
+      "thorough",
+      "complete",
+      "extensive fundamental",
+      "essential revolutionary",
+      "extreme"
     ],
     "uzbek": "1) tubdan, chuqur 2) inqilobiy, keskin",
     "example": "The invention of electricity brought a radical transformation to human society."
@@ -330,6 +340,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to confirm or verify",
     "synonyms": [
+      "confirm or verify",
       "confirm",
       "verify",
       "corroborate",
@@ -346,8 +357,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "annoying, irritating",
     "synonyms": [
-      "irritating",
       "annoying",
+      "irritating",
       "frustrating",
       "troublesome"
     ],
@@ -362,8 +373,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "humble, low-key",
     "synonyms": [
-      "modest",
       "humble",
+      "low-key",
+      "modest",
       "unpretentious"
     ],
     "uzbek": "kamtar, o'zini ko'z-ko'z qilmaydigan",
@@ -425,10 +437,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "plain and without decoration, comforts, or anything extra",
     "synonyms": [
+      "comforts",
+      "or anything extra",
       "severe",
       "strict",
-      "spartan",
-      "plain"
+      "spartan"
     ],
     "uzbek": "oddiy, dabdabasiz, qattiqqo'l",
     "example": "The monks embraced an austere lifestyle devoid of luxury and ornamentation."
@@ -442,6 +455,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "to fear, be afraid of",
     "synonyms": [
       "fear",
+      "be afraid of",
       "terror",
       "apprehension"
     ],
@@ -487,8 +501,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to produce, generate, or create",
     "synonyms": [
-      "generate",
       "produce",
+      "generate",
+      "or create",
       "engender",
       "breed"
     ],
@@ -503,10 +518,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to give up, deny, or surrender something",
     "synonyms": [
+      "give up",
+      "deny",
+      "or surrender something",
       "reject",
-      "relinquish",
-      "abandon",
-      "repudiate"
+      "relinquish"
     ],
     "uzbek": "voz kechmoq, rad etmoq",
     "example": "He decided to renounce his claims to the throne to marry a commoner."
@@ -551,8 +567,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a person authorized to act on behalf of another; substitute",
     "synonyms": [
-      "representative",
       "substitute",
+      "representative",
       "agent",
       "stand-in"
     ],
@@ -598,6 +614,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "new and different",
     "synonyms": [
+      "new and different",
       "groundbreaking",
       "novel",
       "inventive",
@@ -630,6 +647,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to spread widely (particularly information)",
     "synonyms": [
+      "spread widely",
       "distribute",
       "spread",
       "broadcast",
@@ -694,8 +712,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to guess, to form a theory without firm evidence",
     "synonyms": [
-      "conjecture",
       "guess",
+      "conjecture",
       "theorize",
       "ponder"
     ],
@@ -725,10 +743,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "scattered, irregular, unpredictable",
     "synonyms": [
-      "intermittent",
-      "occasional",
+      "scattered",
       "irregular",
-      "periodic"
+      "unpredictable",
+      "intermittent",
+      "occasional"
     ],
     "uzbek": "vaqti-vaqti bilan bo'ladigan, tarqoq",
     "example": "Throughout the night, the campers heard sporadic bursts of thunder in the distance."
@@ -804,6 +823,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "poverty, scarcity",
     "synonyms": [
+      "poverty",
       "scarcity",
       "dearth",
       "shortage",
@@ -820,9 +840,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "temporary, short-lived",
     "synonyms": [
+      "temporary",
+      "short-lived",
       "transient",
       "fleeting",
-      "short-lived",
       "momentary"
     ],
     "uzbek": "qisqa muddatli, o'tkinchi",
@@ -868,6 +889,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a great difference",
     "synonyms": [
+      "a great difference",
       "discrepancy",
       "imbalance",
       "inequality",
@@ -884,6 +906,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "not influenced by strong emotion, fair-minded",
     "synonyms": [
+      "fair-minded",
       "impartial",
       "unbiased",
       "detached",
@@ -917,6 +940,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "to brag, to show off",
     "synonyms": [
       "brag",
+      "show off",
       "crow",
       "gloat"
     ],
@@ -931,9 +955,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "irritating, annoying",
     "synonyms": [
+      "irritating",
       "annoying",
       "tedious",
-      "irritating",
       "burdensome"
     ],
     "uzbek": "zerikarli, joniga tegadigan",
@@ -978,6 +1002,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to cause a reaction or emotion (usually anger); to trigger",
     "synonyms": [
+      "trigger",
       "incite",
       "instigate",
       "rouse",
@@ -1025,6 +1050,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "built-in, existing in something as a permanent or essential characteristic",
     "synonyms": [
+      "built-in",
       "intrinsic",
       "innate",
       "inborn",
@@ -1041,6 +1067,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun / adj.",
     "definition": "everyday informal language, local dialect",
     "synonyms": [
+      "everyday informal language",
+      "local dialect",
       "dialect",
       "colloquial speech",
       "native tongue"
@@ -1057,6 +1085,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "interrogation, questioning",
     "synonyms": [
       "interrogation",
+      "questioning",
       "inquiry",
       "investigation",
       "probe"
@@ -1088,6 +1117,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. / verb",
     "definition": "evil in nature, harmful",
     "synonyms": [
+      "evil in nature",
       "harmful",
       "evil",
       "malicious",
@@ -1104,9 +1134,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "oddity, something that is not normal",
     "synonyms": [
+      "oddity",
       "irregularity",
       "abnormality",
-      "oddity",
       "deviation"
     ],
     "uzbek": "anomaliya, noodatiylik, me'yordan chetga chiqish",
@@ -1121,6 +1151,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "to hold someone or something back, to suppress, to prevent",
     "synonyms": [
       "suppress",
+      "prevent",
       "restrain",
       "hinder",
       "impede"
@@ -1168,6 +1199,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "passionate about something",
     "synonyms": [
+      "passionate about something",
       "passionate",
       "enthusiastic",
       "eager",
@@ -1200,6 +1232,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "foolish, reckless",
     "synonyms": [
+      "foolish",
       "reckless",
       "rash",
       "unwise",
@@ -1296,6 +1329,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "having mixed feelings",
     "synonyms": [
+      "having mixed feelings",
       "conflicted",
       "undecided",
       "torn",
@@ -1392,6 +1426,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun / verb",
     "definition": "an opinion or conclusion that is unproven, a guess",
     "synonyms": [
+      "a guess",
       "speculation",
       "guess",
       "surmise",
@@ -1424,6 +1459,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to make stronger",
     "synonyms": [
+      "make stronger",
       "strengthen",
       "fortify",
       "bolster",
@@ -1488,6 +1524,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "open to more than one interpretation; unclear",
     "synonyms": [
+      "unclear",
       "ambiguous",
       "vague",
       "uncertain",
@@ -1504,6 +1541,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a place that is strongly defended, a fortress",
     "synonyms": [
+      "a fortress",
       "fortress",
       "bastion",
       "citadel",
@@ -1552,6 +1590,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "slow-moving",
     "synonyms": [
+      "slow-moving",
       "lethargic",
       "slow",
       "inactive",
@@ -1616,10 +1655,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a person's nature, character, or frame of mind",
     "synonyms": [
+      "a person's nature",
+      "character",
       "disposition",
       "nature",
-      "temper",
-      "personality"
+      "temper"
     ],
     "uzbek": "mijoz, xarakter, fe'l-atvor",
     "example": "Her calm and patient temperament made her an exceptional diplomat."
@@ -1632,10 +1672,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a sudden change or disruption, chaos",
     "synonyms": [
+      "chaos",
       "disruption",
-      "turmoil",
-      "upheaval",
-      "chaos"
+      "turmoil"
     ],
     "uzbek": "to'ntarilish, keskin o'zgarish, larza",
     "example": "The sudden collapse of the currency caused immense economic upheaval."
@@ -1681,6 +1720,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "shallow, on the surface",
     "synonyms": [
       "shallow",
+      "on the surface",
       "cursory",
       "external",
       "slight"
@@ -1728,10 +1768,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "the essence, the main point",
     "synonyms": [
+      "the essence",
+      "the main point",
       "core",
       "essence",
-      "heart",
-      "pivot"
+      "heart"
     ],
     "uzbek": "eng muhim nuqta, muammoning o'zagi",
     "example": "The crux of the debate centers on balancing individual privacy with national security."
@@ -1792,10 +1833,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "capable of working successfully, realistic, doable",
     "synonyms": [
+      "realistic",
+      "doable",
       "feasible",
       "workable",
-      "sustainable",
-      "practical"
+      "sustainable"
     ],
     "uzbek": "yashovchan, amalga oshirsa bo'ladigan",
     "example": "Engineers are striving to create commercially viable renewable energy sources."
@@ -1824,10 +1866,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "misbehave, disobey",
     "synonyms": [
+      "misbehave",
+      "disobey",
       "violate",
       "infringe",
-      "overstep",
-      "breach"
+      "overstep"
     ],
     "uzbek": "chegaradan chiqmoq, qonunni buzmoq",
     "example": "Soldiers were sternly warned not to transgress international maritime borders."
@@ -1904,6 +1947,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to bring to mind",
     "synonyms": [
+      "bring to mind",
       "elicit",
       "conjure up",
       "awaken",
@@ -1921,9 +1965,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "portrayal, illustration",
     "synonyms": [
       "portrayal",
+      "illustration",
       "representation",
-      "rendering",
-      "illustration"
+      "rendering"
     ],
     "uzbek": "tasvirlash, ifodalash",
     "example": "The historical novel offered a remarkably realistic depiction of Victorian London."
@@ -1936,10 +1980,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun / verb",
     "definition": "a difficulty, problem, or responsibility",
     "synonyms": [
+      "a difficulty",
+      "problem",
+      "or responsibility",
       "load",
-      "hardship",
-      "strain",
-      "encumbrance"
+      "hardship"
     ],
     "uzbek": "og'ir yuk, mashaqqat; yuklamoq",
     "example": "Caring for elderly relatives placed a significant financial and emotional burden on the family."
@@ -1952,6 +1997,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a memory; the act of remembering",
     "synonyms": [
+      "a memory",
       "memory",
       "reminiscence",
       "remembrance",
@@ -1968,6 +2014,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "confusion or disorder",
     "synonyms": [
+      "confusion or disorder",
       "commotion",
       "uproar",
       "clamor",
@@ -2000,10 +2047,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "manner, attitude, appearance",
     "synonyms": [
-      "behavior",
-      "bearing",
       "manner",
-      "conduct"
+      "attitude",
+      "appearance",
+      "behavior",
+      "bearing"
     ],
     "uzbek": "o'zini tutish, xulq-atvor",
     "example": "The diplomat maintained a polite, professional demeanor despite provocative questioning."
@@ -2032,6 +2080,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "angry, furious",
     "synonyms": [
+      "angry",
       "furious",
       "enraged",
       "incensed",
@@ -2048,9 +2097,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "unconfirmed, subject to change",
     "synonyms": [
+      "unconfirmed",
+      "subject to change",
       "provisional",
       "hesitant",
-      "unconfirmed",
       "cautious"
     ],
     "uzbek": "sinov tariqasidagi, ikkilanuvchan, noaniq",
@@ -2064,10 +2114,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adv.",
     "definition": "only; just",
     "synonyms": [
-      "simply",
       "only",
-      "purely",
-      "just"
+      "just",
+      "simply",
+      "purely"
     ],
     "uzbek": "shunchaki, faqatgina",
     "example": "He insisted that his critical remarks were merely intended to provide constructive feedback."
@@ -2096,6 +2146,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "unimportant, insignificant",
     "synonyms": [
+      "unimportant",
       "insignificant",
       "trivial",
       "minor",
@@ -2112,6 +2163,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "complicated or confusing",
     "synonyms": [
+      "complicated or confusing",
       "convoluted",
       "complex",
       "intricate",
@@ -2128,10 +2180,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "1) weak, disabled 2) in a run-down state, decayed",
     "synonyms": [
+      "weak",
+      "decayed",
       "dilapidated",
       "feeble",
-      "rickety",
-      "ramshackle"
+      "rickety"
     ],
     "uzbek": "1) qarigan, darmonsiz 2) eskirgan, xaroba",
     "example": "The village elders gathered inside a decrepit wooden hall that had survived two wars."
@@ -2161,6 +2214,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "stubbornness, unwilling to change",
     "synonyms": [
       "stubbornness",
+      "unwilling to change",
       "inflexibility",
       "tenacity",
       "pigheadedness"
@@ -2192,10 +2246,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "boredom, dullness, lack of variety",
     "synonyms": [
-      "tedium",
       "boredom",
-      "sameness",
-      "dullness"
+      "dullness",
+      "lack of variety",
+      "tedium",
+      "sameness"
     ],
     "uzbek": "bir xillik, zerikarlilik",
     "example": "The monotony of assembly line work led many workers to experience extreme burnout."
@@ -2208,6 +2263,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "treat with disrespect",
     "synonyms": [
+      "treat with disrespect",
       "demean",
       "humiliate",
       "devalue",
@@ -2241,9 +2297,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "traditional, accepted, mainstream, standard",
     "synonyms": [
       "traditional",
-      "customary",
+      "accepted",
+      "mainstream",
       "standard",
-      "orthodox"
+      "customary"
     ],
     "uzbek": "an'anaviy, odatiy",
     "example": "She rejected conventional career advice and chose instead to pursue environmental art."
@@ -2288,10 +2345,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "important; famous",
     "synonyms": [
+      "important",
+      "famous",
       "conspicuous",
       "eminent",
-      "notable",
-      "distinguished"
+      "notable"
     ],
     "uzbek": "ko'zga ko'ringan, mashhur, yetakchi",
     "example": "Several prominent scientists urged international leaders to ratify the climate pact."
@@ -2335,10 +2393,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to trigger, spark, or activate; to excite",
     "synonyms": [
-      "encourage",
-      "inspire",
-      "energize",
-      "invigorate"
+      "trigger",
+      "spark",
+      "or activate",
+      "excite",
+      "encourage"
     ],
     "uzbek": "rag'batlantirmoq, jonlantirmoq",
     "example": "Tax incentives were specifically designed to stimulate private investment in green technology."
@@ -2367,6 +2426,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "hard-working",
     "synonyms": [
+      "hard-working",
       "hardworking",
       "industrious",
       "conscientious",
@@ -2383,8 +2443,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to downgrade, to lower in rank or status",
     "synonyms": [
-      "demote",
       "downgrade",
+      "demote",
       "banish",
       "marginalize"
     ],
@@ -2431,8 +2491,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. / noun",
     "definition": "existing in thought or as an idea but not having a physical or concrete existence; conceptual",
     "synonyms": [
-      "theoretical",
       "conceptual",
+      "theoretical",
       "intangible"
     ],
     "uzbek": "mavhum, abstrakt; tezis",
@@ -2446,10 +2506,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "undeveloped, nonfunctional",
     "synonyms": [
+      "undeveloped",
+      "nonfunctional",
       "residual",
       "rudimentary",
-      "primitive",
-      "surviving"
+      "primitive"
     ],
     "uzbek": "qoldiq, rudimentar, so'ngan",
     "example": "Human wisdom teeth are considered vestigial structures inherited from our ancient ancestors."
@@ -2462,6 +2523,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. phrase",
     "definition": "obsessed with something",
     "synonyms": [
+      "obsessed with something",
       "absorbed in",
       "engrossed in",
       "obsessed with"
@@ -2493,6 +2555,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "the act of remembering something; a memory",
     "synonyms": [
+      "a memory",
       "memorial",
       "recollection",
       "token",
@@ -2510,6 +2573,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "to keep, to hold on to",
     "synonyms": [
       "keep",
+      "hold on to",
       "preserve",
       "maintain",
       "hold"
@@ -2541,9 +2605,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "difficult, exhausting",
     "synonyms": [
+      "difficult",
+      "exhausting",
       "arduous",
       "demanding",
-      "exhausting",
       "taxing"
     ],
     "uzbek": "mashaqqatli, ko'p kuch talab qiladigan",
@@ -2558,8 +2623,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "magic, charm, fascination",
     "synonyms": [
       "magic",
-      "fascination",
       "charm",
+      "fascination",
       "allure"
     ],
     "uzbek": "sehr, joziba, maftunkorlik",
@@ -2574,6 +2639,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "prepared to obey others, submissive, less important",
     "synonyms": [
       "submissive",
+      "less important",
       "subordinate",
       "compliant",
       "servile"
@@ -2606,6 +2672,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "unfriendly, threatening",
     "synonyms": [
       "unfriendly",
+      "threatening",
       "antagonistic",
       "aggressive",
       "belligerent"
@@ -2621,10 +2688,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to make widely known, to publicize",
     "synonyms": [
+      "make widely known",
+      "publicize",
       "proclaim",
       "broadcast",
-      "declare",
-      "announce"
+      "declare"
     ],
     "uzbek": "keng e'lon qilmoq, ommaga yoymoq",
     "example": "The newly elected government promulgated a sweeping set of democratic reforms."
@@ -2637,10 +2705,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to make law, to put into practice (a belief, idea, or suggestion)",
     "synonyms": [
+      "make law",
+      "put into practice",
       "pass",
       "legislate",
-      "decree",
-      "implement"
+      "decree"
     ],
     "uzbek": "qonun sifatida qabul qilmoq, ijro etmoq",
     "example": "Congress enacted comprehensive legislation to protect endangered wildlife habitats."
@@ -2653,9 +2722,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "miserable, hopeless, awful",
     "synonyms": [
-      "wretched",
       "miserable",
       "hopeless",
+      "awful",
+      "wretched",
       "degraded"
     ],
     "uzbek": "juda ayanchli, xor, nochor",
@@ -2669,10 +2739,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to use up, to consume",
     "synonyms": [
-      "spend",
+      "use up",
       "consume",
-      "exhaust",
-      "use up"
+      "spend",
+      "exhaust"
     ],
     "uzbek": "sarflamoq, ketkazmoq (kuch, resurs)",
     "example": "Athletes expend enormous amounts of metabolic energy during an Olympic marathon."
@@ -2701,6 +2771,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "embarrassing, shameful",
     "synonyms": [
+      "embarrassing",
       "shameful",
       "disgraceful",
       "humiliating",
@@ -2717,10 +2788,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "showing a lack of experience, wisdom, or judgment",
     "synonyms": [
+      "wisdom",
+      "or judgment",
       "innocent",
       "gullible",
-      "ingenuous",
-      "inexperienced"
+      "ingenuous"
     ],
     "uzbek": "sodda, go'l, laqma",
     "example": "It was naive of him to assume that everyone on the internet tells the truth."
@@ -2814,8 +2886,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "disorganized, forgetful",
     "synonyms": [
       "disorganized",
-      "flighty",
       "forgetful",
+      "flighty",
       "absentminded"
     ],
     "uzbek": "parokanda, parishonxotir, besaranjom",
@@ -2845,6 +2917,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "complete or perfect, having a high degree of skill",
     "synonyms": [
+      "complete or perfect",
       "complete",
       "masterful",
       "flawless",
@@ -2893,6 +2966,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "involving a lot of effort, difficult",
     "synonyms": [
+      "difficult",
       "burdensome",
       "taxing",
       "arduous",
@@ -2909,6 +2983,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "fair-minded, not influenced by personal feelings",
     "synonyms": [
+      "fair-minded",
       "impartial",
       "unbiased",
       "fair",
@@ -2941,6 +3016,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "no longer produced or used; out of date",
     "synonyms": [
+      "out of date",
       "outdated",
       "archaic",
       "antiquated",
@@ -3117,6 +3193,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "original and pure; not spoiled or worn from use",
     "synonyms": [
+      "original and pure",
       "unspoiled",
       "immaculate",
       "pure",
@@ -3181,9 +3258,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "everywhere, universal",
     "synonyms": [
+      "everywhere",
+      "universal",
       "omnipresent",
       "pervasive",
-      "everywhere",
       "widespread"
     ],
     "uzbek": "hamma joyda mavjud, har yerda uchraydigan",
@@ -3213,10 +3291,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "strong and healthy, durable",
     "synonyms": [
+      "strong and healthy",
+      "durable",
       "sturdy",
       "strong",
-      "vigorous",
-      "resilient"
+      "vigorous"
     ],
     "uzbek": "baquvvat, mustahkam, bardoshli",
     "example": "The cybersecurity team built a robust network architecture capable of repelling attacks."
@@ -3245,10 +3324,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "exaggerated, sensationalized, or overemotional",
     "synonyms": [
+      "exaggerated",
+      "sensationalized",
+      "or overemotional",
       "overemotional",
-      "sensational",
-      "histrionic",
-      "dramatic"
+      "sensational"
     ],
     "uzbek": "o'ta bo'rttirilgan, teatrnamo",
     "example": "Her melodramatic reaction to a small scratch made everyone in the room chuckle."
@@ -3277,10 +3357,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "hatred, dislike",
     "synonyms": [
+      "hatred",
+      "dislike",
       "hostility",
       "aversion",
-      "animosity",
-      "dislike"
+      "animosity"
     ],
     "uzbek": "kuchli yoqtirmaslik, adovat, antipatiya",
     "example": "The two corporate moguls had a long-standing personal antipathy toward one another."
@@ -3293,8 +3374,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "dangerous",
     "synonyms": [
-      "hazardous",
       "dangerous",
+      "hazardous",
       "treacherous",
       "risky"
     ],
@@ -3341,6 +3422,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to create difficulties for someone or something, resulting in delay",
     "synonyms": [
+      "resulting in delay",
       "hinder",
       "obstruct",
       "hamper",
@@ -3357,8 +3439,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a combination of statements or ideas that are opposed to one another; inconsistency",
     "synonyms": [
-      "paradox",
       "inconsistency",
+      "paradox",
       "conflict",
       "discrepancy"
     ],
@@ -3373,9 +3455,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "having an excessively critical point of view; disapproving",
     "synonyms": [
+      "disapproving",
       "critical",
       "censorious",
-      "disapproving",
       "fault-finding"
     ],
     "uzbek": "tez hukm chiqaruvchi, birovni ayblashga moyil",
@@ -3389,10 +3471,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "depressing, gloomy",
     "synonyms": [
+      "depressing",
       "gloomy",
       "bleak",
-      "dreary",
-      "depressing"
+      "dreary"
     ],
     "uzbek": "g'amgin, tushkun, umidsiz",
     "example": "The financial forecast for the struggling retail sector remained dismal."
@@ -3470,6 +3552,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "believability, authority",
     "synonyms": [
       "believability",
+      "authority",
       "plausibility",
       "trustworthiness",
       "reputation"
@@ -3502,6 +3585,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "to summon, to call together",
     "synonyms": [
       "summon",
+      "call together",
       "assemble",
       "convene",
       "call"
@@ -3597,6 +3681,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "anger or annoyance",
     "synonyms": [
+      "anger or annoyance",
       "righteous anger",
       "resentment",
       "fury",
@@ -3613,10 +3698,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun / verb",
     "definition": "to restrict or restrain, to put in chains",
     "synonyms": [
+      "restrict or restrain",
+      "put in chains",
       "shackle",
       "chain",
-      "restrain",
-      "bind"
+      "restrain"
     ],
     "uzbek": "kishan, zanjir; kishanlamoq, cheklamoq",
     "example": "Excessive bureaucracy should not fetter creative entrepreneurship in our universities."
@@ -3629,10 +3715,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "stiff, firm, unchangeable",
     "synonyms": [
-      "inflexible",
       "stiff",
-      "strict",
-      "unbending"
+      "firm",
+      "unchangeable",
+      "inflexible",
+      "strict"
     ],
     "uzbek": "qattiq, egilmas, o'zgarmas",
     "example": "A rigid mindset prevents individuals from adapting to changing professional environments."
@@ -3645,9 +3732,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to grow, to develop",
     "synonyms": [
+      "grow",
+      "develop",
       "foster",
       "nurture",
-      "develop",
       "encourage"
     ],
     "uzbek": "o'stirmoq, rivojlantirmoq, parvarishlamoq",
@@ -3661,6 +3749,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. / noun",
     "definition": "young, childish, immature",
     "synonyms": [
+      "young",
       "childish",
       "immature",
       "adolescent",
@@ -3677,10 +3766,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a sudden, violent, irregular movement of the body",
     "synonyms": [
+      "a sudden",
+      "violent",
       "spasm",
       "seizure",
-      "upheaval",
-      "tremor"
+      "upheaval"
     ],
     "uzbek": "tutqanoq, talvasa; keskin silkinish",
     "example": "The financial panic caused severe convulsions throughout international equity markets."
@@ -3743,7 +3833,6 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "synonyms": [
       "care",
       "concern",
-      "solicitude",
       "attentiveness"
     ],
     "uzbek": "g'amxo'rlik, kuyunchaklik, e'tibor",
@@ -3758,7 +3847,6 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "spreading widely throughout an area or group of people",
     "synonyms": [
       "widespread",
-      "pervasive",
       "permeating",
       "prevalent"
     ],
@@ -3837,6 +3925,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "general agreement",
     "synonyms": [
+      "general agreement",
       "agreement",
       "accord",
       "harmony",
@@ -3853,6 +3942,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "disagreement between people",
     "synonyms": [
+      "disagreement between people",
       "strife",
       "conflict",
       "friction",
@@ -3885,10 +3975,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to cause (someone) to feel embarrassed, ashamed, or humiliated",
     "synonyms": [
+      "ashamed",
+      "or humiliated",
       "humiliate",
       "embarrass",
-      "shame",
-      "abash"
+      "shame"
     ],
     "uzbek": "qattiq uyaltirmoq, xijolat qilmoq",
     "example": "He was thoroughly mortified when he realized he had accidentally sent the private memo to the entire staff."
@@ -3901,6 +3992,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to disappear or evaporate",
     "synonyms": [
+      "disappear or evaporate",
       "disperse",
       "scatter",
       "vanish",
@@ -3997,10 +4089,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to provide, to supply",
     "synonyms": [
+      "provide",
+      "supply",
       "bestow",
       "gift",
-      "fund",
-      "equip"
+      "fund"
     ],
     "uzbek": "in'om etmoq, baxsh etmoq, mablag' ajratmoq",
     "example": "Nature had endowed her with a brilliant intellect and profound musical intuition."
@@ -4093,6 +4186,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "having the necessary ability, knowledge, or skill to do something successfully",
     "synonyms": [
+      "knowledge",
       "capable",
       "proficient",
       "skilled",
@@ -4109,10 +4203,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "the quality of being very unpleasant, unkind, or difficult",
     "synonyms": [
+      "unkind",
+      "or difficult",
       "harshness",
       "rigor",
-      "intensity",
-      "strictness"
+      "intensity"
     ],
     "uzbek": "qattiqlik, og'irlik, keskinlik",
     "example": "The sheer severity of the winter blizzard forced regional airports to shut down."
@@ -4252,6 +4347,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "intending to cause harm; evil",
     "synonyms": [
+      "evil",
       "spiteful",
       "malevolent",
       "venomous",
@@ -4268,8 +4364,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to revise, to make changes",
     "synonyms": [
-      "modify",
       "revise",
+      "make changes",
+      "modify",
       "alter",
       "improve"
     ],
@@ -4316,6 +4413,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to spread throughout something",
     "synonyms": [
+      "spread throughout something",
       "penetrate",
       "suffuse",
       "pervade",
@@ -4348,10 +4446,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "not able to be influenced, hurt, or damaged",
     "synonyms": [
+      "hurt",
+      "or damaged",
       "impenetrable",
       "immune",
-      "resistant",
-      "unaffected"
+      "resistant"
     ],
     "uzbek": "o'tkazmaydigan, ta'sir qilmaydigan",
     "example": "The scientist's waterproof jacket proved entirely impervious to the driving rainstorm."
@@ -4411,6 +4510,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "deep respect",
     "synonyms": [
+      "deep respect",
       "homage",
       "deference",
       "respect",
@@ -4491,6 +4591,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "having or showing serious purpose and determination; formal",
     "synonyms": [
+      "formal",
       "grave",
       "serious",
       "somber",
@@ -4507,10 +4608,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a person who supports an idea, plan, or cause",
     "synonyms": [
+      "plan",
+      "or cause",
       "advocate",
       "supporter",
-      "champion",
-      "promoter"
+      "champion"
     ],
     "uzbek": "tarafdor, himoyachi, qo'llovchi",
     "example": "She was a vocal proponent of renewable energy and electric public transportation."
@@ -4524,6 +4626,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "sharp; highly developed (usually the senses)",
     "synonyms": [
       "sharp",
+      "highly developed",
       "astute",
       "eager",
       "acute"
@@ -4555,6 +4658,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to go in different directions from the same point, to become different",
     "synonyms": [
+      "become different",
       "separate",
       "deviate",
       "branch off",
@@ -4571,10 +4675,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "extremely dirty, poor, and unpleasant",
     "synonyms": [
+      "extremely dirty",
+      "poor",
+      "and unpleasant",
       "filthy",
-      "wretched",
-      "sordid",
-      "run-down"
+      "wretched"
     ],
     "uzbek": "iflos, abgor, g'aribona",
     "example": "Undercover journalists exposed the squalid living conditions inside the unlicensed boarding home."
@@ -4618,10 +4723,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a request for money, information, or help",
     "synonyms": [
+      "information",
+      "or help",
       "petition",
       "appeal",
-      "plea",
-      "request"
+      "plea"
     ],
     "uzbek": "iltimos, da'vat, so'rash (masalan, xayriya)",
     "example": "The university sent a polite solicitation to alumni asking for contributions to the scholarship fund."
@@ -4698,6 +4804,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "power and influence (especially in politics or business)",
     "synonyms": [
+      "power and influence",
       "influence",
       "power",
       "leverage",
@@ -4746,10 +4853,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "possibly true, able to be believed, reasonable",
     "synonyms": [
+      "possibly true",
+      "reasonable",
       "credible",
       "believable",
-      "feasible",
-      "reasonable"
+      "feasible"
     ],
     "uzbek": "ishonarli, haqiqatga yaqin",
     "example": "Detectives searched for a plausible explanation for how the jewels vanished from the locked vault."
@@ -4826,6 +4934,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "sincere and serious",
     "synonyms": [
+      "sincere and serious",
       "sincere",
       "fervent",
       "serious",
@@ -4842,10 +4951,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "life, energy, and strength",
     "synonyms": [
+      "life",
       "energy",
+      "and strength",
       "vigor",
-      "liveliness",
-      "dynamism"
+      "liveliness"
     ],
     "uzbek": "hayotiy kuch, jo'shqinlik, g'ayrat",
     "example": "Regular physical exercise and balanced nutrition contribute to enduring youthful vitality."
@@ -4858,6 +4968,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb / noun",
     "definition": "to imitate or copy (someone's actions or words)",
     "synonyms": [
+      "imitate or copy",
       "imitate",
       "copy",
       "reproduce",
@@ -4938,6 +5049,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a false display, an attempt to deceive",
     "synonyms": [
+      "a false display",
       "sham",
       "facade",
       "affectation",
@@ -5002,10 +5114,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a dangerous, difficult, or otherwise unfortunate situation",
     "synonyms": [
+      "a dangerous",
+      "difficult",
       "predicament",
       "hardship",
-      "quandary",
-      "misfortune"
+      "quandary"
     ],
     "uzbek": "achinarli ahvol, mushkul vaziyat",
     "example": "International humanitarian agencies rallied to alleviate the desperate plight of drought victims."
@@ -5034,6 +5147,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "very important (in reference to a decision or event)",
     "synonyms": [
+      "very important",
       "historic",
       "significant",
       "crucial",
@@ -5050,6 +5164,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to continue to be heard; to echo repeatedly",
     "synonyms": [
+      "echo repeatedly",
       "resonate",
       "echo",
       "rebound",
@@ -5128,6 +5243,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "bending or able to be bent easily; not stiff; flexible",
     "synonyms": [
+      "not stiff",
       "flexible",
       "limber",
       "pliant",
@@ -5160,10 +5276,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "silent and unpleasant; depressed; gloomy",
     "synonyms": [
+      "silent and unpleasant",
+      "depressed",
+      "gloomy",
       "glum",
-      "morose",
-      "sulky",
-      "surly"
+      "morose"
     ],
     "uzbek": "qovog'i soliq, tund, xomush",
     "example": "The disappointed adolescent sat in sullen silence after being denied permission to attend the party."
@@ -5208,10 +5325,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "calm, quiet, and peaceful",
     "synonyms": [
-      "serene",
-      "peaceful",
       "calm",
-      "placid"
+      "quiet",
+      "and peaceful",
+      "serene",
+      "peaceful"
     ],
     "uzbek": "sokin, tinch, osoyishta",
     "example": "Early morning rowing across the tranquil alpine lake brought a deep sense of stillness."
@@ -5255,6 +5373,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a feeling of doubt, uncertainty, or worry about a future event",
     "synonyms": [
+      "uncertainty",
       "doubt",
       "qualm",
       "apprehension",
@@ -5271,10 +5390,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "small in number, often spread over a large area; scarce",
     "synonyms": [
+      "small in number",
+      "scarce",
       "scanty",
       "thin",
-      "scattered",
-      "meager"
+      "scattered"
     ],
     "uzbek": "siyrak, tarqoq, oz sonli",
     "example": "Vegetation becomes increasingly sparse as one ascends higher into the rocky alpine zone."
@@ -5287,10 +5407,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "originator, creator, founder",
     "synonyms": [
+      "originator",
+      "creator",
+      "founder",
       "ancestor",
-      "forefather",
-      "precursor",
-      "founder"
+      "forefather"
     ],
     "uzbek": "ajdod, boshlovchi, asoschi",
     "example": "Biologists traced modern wolves and domestic dogs back to an extinct canine progenitor."
@@ -5319,6 +5440,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun / verb",
     "definition": "an idea or theory on which a statement or action is based; an assumption",
     "synonyms": [
+      "an assumption",
       "assumption",
       "postulate",
       "basis",
@@ -5383,6 +5505,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. / verb",
     "definition": "not known to many people, difficult to understand",
     "synonyms": [
+      "difficult to understand",
       "unclear",
       "enigmatic",
       "vague",
@@ -5415,6 +5538,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "fond of company; sociable",
     "synonyms": [
+      "fond of company",
       "sociable",
       "outgoing",
       "companionable",
@@ -5447,10 +5571,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "strong, healthy, and full of energy",
     "synonyms": [
+      "strong",
+      "healthy",
       "energetic",
       "robust",
-      "strenuous",
-      "forceful"
+      "strenuous"
     ],
     "uzbek": "g'ayratli, kuchli, shiddatli",
     "example": "The doctor recommended thirty minutes of vigorous cardiovascular exercise each morning."
@@ -5558,6 +5683,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "complete and in the original state; not damaged",
     "synonyms": [
+      "not damaged",
       "undamaged",
       "unbroken",
       "whole",
@@ -5590,6 +5716,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "ordinary and dull",
     "synonyms": [
+      "ordinary and dull",
       "routine",
       "ordinary",
       "pedestrian",
@@ -5670,6 +5797,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj. / verb",
     "definition": "to show something clearly, through signs or actions",
     "synonyms": [
+      "show something clearly",
       "apparent",
       "evident",
       "display",
@@ -5686,10 +5814,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "noun",
     "definition": "a continuous sequence; a range",
     "synonyms": [
+      "a continuous sequence",
+      "a range",
       "sequence",
       "progression",
-      "spectrum",
-      "range"
+      "spectrum"
     ],
     "uzbek": "uzluksiz ketma-ketlik, kontinuum",
     "example": "Human consciousness exists along a dynamic continuum between deep sleep and hyper-alertness."
@@ -5702,6 +5831,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb / noun",
     "definition": "to correct a wrong",
     "synonyms": [
+      "correct a wrong",
       "remedy",
       "correct",
       "rectify",
@@ -5797,10 +5927,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "verb",
     "definition": "to strengthen or support; to keep alive",
     "synonyms": [
+      "strengthen or support",
+      "keep alive",
       "maintain",
       "support",
-      "nourish",
-      "endure"
+      "nourish"
     ],
     "uzbek": "ta'minlamoq, ushlab turmoq, bardosh bermoq",
     "example": "The desert oasis possessed enough water and vegetation to sustain a nomadic tribe."
@@ -5861,10 +5992,11 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "not loud, bright, noticeable, or obvious",
     "synonyms": [
-      "delicate",
-      "understated",
-      "elusive",
-      "nuanced"
+      "not loud",
+      "bright",
+      "noticeable",
+      "or obvious",
+      "delicate"
     ],
     "uzbek": "nozik, sezilar-sezilmas, uncha ko'zga tashlanmaydigan",
     "example": "A subtle alteration in the formula made the chemical fragrance considerably softer."
@@ -5942,9 +6074,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "boring, slow, and tiring",
     "synonyms": [
       "boring",
+      "slow",
+      "and tiring",
       "monotonous",
-      "wearisome",
-      "tiresome"
+      "wearisome"
     ],
     "uzbek": "zerikarli, toliqtiradigan, cho'zilgan",
     "example": "Entering thousands of survey responses into a spreadsheet was a tedious clerical job."
@@ -5974,9 +6107,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "powerful, persuasive, or effective",
     "synonyms": [
       "powerful",
+      "persuasive",
+      "or effective",
       "strong",
-      "mighty",
-      "effective"
+      "mighty"
     ],
     "uzbek": "kuchli, ta'sirli, qudratli",
     "example": "The experimental antibiotic proved to be an extraordinarily potent weapon against infections."
@@ -5989,6 +6123,7 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "providing the right conditions for something to happen or exist; to help bring about",
     "synonyms": [
+      "help bring about",
       "beneficial",
       "favorable",
       "advantageous",
@@ -6117,8 +6252,9 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "easily frightened; shy",
     "synonyms": [
-      "fearful",
+      "easily frightened",
       "shy",
+      "fearful",
       "meek",
       "hesitant"
     ],
@@ -6230,9 +6366,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "definition": "clever, original, and inventive (in reference to a person)",
     "synonyms": [
       "clever",
+      "original",
+      "and inventive",
       "inventive",
-      "creative",
-      "shrewd"
+      "creative"
     ],
     "uzbek": "aqlli, topqir, o'tkir zukko",
     "example": "The engineer devised an ingenious filtration system capable of purifying river water in seconds."
@@ -6261,10 +6398,10 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "impossible to satisfy",
     "synonyms": [
+      "impossible to satisfy",
       "unquenchable",
       "ravenous",
-      "greedy",
-      "insatiable"
+      "greedy"
     ],
     "uzbek": "to'ymas, qoniqmas, ochko'z",
     "example": "The curious child had an insatiable appetite for books on astronomy and prehistoric dinosaurs."
@@ -6373,8 +6510,8 @@ export const VOCABULARY_DATA: VocabWord[] = [
     "pos": "adj.",
     "definition": "1) intense, extreme 2) requiring deep thought",
     "synonyms": [
-      "deep",
       "intense",
+      "deep",
       "far-reaching",
       "insightful"
     ],

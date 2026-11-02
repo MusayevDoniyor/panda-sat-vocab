@@ -11,7 +11,9 @@ import {
   RotateCcw, 
   Award, 
   Volume2, 
-  Sparkles
+  Sparkles,
+  ListOrdered,
+  Shuffle
 } from 'lucide-react';
 
 interface QuizLearnProps {
@@ -24,10 +26,11 @@ interface QuizLearnProps {
 
 interface Question {
   targetWord: VocabWord;
-  promptType: 'word-to-uzbek' | 'uzbek-to-word';
+  promptType: 'word-to-synonyms' | 'synonyms-to-word';
   options: {
     id: number;
     text: string;
+    subText?: string;
     isCorrect: boolean;
     wordObj: VocabWord;
     hidden?: boolean;
@@ -41,6 +44,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
   onGoToOralExam,
   onGoToFlashcards,
 }) => {
+  const [isShuffledOrder, setIsShuffledOrder] = useState(false); // Default to Sequential 1->25!
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOptionIdx, setSelectedOptionIdx] = useState<number | null>(null);
@@ -55,10 +59,16 @@ export const QuizLearn: FC<QuizLearnProps> = ({
   const generateQuestions = useCallback(() => {
     if (words.length === 0) return;
 
-    const shuffledTargets = [...words].sort(() => Math.random() - 0.5);
-    const newQuestions: Question[] = shuffledTargets.map((target) => {
-      const promptType = Math.random() > 0.4 ? 'word-to-uzbek' : 'uzbek-to-word';
+    // Use exact sequential order by default, or shuffle if user toggled it
+    const targetList = isShuffledOrder 
+      ? [...words].sort(() => Math.random() - 0.5)
+      : [...words];
 
+    const newQuestions: Question[] = targetList.map((target, idx) => {
+      // Alternate between: Word -> Synonyms/Def AND Synonyms/Def -> Word
+      const promptType = idx % 2 === 0 ? 'word-to-synonyms' : 'synonyms-to-word';
+
+      // Smart distractors: prioritize same part of speech from the unit
       const samePos = words.filter((w) => w.id !== target.id && w.pos === target.pos);
       const otherWords = words.filter((w) => w.id !== target.id && w.pos !== target.pos);
 
@@ -73,10 +83,15 @@ export const QuizLearn: FC<QuizLearnProps> = ({
       const options = allChoices.map((c, i) => {
         const isCorrect = c.id === target.id;
         const text =
-          promptType === 'word-to-uzbek'
-            ? `${c.uzbek} — "${c.definition}"`
+          promptType === 'word-to-synonyms'
+            ? c.definition
             : `${c.word} (${c.pos})`;
-        return { id: i, text, isCorrect, wordObj: c, hidden: false };
+        const subText =
+          promptType === 'word-to-synonyms'
+            ? `↳ O'zbekcha: ${c.uzbek}`
+            : `↳ Def: ${c.definition} • ${c.uzbek}`;
+
+        return { id: i, text, subText, isCorrect, wordObj: c, hidden: false };
       });
 
       return {
@@ -96,7 +111,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
     setIncorrectWords([]);
     setIsFinished(false);
     setUsedLifeline(false);
-  }, [words]);
+  }, [words, isShuffledOrder]);
 
   useEffect(() => {
     generateQuestions();
@@ -297,15 +312,32 @@ export const QuizLearn: FC<QuizLearnProps> = ({
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      {/* Quiz Header Bar */}
-      <div className="flex items-center justify-between gap-4 mb-4 text-xs font-bold">
+      {/* Quiz Header Bar with Order Mode Switcher */}
+      <div className="flex items-center justify-between gap-4 mb-4 text-xs font-bold flex-wrap">
         <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
           <span>Question {currentIdx + 1} of {questions.length}</span>
           <span className="text-slate-300 dark:text-slate-600">•</span>
-          <span className="text-indigo-600 dark:text-indigo-400 font-mono">Word #{currentQ.targetWord.id}</span>
+          <span className="text-indigo-600 dark:text-indigo-400 font-mono font-bold">Word #{currentQ.targetWord.id}</span>
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2">
+          {/* Order Toggle: Sequential (1->25) vs Shuffled */}
+          <button
+            onClick={() => {
+              setIsShuffledOrder(!isShuffledOrder);
+            }}
+            title={isShuffledOrder ? 'Questions: Shuffled order (Click to make Sequential)' : 'Questions: Sequential order #1 to #25 (Click to Shuffle)'}
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
+              isShuffledOrder
+                ? 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300'
+                : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300'
+            }`}
+          >
+            {isShuffledOrder ? <Shuffle className="w-3.5 h-3.5" /> : <ListOrdered className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />}
+            <span>{isShuffledOrder ? 'Shuffled' : 'Sequential 1→25'}</span>
+          </button>
+
+          {/* Streak indicator */}
           {streak >= 2 && (
             <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-500/30 px-2.5 py-0.5 rounded-full text-xs font-bold animate-pulse">
               <Flame className="w-3.5 h-3.5 fill-amber-500" />
@@ -347,9 +379,9 @@ export const QuizLearn: FC<QuizLearnProps> = ({
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg dark:shadow-2xl mb-6 transition-colors duration-200">
         <div className="flex items-center justify-between mb-4">
           <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            {currentQ.promptType === 'word-to-uzbek'
-              ? 'Select the correct Uzbek meaning & definition:'
-              : 'Select the correct English SAT word:'}
+            {currentQ.promptType === 'word-to-synonyms'
+              ? 'Select the College Panda Synonyms & Definition:'
+              : 'Which SAT Word corresponds to these Synonyms?'}
           </span>
           <button
             onClick={() => speakWord(currentQ.targetWord.word)}
@@ -362,26 +394,31 @@ export const QuizLearn: FC<QuizLearnProps> = ({
 
         {/* Prompt Word / Meaning */}
         <div className="mb-6">
-          {currentQ.promptType === 'word-to-uzbek' ? (
-            <div className="flex items-baseline gap-3">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
-                {currentQ.targetWord.word}
-              </h2>
-              <span className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-lg">
-                {currentQ.targetWord.pos}
-              </span>
+          {currentQ.promptType === 'word-to-synonyms' ? (
+            <div>
+              <div className="flex items-baseline gap-3 mb-2">
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
+                  {currentQ.targetWord.word}
+                </h2>
+                <span className="text-xs font-mono font-bold text-indigo-700 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-lg">
+                  {currentQ.targetWord.pos}
+                </span>
+              </div>
+              <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
+                O'zbekcha: {currentQ.targetWord.uzbek}
+              </div>
             </div>
           ) : (
             <div>
-              <div className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
-                O'zbekcha:
+              <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
+                College Panda Definition & Synonyms:
               </div>
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2">
-                {currentQ.targetWord.uzbek}
-              </h2>
-              <p className="text-slate-600 dark:text-slate-300 text-sm italic">
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2 leading-snug">
                 "{currentQ.targetWord.definition}"
-              </p>
+              </h2>
+              <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
+                O'zbekcha: {currentQ.targetWord.uzbek}
+              </div>
             </div>
           )}
         </div>
@@ -423,7 +460,14 @@ export const QuizLearn: FC<QuizLearnProps> = ({
                   <span className="w-6 h-6 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 flex items-center justify-center text-xs font-black shrink-0">
                     {idx + 1}
                   </span>
-                  <span className="text-sm font-semibold leading-relaxed">{opt.text}</span>
+                  <div>
+                    <div className="text-sm font-bold leading-relaxed">{opt.text}</div>
+                    {opt.subText && (
+                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                        {opt.subText}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 {isAnswered && (
