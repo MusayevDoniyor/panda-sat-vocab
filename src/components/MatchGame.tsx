@@ -161,13 +161,11 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
       setMatchedCount((prev) => {
         const next = prev + 1;
         if (next >= targetCount) {
-          // Completed game!
           if (timerRef.current) clearInterval(timerRef.current);
           setIsCompleted(true);
           sounds.playVictory();
           confetti({ particleCount: 150, spread: 85, origin: { y: 0.6 } });
 
-          // Save personal record
           const finalTotalTime = timerSeconds + penaltyTime;
           const key = `panda_match_best_${gridSize}_unit_${unitNumber}`;
           if (bestTime === null || finalTotalTime < bestTime) {
@@ -178,12 +176,11 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
         return next;
       });
     } else {
-      // MISMATCH / PENALTY
+      // MISMATCH
       sounds.playError();
       setCombo(1);
       setWrongMatchIds([firstTile.id, clickedTile.id]);
 
-      // Add 1.0s penalty
       setPenaltyTime((prev) => prev + 1.0);
       setShowPenaltyNotice(true);
       setTimeout(() => setShowPenaltyNotice(false), 900);
@@ -203,20 +200,20 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
       {/* Top Header & Settings */}
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 rounded-2xl bg-gradient-to-br from-purple-500/20 to-indigo-500/20 text-purple-400 border border-purple-500/30 shadow-lg shadow-purple-500/10">
+          <div className="p-2.5 rounded-2xl bg-purple-50 dark:bg-gradient-to-br dark:from-purple-500/20 dark:to-indigo-500/20 text-purple-600 dark:text-purple-400 border border-purple-200 dark:border-purple-500/30 shadow-md">
             <Zap className="w-5 h-5" />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+            <h1 className="text-xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
               <span>Speed Match</span>
               {combo >= 2 && (
-                <span className="flex items-center gap-1 text-xs font-black text-amber-400 bg-amber-500/20 border border-amber-500/40 px-2 py-0.5 rounded-full animate-pulse">
-                  <Flame className="w-3.5 h-3.5 fill-amber-400" />
+                <span className="flex items-center gap-1 text-xs font-black text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/20 border border-amber-200 dark:border-amber-500/40 px-2.5 py-0.5 rounded-full animate-pulse">
+                  <Flame className="w-3.5 h-3.5 fill-amber-500" />
                   <span>{combo}x Combo!</span>
                 </span>
               )}
             </h1>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
               Match the English SAT word with its definition & Uzbek translation
             </p>
           </div>
@@ -225,16 +222,16 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
         {/* Controls & Metrics */}
         <div className="flex items-center gap-3 flex-wrap">
           {/* Difficulty / Grid Size Picker */}
-          <div className="flex items-center bg-slate-800/90 rounded-xl p-1 border border-slate-700 text-xs font-semibold">
-            <span className="px-2 text-slate-400 hidden sm:inline">Pairs:</span>
+          <div className="flex items-center bg-slate-100 dark:bg-slate-800/90 rounded-2xl p-1 border border-slate-200 dark:border-slate-700 text-xs font-bold">
+            <span className="px-2 text-slate-500 dark:text-slate-400 hidden sm:inline">Pairs:</span>
             {[4, 6, 8].map((size) => (
               <button
                 key={size}
                 onClick={() => setGridSize(size as 4 | 6 | 8)}
-                className={`px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
+                className={`px-3 py-1 rounded-xl transition-all cursor-pointer ${
                   gridSize === size
-                    ? 'bg-indigo-600 text-white shadow-sm'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-indigo-600 text-white shadow-xs'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
                 }`}
               >
                 {size}
@@ -243,9 +240,9 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
           </div>
 
           {/* Live Timer with Penalty Indicator */}
-          <div className="relative flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200">
-            <Timer className="w-4 h-4 text-indigo-400" />
-            <span className="font-mono text-base font-bold text-indigo-300">
+          <div className="relative flex items-center gap-2 px-3.5 py-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 shadow-xs">
+            <Timer className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+            <span className="font-mono text-base font-black text-indigo-600 dark:text-indigo-300">
               {totalEffectiveTime}s
             </span>
             {showPenaltyNotice && (
@@ -257,7 +254,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
 
           {/* Best Record */}
           {bestTime !== null && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold">
               <Trophy className="w-3.5 h-3.5" />
               <span>Record: {bestTime.toFixed(1)}s</span>
             </div>
@@ -265,7 +262,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
 
           <button
             onClick={initGame}
-            className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 transition-colors cursor-pointer"
+            className="p-2 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 transition-colors cursor-pointer shadow-xs"
             title="Restart Game"
           >
             <RotateCcw className="w-4 h-4" />
@@ -274,7 +271,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
       </div>
 
       {/* MATCHED PROGRESS BAR */}
-      <div className="w-full bg-slate-800/80 rounded-full h-1.5 mb-6 overflow-hidden">
+      <div className="w-full bg-slate-200 dark:bg-slate-800/80 rounded-full h-1.5 mb-6 overflow-hidden">
         <div
           className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-1.5 rounded-full transition-all duration-300"
           style={{ width: `${(matchedCount / targetPairs) * 100}%` }}
@@ -283,43 +280,43 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
 
       {/* GAME OVER CARD */}
       {isCompleted ? (
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-center max-w-lg mx-auto shadow-2xl relative overflow-hidden">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 sm:p-12 text-center max-w-lg mx-auto shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-200">
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 via-indigo-500 to-amber-500" />
           
-          <div className="w-20 h-20 mx-auto rounded-3xl bg-gradient-to-br from-emerald-500/20 to-indigo-500/20 border border-emerald-500/30 flex items-center justify-center text-4xl mb-4 shadow-inner">
+          <div className="w-20 h-20 mx-auto rounded-3xl bg-emerald-50 dark:bg-gradient-to-br dark:from-emerald-500/20 dark:to-indigo-500/20 border border-emerald-200 dark:border-emerald-500/30 flex items-center justify-center text-4xl mb-4 shadow-inner">
             🏆
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-1">
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mb-1">
             Phenomenal Recall!
           </h2>
-          <p className="text-slate-400 text-xs sm:text-sm mb-6">
+          <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mb-6 font-medium">
             All {targetPairs} pairs matched successfully in Unit {unitNumber > 0 ? unitNumber : 'Custom'}
           </p>
 
           {/* Stats Breakdown */}
-          <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-slate-800/60 border border-slate-700/60 mb-6">
+          <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 mb-6">
             <div>
-              <div className="text-xl sm:text-2xl font-black font-mono text-emerald-400">
+              <div className="text-xl sm:text-2xl font-black font-mono text-emerald-600 dark:text-emerald-400">
                 {totalEffectiveTime}s
               </div>
-              <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+              <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 Total Time
               </div>
             </div>
             <div>
-              <div className="text-xl sm:text-2xl font-black text-amber-400">
+              <div className="text-xl sm:text-2xl font-black text-amber-500 dark:text-amber-400">
                 {maxCombo}x 🔥
               </div>
-              <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+              <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 Max Combo
               </div>
             </div>
             <div>
-              <div className="text-xl sm:text-2xl font-black text-indigo-400">
+              <div className="text-xl sm:text-2xl font-black text-indigo-600 dark:text-indigo-400">
                 {penaltyTime > 0 ? `+${penaltyTime.toFixed(0)}s` : '0s'}
               </div>
-              <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+              <div className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 Penalties
               </div>
             </div>
@@ -352,34 +349,34 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
               return (
                 <div
                   key={tile.id}
-                  className="h-28 sm:h-32 rounded-2xl border border-slate-800/20 bg-slate-900/10 opacity-0 pointer-events-none transition-all duration-500"
+                  className="h-28 sm:h-32 rounded-2xl border border-slate-200/40 dark:border-slate-800/20 bg-slate-100/10 dark:bg-slate-900/10 opacity-0 pointer-events-none transition-all duration-500"
                 />
               );
             }
 
             let tileClasses =
-              'bg-slate-850 hover:bg-slate-800 border-slate-750 text-slate-200';
+              'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 shadow-xs dark:bg-slate-850 dark:hover:bg-slate-800 dark:border-slate-750 dark:text-slate-200';
 
             if (isSelected) {
               tileClasses =
-                'bg-indigo-950/90 border-indigo-400 text-white ring-2 ring-indigo-500/50 shadow-xl shadow-indigo-500/30 scale-[1.03]';
+                'bg-indigo-50 border-indigo-500 text-indigo-950 ring-2 ring-indigo-500/40 shadow-md scale-[1.03] dark:bg-indigo-950/90 dark:border-indigo-400 dark:text-white dark:ring-indigo-500/50 dark:shadow-xl dark:shadow-indigo-500/30';
             } else if (isWrong) {
               tileClasses =
-                'bg-rose-950/90 border-rose-500 text-rose-200 ring-2 ring-rose-500/50 animate-shake';
+                'bg-rose-50 border-rose-500 text-rose-950 ring-2 ring-rose-500/40 animate-shake dark:bg-rose-950/90 dark:border-rose-500 dark:text-rose-200 dark:ring-rose-500/50';
             }
 
             return (
               <button
                 key={tile.id}
                 onClick={() => handleTileClick(tile)}
-                className={`h-28 sm:h-32 p-3 sm:p-4 rounded-2xl border transition-all duration-150 flex flex-col justify-center items-center text-center cursor-pointer shadow-md ${tileClasses}`}
+                className={`h-28 sm:h-32 p-3 sm:p-4 rounded-2xl border transition-all duration-150 flex flex-col justify-center items-center text-center cursor-pointer ${tileClasses}`}
               >
                 {tile.type === 'word' ? (
-                  <span className="text-base sm:text-xl font-extrabold tracking-tight text-white">
+                  <span className="text-base sm:text-xl font-black tracking-tight text-slate-900 dark:text-white">
                     {tile.text}
                   </span>
                 ) : (
-                  <span className="text-xs sm:text-sm font-medium leading-snug line-clamp-4 text-slate-200 whitespace-pre-line">
+                  <span className="text-xs sm:text-sm font-semibold leading-snug line-clamp-4 text-slate-700 dark:text-slate-200 whitespace-pre-line">
                     {tile.text}
                   </span>
                 )}

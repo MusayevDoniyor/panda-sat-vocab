@@ -34,10 +34,9 @@ export const Flashcards: FC<FlashcardsProps> = ({
   const [isFlipped, setIsFlipped] = useState(false);
   const [shuffledWords, setShuffledWords] = useState<VocabWord[]>(words);
   const [isShuffled, setIsShuffled] = useState(false);
-  const [swapSides, setSwapSides] = useState(false); // if true, show Uzbek/Def on front
+  const [swapSides, setSwapSides] = useState(false);
   const [autoPlay, setAutoPlay] = useState(false);
 
-  // Sync shuffledWords when input words change
   useEffect(() => {
     setShuffledWords(words);
     setCurrentIndex(0);
@@ -64,6 +63,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
   }, []);
 
   const handleShuffle = () => {
+    sounds.playFlip();
     if (isShuffled) {
       setShuffledWords(words);
       setIsShuffled(false);
@@ -110,6 +110,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
     const timer = setTimeout(() => {
       if (!isFlipped) {
         setIsFlipped(true);
+        sounds.playFlip();
       } else {
         handleNext();
       }
@@ -121,7 +122,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
   if (!currentWord) {
     return (
       <div className="text-center py-20">
-        <p className="text-slate-400">No words found in this category.</p>
+        <p className="text-slate-500 dark:text-slate-400">No words found in this category.</p>
       </div>
     );
   }
@@ -132,23 +133,26 @@ export const Flashcards: FC<FlashcardsProps> = ({
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       {/* Top Controls Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-3 mb-4 text-xs text-slate-400">
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-4 text-xs text-slate-500 dark:text-slate-400 font-medium">
         <div className="flex items-center space-x-2">
-          <span className="font-semibold text-slate-200">
+          <span className="font-bold text-slate-800 dark:text-slate-200">
             Card {currentIndex + 1} of {shuffledWords.length}
           </span>
-          <span className="text-slate-600">•</span>
-          <span className="text-indigo-400 font-mono">Word #{currentWord.id}</span>
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="text-indigo-600 dark:text-indigo-400 font-mono font-bold">Word #{currentWord.id}</span>
         </div>
 
         <div className="flex items-center space-x-2">
           <button
-            onClick={() => setSwapSides(!swapSides)}
-            title="Swap Front / Back"
-            className={`p-2 rounded-lg border transition-all cursor-pointer ${
+            onClick={() => {
+              sounds.playFlip();
+              setSwapSides(!swapSides);
+            }}
+            title="Swap Front / Back (Term vs Definition)"
+            className={`p-2 rounded-xl border transition-all cursor-pointer shadow-xs ${
               swapSides
                 ? 'bg-indigo-600 border-indigo-500 text-white'
-                : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'
+                : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'
             }`}
           >
             <Repeat className="w-4 h-4" />
@@ -156,33 +160,36 @@ export const Flashcards: FC<FlashcardsProps> = ({
 
           <button
             onClick={handleShuffle}
-            title="Shuffle (R)"
-            className={`p-2 rounded-lg border transition-all cursor-pointer ${
+            title="Shuffle Cards (R)"
+            className={`p-2 rounded-xl border transition-all cursor-pointer shadow-xs ${
               isShuffled
                 ? 'bg-purple-600 border-purple-500 text-white'
-                : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'
+                : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'
             }`}
           >
             <Shuffle className="w-4 h-4" />
           </button>
 
           <button
-            onClick={() => setAutoPlay(!autoPlay)}
-            title="Auto-play"
-            className={`p-2 rounded-lg border transition-all cursor-pointer flex items-center space-x-1 ${
+            onClick={() => {
+              sounds.playFlip();
+              setAutoPlay(!autoPlay);
+            }}
+            title="Auto-play Cards"
+            className={`p-2 rounded-xl border transition-all cursor-pointer flex items-center space-x-1 shadow-xs ${
               autoPlay
                 ? 'bg-emerald-600 border-emerald-500 text-white'
-                : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'
+                : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'
             }`}
           >
             {autoPlay ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-            <span className="text-[11px] font-semibold">{autoPlay ? 'Pause' : 'Auto'}</span>
+            <span className="text-[11px] font-bold">{autoPlay ? 'Pause' : 'Auto'}</span>
           </button>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-slate-800 rounded-full h-1.5 mb-6 overflow-hidden">
+      <div className="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 mb-6 overflow-hidden">
         <div
           className="bg-gradient-to-r from-indigo-500 to-purple-500 h-1.5 rounded-full transition-all duration-300"
           style={{ width: `${((currentIndex + 1) / shuffledWords.length) * 100}%` }}
@@ -200,14 +207,14 @@ export const Flashcards: FC<FlashcardsProps> = ({
           }`}
         >
           {/* FRONT OF CARD */}
-          <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-850 to-slate-900 border border-slate-800 hover:border-slate-700 rounded-3xl p-8 flex flex-col justify-between shadow-2xl backface-hidden">
+          <div className="absolute inset-0 w-full h-full bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-850 dark:to-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg dark:shadow-2xl backface-hidden transition-colors duration-200">
             {/* Top row */}
             <div className="flex items-center justify-between" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center space-x-2">
-                <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/20">
                   Unit {currentWord.unit}
                 </span>
-                <span className="px-2.5 py-1 rounded-lg text-xs font-mono text-slate-400 bg-slate-800">
+                <span className="px-2.5 py-1 rounded-xl text-xs font-mono font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-transparent">
                   {currentWord.pos}
                 </span>
               </div>
@@ -216,16 +223,16 @@ export const Flashcards: FC<FlashcardsProps> = ({
                 <button
                   onClick={() => onToggleStar(currentWord.id)}
                   title="Star word (S)"
-                  className="p-2 rounded-xl text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-colors cursor-pointer"
+                  className="p-2 rounded-xl text-slate-400 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                 >
-                  <Star className={`w-5 h-5 ${isStarred ? 'text-amber-400 fill-amber-400' : ''}`} />
+                  <Star className={`w-5 h-5 ${isStarred ? 'text-amber-500 fill-amber-500' : ''}`} />
                 </button>
                 <button
                   onClick={() => onToggleMaster(currentWord.id)}
                   title="Mark Mastered (M)"
-                  className="p-2 rounded-xl text-slate-400 hover:text-emerald-400 hover:bg-slate-800 transition-colors cursor-pointer"
+                  className="p-2 rounded-xl text-slate-400 hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                 >
-                  <CheckCircle2 className={`w-5 h-5 ${isMastered ? 'text-emerald-400 fill-emerald-400' : ''}`} />
+                  <CheckCircle2 className={`w-5 h-5 ${isMastered ? 'text-emerald-500 fill-emerald-500' : ''}`} />
                 </button>
               </div>
             </div>
@@ -234,7 +241,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
             <div className="text-center my-auto">
               {!swapSides ? (
                 <>
-                  <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                  <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-4">
                     {currentWord.word}
                   </h2>
                   <button
@@ -242,21 +249,21 @@ export const Flashcards: FC<FlashcardsProps> = ({
                       e.stopPropagation();
                       speakWord(currentWord.word);
                     }}
-                    className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 hover:bg-slate-700 text-indigo-300 text-xs font-medium border border-slate-700 transition-all hover:scale-105 cursor-pointer"
+                    className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-700 text-indigo-700 dark:text-indigo-300 text-xs font-bold border border-slate-200 dark:border-slate-700 transition-all hover:scale-105 cursor-pointer shadow-xs"
                   >
-                    <Volume2 className="w-4 h-4 text-indigo-400" />
+                    <Volume2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
                     <span>Pronounce</span>
                   </button>
                 </>
               ) : (
                 <>
-                  <div className="text-xs uppercase font-bold tracking-wider text-emerald-400 mb-2">
+                  <div className="text-xs uppercase font-extrabold tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
                     O'zbekcha Ma'nosi:
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
                     {currentWord.uzbek}
                   </h2>
-                  <p className="text-slate-300 text-sm italic max-w-lg mx-auto">
+                  <p className="text-slate-600 dark:text-slate-300 text-sm italic max-w-lg mx-auto">
                     "{currentWord.definition}"
                   </p>
                 </>
@@ -264,26 +271,26 @@ export const Flashcards: FC<FlashcardsProps> = ({
             </div>
 
             {/* Bottom hint */}
-            <div className="flex items-center justify-between text-xs text-slate-500 pt-4 border-t border-slate-800/80">
+            <div className="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 pt-4 border-t border-slate-100 dark:border-slate-800/80 font-medium">
               <span>Click or Space to flip</span>
-              <span className="flex items-center space-x-1">
+              <span className="flex items-center space-x-1.5">
                 <RotateCw className="w-3.5 h-3.5" />
-                <span>Flip to see details</span>
+                <span>Flip for definition & Uzbek</span>
               </span>
             </div>
           </div>
 
           {/* BACK OF CARD */}
-          <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-900 via-indigo-950/20 to-slate-900 border border-indigo-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl backface-hidden rotate-y-180 overflow-y-auto">
+          <div className="absolute inset-0 w-full h-full bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:via-indigo-950/20 dark:to-slate-900 border border-indigo-200 dark:border-indigo-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-lg dark:shadow-2xl backface-hidden rotate-y-180 overflow-y-auto transition-colors duration-200">
             {/* Top row */}
-            <div className="flex items-center justify-between pb-3 border-b border-slate-800" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center space-x-2">
-                <span className="text-lg font-bold text-white">{currentWord.word}</span>
-                <span className="text-xs font-mono text-indigo-400">({currentWord.pos})</span>
+                <span className="text-lg font-black text-slate-900 dark:text-white">{currentWord.word}</span>
+                <span className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">({currentWord.pos})</span>
               </div>
               <button
                 onClick={() => speakWord(currentWord.word)}
-                className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-indigo-300 transition-colors cursor-pointer"
+                className="p-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-indigo-600 dark:text-indigo-300 transition-colors cursor-pointer"
               >
                 <Volume2 className="w-4 h-4" />
               </button>
@@ -292,21 +299,21 @@ export const Flashcards: FC<FlashcardsProps> = ({
             {/* Middle Details */}
             <div className="space-y-4 my-auto py-2">
               {/* Uzbek Translation Card */}
-              <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-xl p-3.5">
-                <div className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 mb-1">
+              <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-500/30 rounded-2xl p-4">
+                <div className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
                   O'zbekcha Tarjima:
                 </div>
-                <div className="text-base sm:text-lg font-bold text-emerald-200">
+                <div className="text-base sm:text-lg font-black text-emerald-900 dark:text-emerald-200">
                   {currentWord.uzbek}
                 </div>
               </div>
 
               {/* English Definition */}
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-400 mb-1">
+                <div className="text-[10px] font-extrabold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
                   College Panda Definition:
                 </div>
-                <p className="text-slate-200 text-sm leading-relaxed">
+                <p className="text-slate-800 dark:text-slate-200 text-sm leading-relaxed font-medium">
                   {currentWord.definition}
                 </p>
               </div>
@@ -314,14 +321,14 @@ export const Flashcards: FC<FlashcardsProps> = ({
               {/* Synonyms */}
               {currentWord.synonyms.length > 0 && (
                 <div>
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-1.5">
                     Synonyms:
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {currentWord.synonyms.map((s, idx) => (
                       <span
                         key={idx}
-                        className="px-2.5 py-0.5 rounded-lg text-xs bg-slate-800 text-slate-300 border border-slate-700"
+                        className="px-2.5 py-0.5 rounded-lg text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-medium"
                       >
                         {s}
                       </span>
@@ -332,15 +339,15 @@ export const Flashcards: FC<FlashcardsProps> = ({
 
               {/* Example sentence */}
               {currentWord.example && (
-                <div className="bg-slate-800/60 rounded-xl p-3 border border-slate-700/60 text-xs text-slate-300 italic">
-                  <span className="text-amber-400 font-semibold not-italic mr-1.5">SAT Context:</span>
+                <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-3 border border-slate-200 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300 italic font-medium">
+                  <span className="text-amber-600 dark:text-amber-400 font-bold not-italic mr-1.5">SAT Context:</span>
                   "{currentWord.example}"
                 </div>
               )}
             </div>
 
             {/* Bottom hint */}
-            <div className="text-center text-xs text-slate-500 pt-2 border-t border-slate-800/60">
+            <div className="text-center text-xs text-slate-400 dark:text-slate-500 pt-2 border-t border-slate-100 dark:border-slate-800/60">
               Click or Space to flip back
             </div>
           </div>
@@ -348,18 +355,18 @@ export const Flashcards: FC<FlashcardsProps> = ({
       </div>
 
       {/* Navigation Controls */}
-      <div className="flex items-center justify-between gap-4 mt-6">
+      <div className="flex items-center justify-between gap-3 sm:gap-4 mt-6">
         <button
           onClick={handlePrev}
-          className="flex-1 flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-all cursor-pointer shadow-md"
+          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-750 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>Previous (←)</span>
+          <span>Prev (←)</span>
         </button>
 
         <button
           onClick={handleFlip}
-          className="flex-1 flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-indigo-600/30 transition-all cursor-pointer"
+          className="flex-1 flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3.5 px-4 rounded-2xl shadow-lg shadow-indigo-600/30 transition-all cursor-pointer"
         >
           <RotateCw className="w-4 h-4" />
           <span>Flip (Space)</span>
@@ -367,7 +374,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
 
         <button
           onClick={handleNext}
-          className="flex-1 flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-4 rounded-xl border border-slate-700 transition-all cursor-pointer shadow-md"
+          className="flex-1 flex items-center justify-center space-x-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-750 text-slate-800 dark:text-white font-bold py-3.5 px-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all cursor-pointer shadow-sm"
         >
           <span>Next (→)</span>
           <ArrowRight className="w-4 h-4" />
@@ -375,26 +382,26 @@ export const Flashcards: FC<FlashcardsProps> = ({
       </div>
 
       {/* Rating buttons (SM-2 Spaced Repetition) */}
-      <div className="mt-6 pt-5 border-t border-slate-800">
-        <div className="text-[11px] font-semibold text-slate-400 text-center mb-3">
+      <div className="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800">
+        <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 text-center mb-3 uppercase tracking-wider">
           Rate your recall for Spaced Repetition:
         </div>
         <div className="grid grid-cols-4 gap-2">
           <button
             onClick={() => handleNext()}
-            className="py-2 px-3 rounded-lg bg-red-950/40 hover:bg-red-900/60 border border-red-500/30 text-red-300 text-xs font-semibold transition-all cursor-pointer"
+            className="py-2.5 px-2 rounded-xl bg-red-50 hover:bg-red-100 dark:bg-red-950/40 dark:hover:bg-red-900/60 border border-red-200 dark:border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all cursor-pointer"
           >
             1. Again
           </button>
           <button
             onClick={() => handleNext()}
-            className="py-2 px-3 rounded-lg bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/30 text-amber-300 text-xs font-semibold transition-all cursor-pointer"
+            className="py-2.5 px-2 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/60 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all cursor-pointer"
           >
             2. Hard
           </button>
           <button
             onClick={() => handleNext()}
-            className="py-2 px-3 rounded-lg bg-blue-950/40 hover:bg-blue-900/60 border border-blue-500/30 text-blue-300 text-xs font-semibold transition-all cursor-pointer"
+            className="py-2.5 px-2 rounded-xl bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/60 border border-blue-200 dark:border-blue-500/30 text-blue-700 dark:text-blue-300 text-xs font-bold transition-all cursor-pointer"
           >
             3. Good
           </button>
@@ -404,7 +411,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
               onToggleMaster(currentWord.id);
               handleNext();
             }}
-            className="py-2 px-3 rounded-lg bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 text-xs font-semibold transition-all cursor-pointer"
+            className="py-2.5 px-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/60 border border-emerald-200 dark:border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all cursor-pointer"
           >
             4. Easy (Master)
           </button>

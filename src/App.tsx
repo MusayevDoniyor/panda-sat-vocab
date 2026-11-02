@@ -3,6 +3,7 @@ import { VOCABULARY_DATA } from './data/vocabulary';
 import type { VocabWord } from './data/vocabulary';
 import type { StudyMode, UserStats } from './types';
 import { loadUserStats, saveUserStats } from './utils/storage';
+import { getInitialTheme, applyTheme, type Theme } from './utils/theme';
 import { Navbar } from './components/Navbar';
 import { Flashcards } from './components/Flashcards';
 import { QuizLearn } from './components/QuizLearn';
@@ -15,6 +16,18 @@ export function App() {
   const [stats, setStats] = useState<UserStats>(loadUserStats);
   const [currentUnit, setCurrentUnit] = useState<number>(1);
   const [currentMode, setCurrentMode] = useState<StudyMode>('flashcards');
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+
+  // Initialize theme on mount
+  useEffect(() => {
+    applyTheme(theme);
+  }, [theme]);
+
+  const handleToggleTheme = () => {
+    const nextTheme: Theme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    applyTheme(nextTheme);
+  };
 
   // Save stats whenever they change
   useEffect(() => {
@@ -79,7 +92,7 @@ export function App() {
   const currentUnitBestScore = stats.unitProgress[currentUnit]?.bestScore ?? null;
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white transition-colors duration-200">
       {/* Top Navigation */}
       <Navbar
         currentUnit={currentUnit}
@@ -88,6 +101,8 @@ export function App() {
         onSelectMode={setCurrentMode}
         totalMastered={stats.masteredIds.length}
         totalStarred={stats.starredIds.length}
+        theme={theme}
+        onToggleTheme={handleToggleTheme}
       />
 
       {/* Main Content Area */}
@@ -147,17 +162,17 @@ export function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950/60 py-6 text-center text-xs text-slate-500 print:hidden">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <footer className="border-t border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950/60 py-6 text-center text-xs text-slate-500 dark:text-slate-400 print:hidden transition-colors duration-200">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 font-medium">
           <div className="flex items-center space-x-2">
             <span>🐼 Panda SAT 400</span>
             <span>•</span>
             <span>The College Panda Vocabulary List</span>
             <span>•</span>
-            <span className="text-emerald-400 font-semibold">16 Units of 25 Words</span>
+            <span className="text-emerald-600 dark:text-emerald-400 font-bold">16 Units of 25 Words</span>
           </div>
           <div>
-            Built with React, TypeScript & Tailwind CSS • Offline LocalStorage Enabled
+            Active Recall & Spaced Repetition • Offline LocalStorage Enabled
           </div>
         </div>
       </footer>

@@ -52,7 +52,6 @@ export const QuizLearn: FC<QuizLearnProps> = ({
   const [isFinished, setIsFinished] = useState(false);
   const [usedLifeline, setUsedLifeline] = useState(false);
 
-  // Generate quiz questions with POS-aligned smart distractors
   const generateQuestions = useCallback(() => {
     if (words.length === 0) return;
 
@@ -60,7 +59,6 @@ export const QuizLearn: FC<QuizLearnProps> = ({
     const newQuestions: Question[] = shuffledTargets.map((target) => {
       const promptType = Math.random() > 0.4 ? 'word-to-uzbek' : 'uzbek-to-word';
 
-      // Smart distractor selection: prioritize same POS if available
       const samePos = words.filter((w) => w.id !== target.id && w.pos === target.pos);
       const otherWords = words.filter((w) => w.id !== target.id && w.pos !== target.pos);
 
@@ -135,7 +133,6 @@ export const QuizLearn: FC<QuizLearnProps> = ({
     setUsedLifeline(true);
     sounds.playFlip();
 
-    // Hide 2 incorrect options
     const incorrectIndices = currentQ.options
       .map((opt, i) => (opt.isCorrect ? -1 : i))
       .filter((i) => i !== -1)
@@ -178,7 +175,6 @@ export const QuizLearn: FC<QuizLearnProps> = ({
     }
   };
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isFinished || !currentQ) return;
@@ -220,41 +216,41 @@ export const QuizLearn: FC<QuizLearnProps> = ({
 
     return (
       <div className="max-w-xl mx-auto px-4 py-10">
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl text-center relative overflow-hidden">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 shadow-xl dark:shadow-2xl text-center relative overflow-hidden transition-colors duration-200">
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-500" />
 
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 text-4xl mb-4 shadow-inner">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-4xl mb-4 shadow-inner">
             {finalPct >= 95 ? '🏆' : finalPct >= 80 ? '🌟' : '📚'}
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-1">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-1">
             {finalPct === 100 ? 'Flawless 100% Mastery!' : finalPct >= 80 ? 'Ready for Oral Exam!' : 'Keep Practicing!'}
           </h2>
-          <p className="text-slate-400 text-xs sm:text-sm mb-6">
+          <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mb-6 font-medium">
             Unit {unitNumber > 0 ? unitNumber : 'Custom'} Quiz Completed
           </p>
 
           {/* Score Box */}
-          <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-slate-800/60 border border-slate-700/60 mb-6">
+          <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 mb-6">
             <div>
-              <div className="text-2xl sm:text-3xl font-black text-indigo-400">{score}/{totalQ}</div>
-              <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Score</div>
+              <div className="text-2xl sm:text-3xl font-black text-indigo-600 dark:text-indigo-400">{score}/{totalQ}</div>
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Score</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-black text-emerald-400">{finalPct}%</div>
-              <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Accuracy</div>
+              <div className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400">{finalPct}%</div>
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Accuracy</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-black text-amber-400">{maxStreak}🔥</div>
-              <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Max Streak</div>
+              <div className="text-2xl sm:text-3xl font-black text-amber-500 dark:text-amber-400">{maxStreak}🔥</div>
+              <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Max Streak</div>
             </div>
           </div>
 
           {/* Oral Exam Ready Recommendation */}
           <div className={`p-4 rounded-2xl text-left border mb-6 ${
             isPassing 
-              ? 'bg-emerald-950/40 border-emerald-500/30 text-emerald-200' 
-              : 'bg-amber-950/40 border-amber-500/30 text-amber-200'
+              ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-500/30 text-emerald-900 dark:text-emerald-200' 
+              : 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-500/30 text-amber-900 dark:text-amber-200'
           }`}>
             <div className="font-bold text-sm flex items-center gap-2 mb-1">
               <Award className="w-4 h-4" />
@@ -280,14 +276,14 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             <div className="flex gap-2">
               <button
                 onClick={generateQuestions}
-                className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 flex items-center justify-center gap-2 cursor-pointer transition-all"
+                className="flex-1 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2 cursor-pointer transition-all"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Retake Quiz</span>
               </button>
               <button
                 onClick={onGoToFlashcards}
-                className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 flex items-center justify-center gap-2 cursor-pointer transition-all"
+                className="flex-1 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2 cursor-pointer transition-all"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Practice Cards</span>
@@ -302,17 +298,17 @@ export const QuizLearn: FC<QuizLearnProps> = ({
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       {/* Quiz Header Bar */}
-      <div className="flex items-center justify-between gap-4 mb-4 text-xs font-semibold">
-        <div className="flex items-center gap-2 text-slate-400">
+      <div className="flex items-center justify-between gap-4 mb-4 text-xs font-bold">
+        <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
           <span>Question {currentIdx + 1} of {questions.length}</span>
-          <span className="text-slate-600">•</span>
-          <span className="text-indigo-400 font-mono">Word #{currentQ.targetWord.id}</span>
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="text-indigo-600 dark:text-indigo-400 font-mono">Word #{currentQ.targetWord.id}</span>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
           {streak >= 2 && (
-            <span className="flex items-center gap-1 text-amber-400 bg-amber-950/60 border border-amber-500/30 px-2.5 py-0.5 rounded-full text-xs font-bold animate-pulse">
-              <Flame className="w-3.5 h-3.5 fill-amber-400" />
+            <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-500/30 px-2.5 py-0.5 rounded-full text-xs font-bold animate-pulse">
+              <Flame className="w-3.5 h-3.5 fill-amber-500" />
               <span>{streak} Streak!</span>
             </span>
           )}
@@ -323,41 +319,41 @@ export const QuizLearn: FC<QuizLearnProps> = ({
               onClick={handle5050Lifeline}
               disabled={usedLifeline}
               title="50/50 Lifeline (Press H)"
-              className={`px-2.5 py-1 rounded-lg border text-xs font-bold transition-all cursor-pointer ${
+              className={`px-2.5 py-1 rounded-xl border text-xs font-black transition-all cursor-pointer shadow-xs ${
                 usedLifeline
-                  ? 'bg-slate-800/40 border-slate-800 text-slate-600 cursor-not-allowed'
-                  : 'bg-purple-950/60 border-purple-500/30 text-purple-300 hover:bg-purple-900/60'
+                  ? 'bg-slate-100 dark:bg-slate-800/40 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
+                  : 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/60'
               }`}
             >
               50:50
             </button>
           )}
 
-          <span className="text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded-lg border border-emerald-500/30">
+          <span className="text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 rounded-xl border border-emerald-200 dark:border-emerald-500/30">
             Score: {score}
           </span>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-slate-800 rounded-full h-1.5 mb-6 overflow-hidden">
+      <div className="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 mb-6 overflow-hidden">
         <div
-          className="bg-indigo-500 h-1.5 rounded-full transition-all duration-300"
+          className="bg-indigo-600 dark:bg-indigo-500 h-1.5 rounded-full transition-all duration-300"
           style={{ width: `${((currentIdx + 1) / questions.length) * 100}%` }}
         />
       </div>
 
       {/* Question Card */}
-      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl mb-6">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg dark:shadow-2xl mb-6 transition-colors duration-200">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
             {currentQ.promptType === 'word-to-uzbek'
               ? 'Select the correct Uzbek meaning & definition:'
               : 'Select the correct English SAT word:'}
           </span>
           <button
             onClick={() => speakWord(currentQ.targetWord.word)}
-            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-indigo-400 transition-colors cursor-pointer"
+            className="p-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-indigo-600 dark:text-indigo-400 transition-colors cursor-pointer"
             title="Pronounce target word"
           >
             <Volume2 className="w-4 h-4" />
@@ -368,22 +364,22 @@ export const QuizLearn: FC<QuizLearnProps> = ({
         <div className="mb-6">
           {currentQ.promptType === 'word-to-uzbek' ? (
             <div className="flex items-baseline gap-3">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                 {currentQ.targetWord.word}
               </h2>
-              <span className="text-xs font-mono text-indigo-400 bg-indigo-950/40 border border-indigo-500/30 px-2 py-0.5 rounded">
+              <span className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-lg">
                 {currentQ.targetWord.pos}
               </span>
             </div>
           ) : (
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1">
+              <div className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
                 O'zbekcha:
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2">
                 {currentQ.targetWord.uzbek}
               </h2>
-              <p className="text-slate-300 text-sm italic">
+              <p className="text-slate-600 dark:text-slate-300 text-sm italic">
                 "{currentQ.targetWord.definition}"
               </p>
             </div>
@@ -397,22 +393,22 @@ export const QuizLearn: FC<QuizLearnProps> = ({
               return (
                 <div
                   key={idx}
-                  className="h-14 rounded-2xl border border-slate-800/40 bg-slate-900/30 opacity-30 flex items-center px-4 text-xs text-slate-600 font-mono select-none"
+                  className="h-14 rounded-2xl border border-dashed border-slate-200 dark:border-slate-800/60 bg-slate-50 dark:bg-slate-900/30 opacity-40 flex items-center px-4 text-xs text-slate-400 dark:text-slate-600 font-mono select-none"
                 >
                   [Eliminated by 50/50]
                 </div>
               );
             }
 
-            let optionStyles = 'bg-slate-800/80 hover:bg-slate-750 border-slate-700 text-slate-200';
+            let optionStyles = 'bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/80 dark:hover:bg-slate-750 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200';
 
             if (isAnswered) {
               if (opt.isCorrect) {
-                optionStyles = 'bg-emerald-950/80 border-emerald-500 text-emerald-100 shadow-md shadow-emerald-500/20';
+                optionStyles = 'bg-emerald-50 dark:bg-emerald-950/80 border-emerald-500 text-emerald-900 dark:text-emerald-100 shadow-md shadow-emerald-500/20';
               } else if (idx === selectedOptionIdx) {
-                optionStyles = 'bg-rose-950/80 border-rose-500 text-rose-100 shadow-md shadow-rose-500/20';
+                optionStyles = 'bg-rose-50 dark:bg-rose-950/80 border-rose-500 text-rose-900 dark:text-rose-100 shadow-md shadow-rose-500/20';
               } else {
-                optionStyles = 'bg-slate-800/40 border-slate-800 text-slate-500 opacity-60';
+                optionStyles = 'bg-slate-100/60 dark:bg-slate-800/40 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 opacity-60';
               }
             }
 
@@ -421,21 +417,21 @@ export const QuizLearn: FC<QuizLearnProps> = ({
                 key={idx}
                 disabled={isAnswered}
                 onClick={() => handleSelectOption(idx)}
-                className={`w-full text-left p-4 rounded-2xl border transition-all flex items-start justify-between gap-3 cursor-pointer ${optionStyles}`}
+                className={`w-full text-left p-4 rounded-2xl border transition-all flex items-start justify-between gap-3 cursor-pointer shadow-xs ${optionStyles}`}
               >
                 <div className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-lg bg-slate-900/60 border border-slate-700 text-slate-300 flex items-center justify-center text-xs font-bold shrink-0">
+                  <span className="w-6 h-6 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 flex items-center justify-center text-xs font-black shrink-0">
                     {idx + 1}
                   </span>
-                  <span className="text-sm font-medium leading-relaxed">{opt.text}</span>
+                  <span className="text-sm font-semibold leading-relaxed">{opt.text}</span>
                 </div>
 
                 {isAnswered && (
                   <div className="shrink-0 pt-0.5">
                     {opt.isCorrect ? (
-                      <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                      <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     ) : idx === selectedOptionIdx ? (
-                      <XCircle className="w-5 h-5 text-rose-400" />
+                      <XCircle className="w-5 h-5 text-rose-500" />
                     ) : null}
                   </div>
                 )}
@@ -446,20 +442,20 @@ export const QuizLearn: FC<QuizLearnProps> = ({
 
         {/* Answer Breakdown / SAT Context */}
         {isAnswered && (
-          <div className="mt-6 pt-5 border-t border-slate-800 space-y-3 animate-fadeIn">
-            <div className="bg-slate-800/70 rounded-2xl p-4 border border-slate-700/80">
+          <div className="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800 space-y-3 animate-fadeIn">
+            <div className="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-4 border border-slate-200 dark:border-slate-700/80">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-bold text-indigo-400">Word Review:</span>
-                <span className="text-[11px] font-mono text-slate-400">ID #{currentQ.targetWord.id}</span>
+                <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Word Review:</span>
+                <span className="text-[11px] font-mono font-bold text-slate-500 dark:text-slate-400">ID #{currentQ.targetWord.id}</span>
               </div>
-              <p className="text-xs text-slate-300 leading-relaxed mb-2">
-                <strong className="text-white">{currentQ.targetWord.word}</strong>: {currentQ.targetWord.definition}
+              <p className="text-xs text-slate-800 dark:text-slate-300 leading-relaxed mb-2">
+                <strong className="text-slate-900 dark:text-white font-bold">{currentQ.targetWord.word}</strong>: {currentQ.targetWord.definition}
               </p>
-              <p className="text-xs text-emerald-300 font-semibold mb-2">
+              <p className="text-xs text-emerald-700 dark:text-emerald-300 font-bold mb-2">
                 O'zbekcha: {currentQ.targetWord.uzbek}
               </p>
               {currentQ.targetWord.example && (
-                <p className="text-xs text-slate-400 italic">
+                <p className="text-xs text-slate-600 dark:text-slate-400 italic">
                   "{currentQ.targetWord.example}"
                 </p>
               )}
@@ -476,7 +472,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
         )}
       </div>
 
-      <div className="text-center text-xs text-slate-500">
+      <div className="text-center text-xs text-slate-400 dark:text-slate-500">
         Keys: 1, 2, 3, 4 to choose • H for 50/50 • Enter to advance
       </div>
     </div>
