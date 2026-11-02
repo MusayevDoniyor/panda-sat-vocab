@@ -1,0 +1,6372 @@
+[
+  {
+    "id": 1,
+    "unit": 1,
+    "word": "erratic",
+    "raw_word": "erratic",
+    "pos": "adj.",
+    "definition": "unpredictable, inconsistent, irregular",
+    "synonyms": [
+      "unpredictable",
+      "inconsistent",
+      "irregular",
+      "errant"
+    ],
+    "uzbek": "beqaror, kutilmagan, o'zgaruvchan",
+    "example": "The scientist observed erratic behavior in the subatomic particles during the test."
+  },
+  {
+    "id": 2,
+    "unit": 1,
+    "word": "secluded",
+    "raw_word": "secluded",
+    "pos": "adj.",
+    "definition": "hard to reach, hidden away",
+    "synonyms": [
+      "isolated",
+      "hidden",
+      "remote",
+      "cloistered"
+    ],
+    "uzbek": "xilvat, chekka, odam oyog'i yetmas",
+    "example": "The monk lived in a secluded hermitage deep within the mountain forest."
+  },
+  {
+    "id": 3,
+    "unit": 1,
+    "word": "fluctuate",
+    "raw_word": "fluctuate",
+    "pos": "verb",
+    "definition": "to rise and fall irregularly",
+    "synonyms": [
+      "oscillate",
+      "vary",
+      "waver",
+      "shift"
+    ],
+    "uzbek": "o'zgarib turmoq, tebranmoq",
+    "example": "Consumer prices tend to fluctuate depending on seasonal market demand."
+  },
+  {
+    "id": 4,
+    "unit": 1,
+    "word": "exalt",
+    "raw_word": "exalt",
+    "pos": "verb",
+    "definition": "to praise, to worship",
+    "synonyms": [
+      "glorify",
+      "praise",
+      "extol",
+      "revere"
+    ],
+    "uzbek": "ulug'lamoq, ko'klarga ko'tarmoq",
+    "example": "The ancient poet sought to exalt the virtue and bravery of fallen warriors."
+  },
+  {
+    "id": 5,
+    "unit": 1,
+    "word": "admonish",
+    "raw_word": "admonish",
+    "pos": "verb",
+    "definition": "to warn or scold someone",
+    "synonyms": [
+      "reprimand",
+      "scold",
+      "warn",
+      "chide"
+    ],
+    "uzbek": "ogohlantirmoq, tanbeh bermoq",
+    "example": "The committee admonished the official for failing to disclose financial ties."
+  },
+  {
+    "id": 6,
+    "unit": 1,
+    "word": "abrupt",
+    "raw_word": "abrupt",
+    "pos": "adj.",
+    "definition": "sudden, unexpected, without warning",
+    "synonyms": [
+      "sudden",
+      "unexpected",
+      "hasty",
+      "precipitous"
+    ],
+    "uzbek": "to'satdan, kutilmagan, keskin",
+    "example": "An abrupt shift in public opinion forced politicians to reconsider their platform."
+  },
+  {
+    "id": 7,
+    "unit": 1,
+    "word": "content",
+    "raw_word": "content",
+    "pos": "adj.",
+    "definition": "satisfied",
+    "synonyms": [
+      "satisfied",
+      "pleased",
+      "gratified"
+    ],
+    "uzbek": "mamnun, qoniqqan, rozi",
+    "example": "Rather than seeking greater wealth, he remained content with his modest lifestyle."
+  },
+  {
+    "id": 8,
+    "unit": 1,
+    "word": "eccentric",
+    "raw_word": "eccentric",
+    "pos": "adj.",
+    "definition": "uncommon, strange",
+    "synonyms": [
+      "peculiar",
+      "unconventional",
+      "odd",
+      "quirky"
+    ],
+    "uzbek": "g'alati, antiqa, noodatiy",
+    "example": "Her eccentric habit of collecting antique keys amused all her colleagues."
+  },
+  {
+    "id": 9,
+    "unit": 1,
+    "word": "mired",
+    "raw_word": "mired",
+    "pos": "adj.",
+    "definition": "stuck in mud",
+    "synonyms": [
+      "entangled",
+      "bogged down",
+      "trapped"
+    ],
+    "uzbek": "botqoqqa botgan, mushkul ahvolda qolgan",
+    "example": "The peace negotiations became mired in bureaucratic disputes and finger-pointing."
+  },
+  {
+    "id": 10,
+    "unit": 1,
+    "word": "colloquial",
+    "raw_word": "colloquial",
+    "pos": "adj.",
+    "definition": "used in casual conversation",
+    "synonyms": [
+      "conversational",
+      "informal",
+      "vernacular"
+    ],
+    "uzbek": "so'zlashuv tiliga oid, kundalik",
+    "example": "Academic journals generally avoid colloquial expressions in favor of formal prose."
+  },
+  {
+    "id": 11,
+    "unit": 1,
+    "word": "reconcile",
+    "raw_word": "reconcile",
+    "pos": "verb",
+    "definition": "settle one's differences, make compatible, bring back to peace",
+    "synonyms": [
+      "harmonize",
+      "settle",
+      "accommodate",
+      "reunite"
+    ],
+    "uzbek": "yarashtirmoq, murosaga keltirmoq",
+    "example": "The diplomat worked tirelessly to reconcile the conflicting demands of both factions."
+  },
+  {
+    "id": 12,
+    "unit": 1,
+    "word": "alienate",
+    "raw_word": "alienate",
+    "pos": "verb",
+    "definition": "to cause someone to feel isolated or lonely",
+    "synonyms": [
+      "isolate",
+      "estrange",
+      "distance"
+    ],
+    "uzbek": "begonalashtirmoq, uzoqlashtirmoq",
+    "example": "His harsh criticism threatened to alienate his most loyal supporters."
+  },
+  {
+    "id": 13,
+    "unit": 1,
+    "word": "distinguish",
+    "raw_word": "distinguish",
+    "pos": "verb",
+    "definition": "to tell the difference between",
+    "synonyms": [
+      "differentiate",
+      "discern",
+      "separate"
+    ],
+    "uzbek": "farqlamoq, ajratib olmoq",
+    "example": "A trained researcher can easily distinguish subtle differences in statistical trends."
+  },
+  {
+    "id": 14,
+    "unit": 1,
+    "word": "adequate",
+    "raw_word": "adequate",
+    "pos": "adj.",
+    "definition": "sufficient, enough, acceptable",
+    "synonyms": [
+      "sufficient",
+      "satisfactory",
+      "acceptable"
+    ],
+    "uzbek": "yetarli, talabga javob beradigan",
+    "example": "The emergency shelters were equipped with adequate supplies of water and food."
+  },
+  {
+    "id": 15,
+    "unit": 1,
+    "word": "contend",
+    "raw_word": "contend",
+    "pos": "verb",
+    "definition": "1) to deal with someone or something 2) to claim or state a belief confidently",
+    "synonyms": [
+      "assert",
+      "claim",
+      "cope with",
+      "grapple"
+    ],
+    "uzbek": "1) kurashmoq 2) da'vo qilmoq, ta'kidlamoq",
+    "example": "Critics contend that the new tax policy will disproportionately harm small businesses."
+  },
+  {
+    "id": 16,
+    "unit": 1,
+    "word": "skeptical",
+    "raw_word": "skeptical",
+    "pos": "adj.",
+    "definition": "having doubts",
+    "synonyms": [
+      "dubious",
+      "incredulous",
+      "distrustful"
+    ],
+    "uzbek": "shubha bilan qaraydigan, ishonqiramaydigan",
+    "example": "Scientists remained skeptical of the startling claims until independent trials were conducted."
+  },
+  {
+    "id": 17,
+    "unit": 1,
+    "word": "enfranchise",
+    "raw_word": "enfranchise",
+    "pos": "verb",
+    "definition": "to give the right to vote",
+    "synonyms": [
+      "grant suffrage",
+      "empower",
+      "liberate"
+    ],
+    "uzbek": "saylov huquqini bermoq",
+    "example": "The constitutional amendment enfranchised millions of previously marginalized citizens."
+  },
+  {
+    "id": 18,
+    "unit": 1,
+    "word": "sophisticated",
+    "raw_word": "sophisticated",
+    "pos": "adj.",
+    "definition": "1) having a lot of worldly experience and knowledge 2) complicated",
+    "synonyms": [
+      "refined",
+      "worldly",
+      "complex",
+      "elaborate"
+    ],
+    "uzbek": "1) tajribali, dunyo ko'rgan 2) murakkab",
+    "example": "Modern climate models rely on sophisticated mathematical algorithms."
+  },
+  {
+    "id": 19,
+    "unit": 1,
+    "word": "radical",
+    "raw_word": "radical",
+    "pos": "adj.",
+    "definition": "1) thorough, complete, extensive 2) fundamental, essential 3) revolutionary, extreme",
+    "synonyms": [
+      "revolutionary",
+      "fundamental",
+      "drastic"
+    ],
+    "uzbek": "1) tubdan, chuqur 2) inqilobiy, keskin",
+    "example": "The invention of electricity brought a radical transformation to human society."
+  },
+  {
+    "id": 20,
+    "unit": 1,
+    "word": "formulate",
+    "raw_word": "formulate",
+    "pos": "verb",
+    "definition": "to create or think up",
+    "synonyms": [
+      "devise",
+      "form",
+      "construct",
+      "conceive"
+    ],
+    "uzbek": "ishlab chiqmoq, yaratmoq",
+    "example": "Researchers must formulate a clear hypothesis before beginning field experiments."
+  },
+  {
+    "id": 21,
+    "unit": 1,
+    "word": "attest",
+    "raw_word": "attest",
+    "pos": "verb",
+    "definition": "to confirm or verify",
+    "synonyms": [
+      "confirm",
+      "verify",
+      "corroborate",
+      "testify"
+    ],
+    "uzbek": "tasdiqlamoq, guvohlik bermoq",
+    "example": "Eyewitness accounts attest to the overwhelming bravery of the rescue workers."
+  },
+  {
+    "id": 22,
+    "unit": 1,
+    "word": "vexing",
+    "raw_word": "vexing",
+    "pos": "adj.",
+    "definition": "annoying, irritating",
+    "synonyms": [
+      "irritating",
+      "annoying",
+      "frustrating",
+      "troublesome"
+    ],
+    "uzbek": "asabga tegadigan, g'ashni keltiradigan",
+    "example": "The persistent leak was a vexing problem that the plumbers could not resolve."
+  },
+  {
+    "id": 23,
+    "unit": 1,
+    "word": "unassuming",
+    "raw_word": "unassuming",
+    "pos": "adj.",
+    "definition": "humble, low-key",
+    "synonyms": [
+      "modest",
+      "humble",
+      "unpretentious"
+    ],
+    "uzbek": "kamtar, o'zini ko'z-ko'z qilmaydigan",
+    "example": "Despite his groundbreaking discoveries, the Nobel laureate remained an unassuming scholar."
+  },
+  {
+    "id": 24,
+    "unit": 1,
+    "word": "coerce",
+    "raw_word": "coerce",
+    "pos": "verb",
+    "definition": "to pressure or force someone to do something",
+    "synonyms": [
+      "compel",
+      "force",
+      "pressure",
+      "bully"
+    ],
+    "uzbek": "majburlamoq, zo'rlamoq",
+    "example": "Dictators often coerce citizens into compliance through systemic intimidation."
+  },
+  {
+    "id": 25,
+    "unit": 1,
+    "word": "adept",
+    "raw_word": "adept",
+    "pos": "adj.",
+    "definition": "very skilled at something",
+    "synonyms": [
+      "skilled",
+      "proficient",
+      "expert",
+      "dexterous"
+    ],
+    "uzbek": "usta, mohir, mahoratli",
+    "example": "She was remarkably adept at defusing tense disagreements among board members."
+  },
+  {
+    "id": 26,
+    "unit": 2,
+    "word": "eloquent",
+    "raw_word": "eloquent",
+    "pos": "adj.",
+    "definition": "fluent or persuasive in speaking or writing",
+    "synonyms": [
+      "articulate",
+      "fluent",
+      "persuasive",
+      "expressive"
+    ],
+    "uzbek": "notiqlik qobiliyatiga ega, ta'sirli so'zlaydigan",
+    "example": "The activist delivered an eloquent plea for educational equality."
+  },
+  {
+    "id": 27,
+    "unit": 2,
+    "word": "austere",
+    "raw_word": "austere",
+    "pos": "adj.",
+    "definition": "plain and without decoration, comforts, or anything extra",
+    "synonyms": [
+      "severe",
+      "strict",
+      "spartan",
+      "plain"
+    ],
+    "uzbek": "oddiy, dabdabasiz, qattiqqo'l",
+    "example": "The monks embraced an austere lifestyle devoid of luxury and ornamentation."
+  },
+  {
+    "id": 28,
+    "unit": 2,
+    "word": "dread",
+    "raw_word": "dread",
+    "pos": "noun / verb",
+    "definition": "to fear, be afraid of",
+    "synonyms": [
+      "fear",
+      "terror",
+      "apprehension"
+    ],
+    "uzbek": "qo'rquv, vahima; qo'rqmoq",
+    "example": "Many students feel a sense of dread prior to opening their standardized exam results."
+  },
+  {
+    "id": 29,
+    "unit": 2,
+    "word": "inevitable",
+    "raw_word": "inevitable",
+    "pos": "adj.",
+    "definition": "unavoidable",
+    "synonyms": [
+      "unavoidable",
+      "inescapable",
+      "destined"
+    ],
+    "uzbek": "muqarrar, qochib qutulib bo'lmas",
+    "example": "Given the advancing technology, digital automation appeared inevitable."
+  },
+  {
+    "id": 30,
+    "unit": 2,
+    "word": "to stress",
+    "raw_word": "to stress",
+    "pos": "verb",
+    "definition": "to emphasize",
+    "synonyms": [
+      "emphasize",
+      "highlight",
+      "underline",
+      "accentuate"
+    ],
+    "uzbek": "urg'u bermoq, alohida ta'kidlamoq",
+    "example": "The professor took care to stress the ethical responsibilities of biomedical research."
+  },
+  {
+    "id": 31,
+    "unit": 2,
+    "word": "spawn",
+    "raw_word": "spawn",
+    "pos": "verb",
+    "definition": "to produce, generate, or create",
+    "synonyms": [
+      "generate",
+      "produce",
+      "engender",
+      "breed"
+    ],
+    "uzbek": "yuzaga keltirmoq, sabab bo'lmoq",
+    "example": "The rapid popularity of smartphones spawned an entire industry of mobile applications."
+  },
+  {
+    "id": 32,
+    "unit": 2,
+    "word": "renounce",
+    "raw_word": "renounce",
+    "pos": "verb",
+    "definition": "to give up, deny, or surrender something",
+    "synonyms": [
+      "reject",
+      "relinquish",
+      "abandon",
+      "repudiate"
+    ],
+    "uzbek": "voz kechmoq, rad etmoq",
+    "example": "He decided to renounce his claims to the throne to marry a commoner."
+  },
+  {
+    "id": 33,
+    "unit": 2,
+    "word": "unprecedented",
+    "raw_word": "unprecedented",
+    "pos": "adj.",
+    "definition": "never done or known before",
+    "synonyms": [
+      "unmatched",
+      "extraordinary",
+      "novel",
+      "unparalleled"
+    ],
+    "uzbek": "misli ko'rilmagan, mislsiz",
+    "example": "The sudden economic crisis required an unprecedented stimulus package."
+  },
+  {
+    "id": 34,
+    "unit": 2,
+    "word": "broach",
+    "raw_word": "broach",
+    "pos": "verb",
+    "definition": "to bring up a difficulty subject for discussion",
+    "synonyms": [
+      "introduce",
+      "mention",
+      "bring up",
+      "raise"
+    ],
+    "uzbek": "qiyin mavzuni muhokamaga ko'tarmoq",
+    "example": "She hesitated before choosing the right moment to broach the topic of budget cuts."
+  },
+  {
+    "id": 35,
+    "unit": 2,
+    "word": "proxy",
+    "raw_word": "proxy",
+    "pos": "noun",
+    "definition": "a person authorized to act on behalf of another; substitute",
+    "synonyms": [
+      "representative",
+      "substitute",
+      "agent",
+      "stand-in"
+    ],
+    "uzbek": "vakil, o'rinbosar; vakolatli shaxs",
+    "example": "Because the ambassador was ill, her proxy attended the security council summit."
+  },
+  {
+    "id": 36,
+    "unit": 2,
+    "word": "detrimental",
+    "raw_word": "detrimental",
+    "pos": "adj.",
+    "definition": "harmful, damaging",
+    "synonyms": [
+      "harmful",
+      "damaging",
+      "injurious",
+      "deleterious"
+    ],
+    "uzbek": "zararli, ziyon keltiradigan",
+    "example": "Lack of adequate sleep can have detrimental effects on memory retention."
+  },
+  {
+    "id": 37,
+    "unit": 2,
+    "word": "secular",
+    "raw_word": "secular",
+    "pos": "adj.",
+    "definition": "having no religious or spiritual basis",
+    "synonyms": [
+      "nonreligious",
+      "lay",
+      "temporal"
+    ],
+    "uzbek": "dunyoviy, dinga aloqador bo'lmagan",
+    "example": "Public schools are secular institutions that welcome students of all beliefs."
+  },
+  {
+    "id": 38,
+    "unit": 2,
+    "word": "innovative",
+    "raw_word": "innovative",
+    "pos": "adj.",
+    "definition": "new and different",
+    "synonyms": [
+      "groundbreaking",
+      "novel",
+      "inventive",
+      "original"
+    ],
+    "uzbek": "yangicha, innovatsion, ilg'or",
+    "example": "The startup introduced an innovative method for desalinating ocean water."
+  },
+  {
+    "id": 39,
+    "unit": 2,
+    "word": "tangible",
+    "raw_word": "tangible",
+    "pos": "adj.",
+    "definition": "real and able to be shown or touched",
+    "synonyms": [
+      "palpable",
+      "concrete",
+      "real",
+      "touchable"
+    ],
+    "uzbek": "aniq, ushlasa bo'ladigan, moddiy",
+    "example": "The team hoped their hard work would soon yield tangible commercial results."
+  },
+  {
+    "id": 40,
+    "unit": 2,
+    "word": "disseminate",
+    "raw_word": "disseminate",
+    "pos": "verb",
+    "definition": "to spread widely (particularly information)",
+    "synonyms": [
+      "distribute",
+      "spread",
+      "broadcast",
+      "circulate"
+    ],
+    "uzbek": "keng tarqatmoq (axborot, g'oya)",
+    "example": "Scientists use open-access journals to disseminate their findings internationally."
+  },
+  {
+    "id": 41,
+    "unit": 2,
+    "word": "delegate",
+    "raw_word": "delegate (verb)",
+    "pos": "verb",
+    "definition": "to assign a task to another person",
+    "synonyms": [
+      "assign",
+      "entrust",
+      "transfer",
+      "depute"
+    ],
+    "uzbek": "vazifani topshirmoq, vakolat bermoq",
+    "example": "An effective manager must learn how to delegate responsibilities to subordinates."
+  },
+  {
+    "id": 42,
+    "unit": 2,
+    "word": "apparent",
+    "raw_word": "apparent",
+    "pos": "adj.",
+    "definition": "clearly visible or understood; obvious",
+    "synonyms": [
+      "obvious",
+      "evident",
+      "visible",
+      "manifest"
+    ],
+    "uzbek": "yaqqol ko'rinib turgan, ravshan",
+    "example": "It was apparent to everyone present that the hypothesis was fundamentally flawed."
+  },
+  {
+    "id": 43,
+    "unit": 2,
+    "word": "postulate",
+    "raw_word": "postulate",
+    "pos": "verb",
+    "definition": "to suggest or propose something",
+    "synonyms": [
+      "assume",
+      "hypothesize",
+      "propose",
+      "premise"
+    ],
+    "uzbek": "taxmin / asos sifatida qabul qilmoq",
+    "example": "Modern physics postulates that nothing can travel faster than the speed of light."
+  },
+  {
+    "id": 44,
+    "unit": 2,
+    "word": "speculate",
+    "raw_word": "speculate",
+    "pos": "verb",
+    "definition": "to guess, to form a theory without firm evidence",
+    "synonyms": [
+      "conjecture",
+      "guess",
+      "theorize",
+      "ponder"
+    ],
+    "uzbek": "taxmin qilmoq, o'y-xayol surmoq",
+    "example": "Economists could only speculate about the long-term impact of the newly introduced tariff."
+  },
+  {
+    "id": 45,
+    "unit": 2,
+    "word": "bazaar",
+    "raw_word": "bazaar",
+    "pos": "noun",
+    "definition": "a market selling a large variety of goods",
+    "synonyms": [
+      "marketplace",
+      "fair",
+      "market"
+    ],
+    "uzbek": "bozor, yarmarka; savdo markazi",
+    "example": "Vendors sold colorful spices and hand-woven silks in the bustling ancient bazaar."
+  },
+  {
+    "id": 46,
+    "unit": 2,
+    "word": "sporadic",
+    "raw_word": "sporadic",
+    "pos": "adj.",
+    "definition": "scattered, irregular, unpredictable",
+    "synonyms": [
+      "intermittent",
+      "occasional",
+      "irregular",
+      "periodic"
+    ],
+    "uzbek": "vaqti-vaqti bilan bo'ladigan, tarqoq",
+    "example": "Throughout the night, the campers heard sporadic bursts of thunder in the distance."
+  },
+  {
+    "id": 47,
+    "unit": 2,
+    "word": "suffrage",
+    "raw_word": "suffrage",
+    "pos": "noun",
+    "definition": "the right to vote",
+    "synonyms": [
+      "voting rights",
+      "franchise",
+      "ballot"
+    ],
+    "uzbek": "saylov huquqi, ovoz berish huquqi",
+    "example": "Suffrage movements in the early 20th century fought courageously for women's voting rights."
+  },
+  {
+    "id": 48,
+    "unit": 2,
+    "word": "incredulous",
+    "raw_word": "incredulous",
+    "pos": "adj.",
+    "definition": "unwilling or unable to believe something",
+    "synonyms": [
+      "disbelieving",
+      "skeptical",
+      "distrustful",
+      "doubtful"
+    ],
+    "uzbek": "ishonmagan, gumonsiragan",
+    "example": "The jury remained incredulous despite the defendant's impassioned claims of innocence."
+  },
+  {
+    "id": 49,
+    "unit": 2,
+    "word": "idealistic",
+    "raw_word": "idealistic",
+    "pos": "adj.",
+    "definition": "unrealistically aiming for perfection",
+    "synonyms": [
+      "utopian",
+      "visionary",
+      "romantic",
+      "optimistic"
+    ],
+    "uzbek": "idealistik, orzuparast, beg'ubor",
+    "example": "Though deemed idealistic by realists, the youth demanded an end to global poverty."
+  },
+  {
+    "id": 50,
+    "unit": 2,
+    "word": "conflate",
+    "raw_word": "conflate",
+    "pos": "verb",
+    "definition": "to mix or combine into one (typically ideas)",
+    "synonyms": [
+      "merge",
+      "confuse",
+      "combine",
+      "blend"
+    ],
+    "uzbek": "adashib birlashtirmoq, aralashtirib yubormoq",
+    "example": "Commentators often conflate economic growth with genuine social welfare."
+  },
+  {
+    "id": 51,
+    "unit": 3,
+    "word": "paucity",
+    "raw_word": "paucity",
+    "pos": "noun",
+    "definition": "poverty, scarcity",
+    "synonyms": [
+      "scarcity",
+      "dearth",
+      "shortage",
+      "lack"
+    ],
+    "uzbek": "yetishmovchilik, taqchillik, ozlik",
+    "example": "The paucity of historical records makes studying this ancient civilization difficult."
+  },
+  {
+    "id": 52,
+    "unit": 3,
+    "word": "ephemeral",
+    "raw_word": "ephemeral",
+    "pos": "adj.",
+    "definition": "temporary, short-lived",
+    "synonyms": [
+      "transient",
+      "fleeting",
+      "short-lived",
+      "momentary"
+    ],
+    "uzbek": "qisqa muddatli, o'tkinchi",
+    "example": "Social media fame can be remarkably ephemeral, vanishing within a few days."
+  },
+  {
+    "id": 53,
+    "unit": 3,
+    "word": "prompt",
+    "raw_word": "prompt",
+    "pos": "verb / adj.",
+    "definition": "to cause (someone) to take a course of action",
+    "synonyms": [
+      "provoke",
+      "stimulate",
+      "punctual",
+      "quick"
+    ],
+    "uzbek": "undaydigan; tezkor; undamoq",
+    "example": "The unexpected rainfall prompted city officials to issue immediate flood warnings."
+  },
+  {
+    "id": 54,
+    "unit": 3,
+    "word": "reverence",
+    "raw_word": "reverence",
+    "pos": "noun",
+    "definition": "deep respect for someone or something",
+    "synonyms": [
+      "deep respect",
+      "veneration",
+      "admiration",
+      "awe"
+    ],
+    "uzbek": "chuqur hurmat, ehtirom",
+    "example": "Indigenous tribes treated the sacred forest with profound spiritual reverence."
+  },
+  {
+    "id": 55,
+    "unit": 3,
+    "word": "disparity",
+    "raw_word": "disparity",
+    "pos": "noun",
+    "definition": "a great difference",
+    "synonyms": [
+      "discrepancy",
+      "imbalance",
+      "inequality",
+      "gap"
+    ],
+    "uzbek": "tengsizlik, tafovut, farq",
+    "example": "A stark disparity in income continues to divide rural and urban populations."
+  },
+  {
+    "id": 56,
+    "unit": 3,
+    "word": "dispassionate",
+    "raw_word": "dispassionate",
+    "pos": "adj.",
+    "definition": "not influenced by strong emotion, fair-minded",
+    "synonyms": [
+      "impartial",
+      "unbiased",
+      "detached",
+      "objective"
+    ],
+    "uzbek": "xolis, his-tuyg'ularsiz, xotirjam",
+    "example": "A judge must maintain a dispassionate stance regardless of personal feelings."
+  },
+  {
+    "id": 57,
+    "unit": 3,
+    "word": "phenomenon",
+    "raw_word": "phenomenon",
+    "pos": "noun",
+    "definition": "a noteworthy occurrence or situation",
+    "synonyms": [
+      "occurrence",
+      "event",
+      "marvel",
+      "wonder"
+    ],
+    "uzbek": "hodisa, fenomen, favqulodda voqea",
+    "example": "The Northern Lights represent a mesmerizing natural phenomenon caused by solar particles."
+  },
+  {
+    "id": 58,
+    "unit": 3,
+    "word": "boast",
+    "raw_word": "boast",
+    "pos": "verb",
+    "definition": "to brag, to show off",
+    "synonyms": [
+      "brag",
+      "crow",
+      "gloat"
+    ],
+    "uzbek": "maqtanmoq, kerilmoq",
+    "example": "The university boasts one of the most distinguished science faculties in the world."
+  },
+  {
+    "id": 59,
+    "unit": 3,
+    "word": "irksome",
+    "raw_word": "irksome",
+    "pos": "adj.",
+    "definition": "irritating, annoying",
+    "synonyms": [
+      "annoying",
+      "tedious",
+      "irritating",
+      "burdensome"
+    ],
+    "uzbek": "zerikarli, joniga tegadigan",
+    "example": "Filing annual financial declarations was an irksome task he consistently postponed."
+  },
+  {
+    "id": 60,
+    "unit": 3,
+    "word": "allude",
+    "raw_word": "allude",
+    "pos": "verb",
+    "definition": "to suggest or call attention to indirectly, to make a reference to something",
+    "synonyms": [
+      "hint at",
+      "refer to",
+      "suggest",
+      "imply"
+    ],
+    "uzbek": "sha'ma qilmoq, ishora qilmoq",
+    "example": "In his final lecture, the professor alluded to an unpublished discovery."
+  },
+  {
+    "id": 61,
+    "unit": 3,
+    "word": "omnipotence",
+    "raw_word": "omnipotence",
+    "pos": "noun",
+    "definition": "having unlimited or great power",
+    "synonyms": [
+      "supreme power",
+      "invincibility",
+      "almightiness"
+    ],
+    "uzbek": "cheksiz qudrat, hamma narsaga qodirlik",
+    "example": "Ancient myths often depicted deities possessing absolute omnipotence over mortals."
+  },
+  {
+    "id": 62,
+    "unit": 3,
+    "word": "provoke",
+    "raw_word": "provoke",
+    "pos": "verb",
+    "definition": "to cause a reaction or emotion (usually anger); to trigger",
+    "synonyms": [
+      "incite",
+      "instigate",
+      "rouse",
+      "irritate"
+    ],
+    "uzbek": "g'azablantirmoq, keltirib chiqarmoq",
+    "example": "His controversial speech was intended to provoke debate across the audience."
+  },
+  {
+    "id": 63,
+    "unit": 3,
+    "word": "indulge",
+    "raw_word": "indulge",
+    "pos": "verb",
+    "definition": "to allow oneself to enjoy the pleasure of",
+    "synonyms": [
+      "pamper",
+      "spoil",
+      "gratify",
+      "yield to"
+    ],
+    "uzbek": "ko'nglini tusaganini bermoq, erkalamoq",
+    "example": "On holidays, she liked to indulge her passion for gourmet French baking."
+  },
+  {
+    "id": 64,
+    "unit": 3,
+    "word": "entrenched",
+    "raw_word": "entrenched",
+    "pos": "adj.",
+    "definition": "firmly established and unlikely to change",
+    "synonyms": [
+      "firmly established",
+      "deep-rooted",
+      "ingrained"
+    ],
+    "uzbek": "mustahkam o'rnashgan, ildiz otgan",
+    "example": "Entrenched corporate traditions often resist the introduction of innovative ideas."
+  },
+  {
+    "id": 65,
+    "unit": 3,
+    "word": "inherent",
+    "raw_word": "inherent",
+    "pos": "adj.",
+    "definition": "built-in, existing in something as a permanent or essential characteristic",
+    "synonyms": [
+      "intrinsic",
+      "innate",
+      "inborn",
+      "essential"
+    ],
+    "uzbek": "tabiiy, ajralmas, xos",
+    "example": "Curiosity about the natural world is an inherent characteristic of young children."
+  },
+  {
+    "id": 66,
+    "unit": 3,
+    "word": "vernacular",
+    "raw_word": "vernacular",
+    "pos": "noun / adj.",
+    "definition": "everyday informal language, local dialect",
+    "synonyms": [
+      "dialect",
+      "colloquial speech",
+      "native tongue"
+    ],
+    "uzbek": "mahalliy so'zlashuv tili, sheva",
+    "example": "Mark Twain famously captured the authentic vernacular of Mississippi river towns."
+  },
+  {
+    "id": 67,
+    "unit": 3,
+    "word": "inquisition",
+    "raw_word": "inquisition",
+    "pos": "noun",
+    "definition": "interrogation, questioning",
+    "synonyms": [
+      "interrogation",
+      "inquiry",
+      "investigation",
+      "probe"
+    ],
+    "uzbek": "tergov, surishtiruv, so'roq",
+    "example": "The executive faced a rigorous legislative inquisition regarding tax avoidance."
+  },
+  {
+    "id": 68,
+    "unit": 3,
+    "word": "anecdote",
+    "raw_word": "anecdote",
+    "pos": "noun",
+    "definition": "a short personal story",
+    "synonyms": [
+      "tale",
+      "story",
+      "narrative",
+      "sketch"
+    ],
+    "uzbek": "qisqa qiziqarli hikoya, latifa",
+    "example": "The speaker opened his keynote presentation with a humorous personal anecdote."
+  },
+  {
+    "id": 69,
+    "unit": 3,
+    "word": "malign",
+    "raw_word": "malign",
+    "pos": "adj. / verb",
+    "definition": "evil in nature, harmful",
+    "synonyms": [
+      "harmful",
+      "evil",
+      "malicious",
+      "defame"
+    ],
+    "uzbek": "yovuz, zararli; yomonlamoq",
+    "example": "A malign influence seemed to cloud the king's judgment in his later years."
+  },
+  {
+    "id": 70,
+    "unit": 3,
+    "word": "anomaly",
+    "raw_word": "anomaly",
+    "pos": "noun",
+    "definition": "oddity, something that is not normal",
+    "synonyms": [
+      "irregularity",
+      "abnormality",
+      "oddity",
+      "deviation"
+    ],
+    "uzbek": "anomaliya, noodatiylik, me'yordan chetga chiqish",
+    "example": "The astronomer noticed an unexpected orbital anomaly in the satellite's path."
+  },
+  {
+    "id": 71,
+    "unit": 3,
+    "word": "inhibit",
+    "raw_word": "inhibit",
+    "pos": "verb",
+    "definition": "to hold someone or something back, to suppress, to prevent",
+    "synonyms": [
+      "suppress",
+      "restrain",
+      "hinder",
+      "impede"
+    ],
+    "uzbek": "to'sqinlik qilmoq, bosib turmoq",
+    "example": "Excessive fear of failure can severely inhibit a creative artist's growth."
+  },
+  {
+    "id": 72,
+    "unit": 3,
+    "word": "mutable",
+    "raw_word": "mutable",
+    "pos": "adj.",
+    "definition": "changeable",
+    "synonyms": [
+      "changeable",
+      "variable",
+      "shifting",
+      "fluid"
+    ],
+    "uzbek": "o'zgaruvchan, beqaror",
+    "example": "In early childhood, cognitive abilities are remarkably mutable and responsive to learning."
+  },
+  {
+    "id": 73,
+    "unit": 3,
+    "word": "petty",
+    "raw_word": "petty",
+    "pos": "adj.",
+    "definition": "1) of little importance 2) caring too much about trivial matters",
+    "synonyms": [
+      "trivial",
+      "minor",
+      "trifling",
+      "insignificant"
+    ],
+    "uzbek": "1) arzimagan, mayda-chuyda 2) maydakash",
+    "example": "They wasted valuable conference time arguing over petty administrative details."
+  },
+  {
+    "id": 74,
+    "unit": 3,
+    "word": "avid",
+    "raw_word": "avid",
+    "pos": "adj.",
+    "definition": "passionate about something",
+    "synonyms": [
+      "passionate",
+      "enthusiastic",
+      "eager",
+      "ardent"
+    ],
+    "uzbek": "ishtiyoqmand, fidoyi, ashaddiy",
+    "example": "An avid reader since childhood, she maintained an enormous home library."
+  },
+  {
+    "id": 75,
+    "unit": 3,
+    "word": "invoke",
+    "raw_word": "invoke",
+    "pos": "verb",
+    "definition": "to call on or refer to something",
+    "synonyms": [
+      "summon",
+      "call upon",
+      "cite",
+      "appeal to"
+    ],
+    "uzbek": "murojaat qilmoq, tilga olmoq",
+    "example": "The defense attorney chose to invoke the Fifth Amendment during the hearing."
+  },
+  {
+    "id": 76,
+    "unit": 4,
+    "word": "imprudent",
+    "raw_word": "imprudent",
+    "pos": "adj.",
+    "definition": "foolish, reckless",
+    "synonyms": [
+      "reckless",
+      "rash",
+      "unwise",
+      "foolhardy"
+    ],
+    "uzbek": "o'ylamay qilingan, ehtiyotsiz",
+    "example": "It would be highly imprudent to invest one's entire savings in a volatile stock."
+  },
+  {
+    "id": 77,
+    "unit": 4,
+    "word": "tenacity",
+    "raw_word": "tenacity",
+    "pos": "noun",
+    "definition": "persistence, determination",
+    "synonyms": [
+      "persistence",
+      "determination",
+      "perseverance",
+      "grit"
+    ],
+    "uzbek": "matonat, qat'iyat, sabot",
+    "example": "Her sheer tenacity allowed her to complete the grueling marathon despite an injury."
+  },
+  {
+    "id": 78,
+    "unit": 4,
+    "word": "venerable",
+    "raw_word": "venerable",
+    "pos": "adj.",
+    "definition": "respected",
+    "synonyms": [
+      "respected",
+      "hallowed",
+      "esteemed",
+      "revered"
+    ],
+    "uzbek": "mo''tabar, ehtiromga sazovor",
+    "example": "The venerable professor received a standing ovation from five decades of graduates."
+  },
+  {
+    "id": 79,
+    "unit": 4,
+    "word": "authoritarian",
+    "raw_word": "authoritarian",
+    "pos": "adj.",
+    "definition": "enforcing strict obedience to authority",
+    "synonyms": [
+      "autocratic",
+      "dictatorial",
+      "tyrannical",
+      "strict"
+    ],
+    "uzbek": "avtoritar, yakkahokimlikka asoslangan",
+    "example": "The country suffered for decades under an authoritarian military regime."
+  },
+  {
+    "id": 80,
+    "unit": 4,
+    "word": "quarrel",
+    "raw_word": "quarrel",
+    "pos": "noun / verb",
+    "definition": "an angry argument or disagreement",
+    "synonyms": [
+      "dispute",
+      "altercation",
+      "argument",
+      "bicker"
+    ],
+    "uzbek": "janjal, nizo; janjallashmoq",
+    "example": "A bitter quarrel between the two co-founders eventually split the enterprise."
+  },
+  {
+    "id": 81,
+    "unit": 4,
+    "word": "yield",
+    "raw_word": "yield",
+    "pos": "verb",
+    "definition": "1) to produce or generate (a result) 2) to surrender",
+    "synonyms": [
+      "produce",
+      "generate",
+      "surrender",
+      "relinquish"
+    ],
+    "uzbek": "1) hosil / natija bermoq 2) bo'ysunmoq, taslim bo'lmoq",
+    "example": "The agricultural initiative yielded a harvest forty percent larger than normal."
+  },
+  {
+    "id": 82,
+    "unit": 4,
+    "word": "ambivalent",
+    "raw_word": "ambivalent",
+    "pos": "adj.",
+    "definition": "having mixed feelings",
+    "synonyms": [
+      "conflicted",
+      "undecided",
+      "torn",
+      "equivocal"
+    ],
+    "uzbek": "ikkilanuvchi, noaniq tuyg'ularga ega",
+    "example": "She felt ambivalent about accepting the promotion because it required moving abroad."
+  },
+  {
+    "id": 83,
+    "unit": 4,
+    "word": "endeavor",
+    "raw_word": "endeavor",
+    "pos": "noun / verb",
+    "definition": "to try hard to do something",
+    "synonyms": [
+      "effort",
+      "attempt",
+      "enterprise",
+      "undertaking"
+    ],
+    "uzbek": "urinish, sa'y-harakat; harakat qilmoq",
+    "example": "Scientific discovery requires relentless endeavor and intellectual humility."
+  },
+  {
+    "id": 84,
+    "unit": 4,
+    "word": "insurrection",
+    "raw_word": "insurrection",
+    "pos": "noun",
+    "definition": "a violent uprising or rebellion",
+    "synonyms": [
+      "rebellion",
+      "uprising",
+      "revolt",
+      "mutiny"
+    ],
+    "uzbek": "qo'zg'olon, isyon",
+    "example": "The king deployed royal guards to suppress the brewing peasant insurrection."
+  },
+  {
+    "id": 85,
+    "unit": 4,
+    "word": "contemplate",
+    "raw_word": "contemplate",
+    "pos": "verb",
+    "definition": "to think about for a long time",
+    "synonyms": [
+      "ponder",
+      "reflect on",
+      "meditate",
+      "consider"
+    ],
+    "uzbek": "chuqur o'ylamoq, mushohada qilmoq",
+    "example": "He sat quietly by the river to contemplate his choices for the future."
+  },
+  {
+    "id": 86,
+    "unit": 4,
+    "word": "compel",
+    "raw_word": "compel",
+    "pos": "verb",
+    "definition": "to force someone to do something",
+    "synonyms": [
+      "force",
+      "coerce",
+      "oblige",
+      "drive"
+    ],
+    "uzbek": "majburlamoq, undamoq",
+    "example": "Overwhelming scientific evidence compelled the board to revise safety guidelines."
+  },
+  {
+    "id": 87,
+    "unit": 4,
+    "word": "feasible",
+    "raw_word": "feasible",
+    "pos": "adj.",
+    "definition": "possible to do easily or conveniently",
+    "synonyms": [
+      "viable",
+      "practicable",
+      "achievable",
+      "realistic"
+    ],
+    "uzbek": "amalga oshirsa bo'ladigan, maqbul",
+    "example": "Engineers concluded that constructing a solar-powered railway was technically feasible."
+  },
+  {
+    "id": 88,
+    "unit": 4,
+    "word": "conjecture",
+    "raw_word": "conjecture",
+    "pos": "noun / verb",
+    "definition": "an opinion or conclusion that is unproven, a guess",
+    "synonyms": [
+      "speculation",
+      "guess",
+      "surmise",
+      "hypothesis"
+    ],
+    "uzbek": "taxmin, faraz; taxmin qilmoq",
+    "example": "Without solid empirical evidence, his conclusion remains mere conjecture."
+  },
+  {
+    "id": 89,
+    "unit": 4,
+    "word": "arbitrary",
+    "raw_word": "arbitrary",
+    "pos": "adj.",
+    "definition": "based on random choice or personal impulse, rather than any reason or system",
+    "synonyms": [
+      "capricious",
+      "random",
+      "unreasoned",
+      "whimsical"
+    ],
+    "uzbek": "o'zboshimchalik bilan qilingan, asossiz",
+    "example": "The monarch imposed arbitrary rules that bewildered and frustrated citizens."
+  },
+  {
+    "id": 90,
+    "unit": 4,
+    "word": "reinforce",
+    "raw_word": "reinforce",
+    "pos": "verb",
+    "definition": "to make stronger",
+    "synonyms": [
+      "strengthen",
+      "fortify",
+      "bolster",
+      "support"
+    ],
+    "uzbek": "kuchaytirmoq, mustahkamlamoq",
+    "example": "Recent economic statistics reinforce the argument for lower interest rates."
+  },
+  {
+    "id": 91,
+    "unit": 4,
+    "word": "to temper",
+    "raw_word": "to temper",
+    "pos": "verb",
+    "definition": "to serve as a neutralizing or counterbalancing force to something",
+    "synonyms": [
+      "mitigate",
+      "moderate",
+      "counterbalance",
+      "soften"
+    ],
+    "uzbek": "mo'tadillashtirmoq, yumshatmoq, muvozanatlamoq",
+    "example": "Experienced leaders temper their ambition with careful pragmatism."
+  },
+  {
+    "id": 92,
+    "unit": 4,
+    "word": "decree",
+    "raw_word": "decree",
+    "pos": "noun / verb",
+    "definition": "an official order or command",
+    "synonyms": [
+      "edict",
+      "mandate",
+      "ruling",
+      "proclamation"
+    ],
+    "uzbek": "farmon, buyruq; qaror qilmoq",
+    "example": "The governor issued a formal decree declaring a state of emergency."
+  },
+  {
+    "id": 93,
+    "unit": 4,
+    "word": "brevity",
+    "raw_word": "brevity",
+    "pos": "noun",
+    "definition": "concise use of words in writing or speech",
+    "synonyms": [
+      "conciseness",
+      "succinctness",
+      "shortness",
+      "terseness"
+    ],
+    "uzbek": "qisqalik, lo'ndalik",
+    "example": "The editor commended the essay for its clarity, analytical depth, and brevity."
+  },
+  {
+    "id": 94,
+    "unit": 4,
+    "word": "equivocal",
+    "raw_word": "equivocal",
+    "pos": "adj.",
+    "definition": "open to more than one interpretation; unclear",
+    "synonyms": [
+      "ambiguous",
+      "vague",
+      "uncertain",
+      "cryptic"
+    ],
+    "uzbek": "ikki ma'noli, noaniq, tushunarsiz",
+    "example": "The candidate gave an equivocal response when questioned about tax reforms."
+  },
+  {
+    "id": 95,
+    "unit": 4,
+    "word": "stronghold",
+    "raw_word": "stronghold",
+    "pos": "noun",
+    "definition": "a place that is strongly defended, a fortress",
+    "synonyms": [
+      "fortress",
+      "bastion",
+      "citadel",
+      "refuge"
+    ],
+    "uzbek": "istehkom, mustahkam qal'a",
+    "example": "The isolated mountain fortress served as the rebels' final stronghold."
+  },
+  {
+    "id": 96,
+    "unit": 4,
+    "word": "conceive",
+    "raw_word": "conceive",
+    "pos": "verb",
+    "definition": "to form or create a plan or idea",
+    "synonyms": [
+      "imagine",
+      "devise",
+      "envisage",
+      "formulate"
+    ],
+    "uzbek": "tasavvur qilmoq, o'ylab topmoq",
+    "example": "It was difficult to conceive how such a massive monument was built without cranes."
+  },
+  {
+    "id": 97,
+    "unit": 4,
+    "word": "vanity",
+    "raw_word": "vanity",
+    "pos": "noun",
+    "definition": "excessive pride in one's own appearance or achievements",
+    "synonyms": [
+      "conceit",
+      "narcissism",
+      "pride",
+      "egotism"
+    ],
+    "uzbek": "manmanlik, kibr; o'tkinchilik",
+    "example": "His insatiable vanity made him obsess constantly over his public image."
+  },
+  {
+    "id": 98,
+    "unit": 4,
+    "word": "sluggish",
+    "raw_word": "sluggish",
+    "pos": "adj.",
+    "definition": "slow-moving",
+    "synonyms": [
+      "lethargic",
+      "slow",
+      "inactive",
+      "torpid"
+    ],
+    "uzbek": "sust, lapashang, sekin harakatlanuvchi",
+    "example": "The global economy experienced sluggish growth during the post-war recovery years."
+  },
+  {
+    "id": 99,
+    "unit": 4,
+    "word": "intuition",
+    "raw_word": "intuition",
+    "pos": "noun",
+    "definition": "instinct, the ability to understand something immediately",
+    "synonyms": [
+      "instinct",
+      "hunch",
+      "sixth sense",
+      "insight"
+    ],
+    "uzbek": "ichki sezgi, sezgirlik",
+    "example": "Experienced chess grandmasters often rely on split-second intuitive judgment."
+  },
+  {
+    "id": 100,
+    "unit": 4,
+    "word": "inexorable",
+    "raw_word": "inexorable",
+    "pos": "adj.",
+    "definition": "impossible to stop or prevent",
+    "synonyms": [
+      "relentless",
+      "unstoppable",
+      "inevitable",
+      "unyielding"
+    ],
+    "uzbek": "to'xtatib bo'lmas, shafqatsiz, o'zgarmas",
+    "example": "The inexorable passage of time transforms both great empires and individual lives."
+  },
+  {
+    "id": 101,
+    "unit": 5,
+    "word": "engender",
+    "raw_word": "engender",
+    "pos": "verb",
+    "definition": "to cause or give rise to (a feeling, situation, or condition)",
+    "synonyms": [
+      "generate",
+      "provoke",
+      "cause",
+      "instigate"
+    ],
+    "uzbek": "keltirib chiqarmoq, uyg'otmoq",
+    "example": "The controversial legislation engendered widespread protests throughout the capital."
+  },
+  {
+    "id": 102,
+    "unit": 5,
+    "word": "temperament",
+    "raw_word": "temperament",
+    "pos": "noun",
+    "definition": "a person's nature, character, or frame of mind",
+    "synonyms": [
+      "disposition",
+      "nature",
+      "temper",
+      "personality"
+    ],
+    "uzbek": "mijoz, xarakter, fe'l-atvor",
+    "example": "Her calm and patient temperament made her an exceptional diplomat."
+  },
+  {
+    "id": 103,
+    "unit": 5,
+    "word": "upheaval",
+    "raw_word": "upheaval",
+    "pos": "noun",
+    "definition": "a sudden change or disruption, chaos",
+    "synonyms": [
+      "disruption",
+      "turmoil",
+      "upheaval",
+      "chaos"
+    ],
+    "uzbek": "to'ntarilish, keskin o'zgarish, larza",
+    "example": "The sudden collapse of the currency caused immense economic upheaval."
+  },
+  {
+    "id": 104,
+    "unit": 5,
+    "word": "embrace",
+    "raw_word": "embrace",
+    "pos": "verb",
+    "definition": "to welcome with open arms, to accept or support willingly",
+    "synonyms": [
+      "welcome",
+      "accept",
+      "adopt",
+      "espouse"
+    ],
+    "uzbek": "bag'riga bosmoq, iliq qabul qilmoq",
+    "example": "Forward-thinking organizations readily embrace technological change."
+  },
+  {
+    "id": 105,
+    "unit": 5,
+    "word": "substantiate",
+    "raw_word": "substantiate",
+    "pos": "verb",
+    "definition": "to show to be true",
+    "synonyms": [
+      "validate",
+      "corroborate",
+      "prove",
+      "confirm"
+    ],
+    "uzbek": "isbotlamoq, asoslamoq",
+    "example": "The scientist needed additional laboratory trials to substantiate her hypothesis."
+  },
+  {
+    "id": 106,
+    "unit": 5,
+    "word": "superficial",
+    "raw_word": "superficial",
+    "pos": "adj.",
+    "definition": "shallow, on the surface",
+    "synonyms": [
+      "shallow",
+      "cursory",
+      "external",
+      "slight"
+    ],
+    "uzbek": "yuzaki, chuqur bo'lmagan",
+    "example": "A superficial inspection failed to detect the severe structural damage beneath the floor."
+  },
+  {
+    "id": 107,
+    "unit": 5,
+    "word": "sovereignty",
+    "raw_word": "sovereignty",
+    "pos": "noun",
+    "definition": "supreme power or authority",
+    "synonyms": [
+      "autonomy",
+      "independence",
+      "supreme power",
+      "rule"
+    ],
+    "uzbek": "suverenitet, oliy hokimiyat",
+    "example": "The treaty firmly guaranteed the political sovereignty of newly formed nations."
+  },
+  {
+    "id": 108,
+    "unit": 5,
+    "word": "lavish",
+    "raw_word": "lavish",
+    "pos": "adj. / verb",
+    "definition": "luxurious",
+    "synonyms": [
+      "luxurious",
+      "opulent",
+      "extravagant",
+      "generous"
+    ],
+    "uzbek": "dabdabali, serhasham; ayamasdan sarflamoq",
+    "example": "The banquet featured lavish decorations and cuisine prepared by master chefs."
+  },
+  {
+    "id": 109,
+    "unit": 5,
+    "word": "crux",
+    "raw_word": "crux",
+    "pos": "noun",
+    "definition": "the essence, the main point",
+    "synonyms": [
+      "core",
+      "essence",
+      "heart",
+      "pivot"
+    ],
+    "uzbek": "eng muhim nuqta, muammoning o'zagi",
+    "example": "The crux of the debate centers on balancing individual privacy with national security."
+  },
+  {
+    "id": 110,
+    "unit": 5,
+    "word": "indifference",
+    "raw_word": "indifference",
+    "pos": "noun",
+    "definition": "lack of interest and concern",
+    "synonyms": [
+      "apathy",
+      "unconcern",
+      "disinterest",
+      "detachment"
+    ],
+    "uzbek": "befarqlik, loqaydlik",
+    "example": "Public indifference toward civic duty can weaken democratic institutions."
+  },
+  {
+    "id": 111,
+    "unit": 5,
+    "word": "tact",
+    "raw_word": "tact",
+    "pos": "noun",
+    "definition": "skillfulness and sensitivity in dealing with others or difficult issues",
+    "synonyms": [
+      "diplomacy",
+      "sensitivity",
+      "discretion",
+      "politeness"
+    ],
+    "uzbek": "nazokat, odob-axloq, nozik muomala",
+    "example": "Delivering constructive criticism requires considerable empathy and tact."
+  },
+  {
+    "id": 112,
+    "unit": 5,
+    "word": "abundant",
+    "raw_word": "abundant",
+    "pos": "adj.",
+    "definition": "plentiful",
+    "synonyms": [
+      "plentiful",
+      "bountiful",
+      "copious",
+      "ample"
+    ],
+    "uzbek": "mo'l-ko'l, serob",
+    "example": "The fertile valley provided abundant harvests of wheat and seasonal fruit."
+  },
+  {
+    "id": 113,
+    "unit": 5,
+    "word": "viable",
+    "raw_word": "viable",
+    "pos": "adj.",
+    "definition": "capable of working successfully, realistic, doable",
+    "synonyms": [
+      "feasible",
+      "workable",
+      "sustainable",
+      "practical"
+    ],
+    "uzbek": "yashovchan, amalga oshirsa bo'ladigan",
+    "example": "Engineers are striving to create commercially viable renewable energy sources."
+  },
+  {
+    "id": 114,
+    "unit": 5,
+    "word": "scorn",
+    "raw_word": "scorn",
+    "pos": "noun / verb",
+    "definition": "contempt, the feeling that someone or something is worthless",
+    "synonyms": [
+      "contempt",
+      "disdain",
+      "derision",
+      "mockery"
+    ],
+    "uzbek": "mensimaslik, nafrat; mensimaslik qilmoq",
+    "example": "The veteran critic treated the amateur painter's work with undisguised scorn."
+  },
+  {
+    "id": 115,
+    "unit": 5,
+    "word": "transgress",
+    "raw_word": "transgress",
+    "pos": "verb",
+    "definition": "misbehave, disobey",
+    "synonyms": [
+      "violate",
+      "infringe",
+      "overstep",
+      "breach"
+    ],
+    "uzbek": "chegaradan chiqmoq, qonunni buzmoq",
+    "example": "Soldiers were sternly warned not to transgress international maritime borders."
+  },
+  {
+    "id": 116,
+    "unit": 5,
+    "word": "analogy",
+    "raw_word": "analogy",
+    "pos": "noun",
+    "definition": "a comparison between two things",
+    "synonyms": [
+      "comparison",
+      "parallel",
+      "correspondence",
+      "metaphor"
+    ],
+    "uzbek": "o'xshatish, analogiya",
+    "example": "The biology teacher drew an analogy between the human heart and an electric water pump."
+  },
+  {
+    "id": 117,
+    "unit": 5,
+    "word": "objection",
+    "raw_word": "objection",
+    "pos": "noun",
+    "definition": "a reason for disagreeing",
+    "synonyms": [
+      "protest",
+      "challenge",
+      "complaint",
+      "demurral"
+    ],
+    "uzbek": "e'tiroz, qarshilik",
+    "example": "The defense attorney raised a vehement objection to the prosecutor's leading question."
+  },
+  {
+    "id": 118,
+    "unit": 5,
+    "word": "construe",
+    "raw_word": "construe",
+    "pos": "verb",
+    "definition": "to interpret in a particular way",
+    "synonyms": [
+      "interpret",
+      "understand",
+      "explain",
+      "analyze"
+    ],
+    "uzbek": "talqin qilmoq, ma'no bermoq",
+    "example": "His prolonged silence was construed by his colleagues as tacit approval of the plan."
+  },
+  {
+    "id": 119,
+    "unit": 5,
+    "word": "procure",
+    "raw_word": "procure",
+    "pos": "verb",
+    "definition": "obtain, acquire",
+    "synonyms": [
+      "obtain",
+      "acquire",
+      "secure",
+      "gain"
+    ],
+    "uzbek": "qo'lga kiritmoq, topib olmoq",
+    "example": "The museum managed to procure an extremely rare manuscript from the fourteenth century."
+  },
+  {
+    "id": 120,
+    "unit": 5,
+    "word": "evoke",
+    "raw_word": "evoke",
+    "pos": "verb",
+    "definition": "to bring to mind",
+    "synonyms": [
+      "elicit",
+      "conjure up",
+      "awaken",
+      "stimulate"
+    ],
+    "uzbek": "uyg'otmoq, eslatmoq, xotiraga keltirmoq",
+    "example": "The haunting melody of the cello evoked bittersweet childhood memories."
+  },
+  {
+    "id": 121,
+    "unit": 5,
+    "word": "depiction",
+    "raw_word": "depiction",
+    "pos": "noun",
+    "definition": "portrayal, illustration",
+    "synonyms": [
+      "portrayal",
+      "representation",
+      "rendering",
+      "illustration"
+    ],
+    "uzbek": "tasvirlash, ifodalash",
+    "example": "The historical novel offered a remarkably realistic depiction of Victorian London."
+  },
+  {
+    "id": 122,
+    "unit": 5,
+    "word": "burden",
+    "raw_word": "burden",
+    "pos": "noun / verb",
+    "definition": "a difficulty, problem, or responsibility",
+    "synonyms": [
+      "load",
+      "hardship",
+      "strain",
+      "encumbrance"
+    ],
+    "uzbek": "og'ir yuk, mashaqqat; yuklamoq",
+    "example": "Caring for elderly relatives placed a significant financial and emotional burden on the family."
+  },
+  {
+    "id": 123,
+    "unit": 5,
+    "word": "recollection",
+    "raw_word": "recollection",
+    "pos": "noun",
+    "definition": "a memory; the act of remembering",
+    "synonyms": [
+      "memory",
+      "reminiscence",
+      "remembrance",
+      "recall"
+    ],
+    "uzbek": "xotira, eslash",
+    "example": "Her recollection of the fateful evening remained vivid despite the passing decades."
+  },
+  {
+    "id": 124,
+    "unit": 5,
+    "word": "tumult",
+    "raw_word": "tumult",
+    "pos": "noun",
+    "definition": "confusion or disorder",
+    "synonyms": [
+      "commotion",
+      "uproar",
+      "clamor",
+      "turmoil"
+    ],
+    "uzbek": "to'polon, g'alayon, g'ala-g'ovur",
+    "example": "The stadium erupted into joyous tumult as the home team scored the winning goal."
+  },
+  {
+    "id": 125,
+    "unit": 5,
+    "word": "concede",
+    "raw_word": "concede",
+    "pos": "verb",
+    "definition": "admit that something is true after first denying it",
+    "synonyms": [
+      "admit",
+      "acknowledge",
+      "yield",
+      "grant"
+    ],
+    "uzbek": "tan olmoq, taslim bo'lmoq",
+    "example": "After scrutinizing the evidence, the senator was forced to concede the argument."
+  },
+  {
+    "id": 126,
+    "unit": 6,
+    "word": "demeanor",
+    "raw_word": "demeanor",
+    "pos": "noun",
+    "definition": "manner, attitude, appearance",
+    "synonyms": [
+      "behavior",
+      "bearing",
+      "manner",
+      "conduct"
+    ],
+    "uzbek": "o'zini tutish, xulq-atvor",
+    "example": "The diplomat maintained a polite, professional demeanor despite provocative questioning."
+  },
+  {
+    "id": 127,
+    "unit": 6,
+    "word": "emigration",
+    "raw_word": "emigration",
+    "pos": "noun",
+    "definition": "the act of leaving one's own country",
+    "synonyms": [
+      "exodus",
+      "migration",
+      "relocation",
+      "departure"
+    ],
+    "uzbek": "muhojirlik, chet elga ko'chib ketish",
+    "example": "Economic hardship prompted a wave of mass emigration to industrial centers abroad."
+  },
+  {
+    "id": 128,
+    "unit": 6,
+    "word": "irate",
+    "raw_word": "irate",
+    "pos": "adj.",
+    "definition": "angry, furious",
+    "synonyms": [
+      "furious",
+      "enraged",
+      "incensed",
+      "livid"
+    ],
+    "uzbek": "juda g'azablangan, darg'azab",
+    "example": "Irate travelers demanded full refunds when their flights were canceled without warning."
+  },
+  {
+    "id": 129,
+    "unit": 6,
+    "word": "tentative",
+    "raw_word": "tentative",
+    "pos": "adj.",
+    "definition": "unconfirmed, subject to change",
+    "synonyms": [
+      "provisional",
+      "hesitant",
+      "unconfirmed",
+      "cautious"
+    ],
+    "uzbek": "sinov tariqasidagi, ikkilanuvchan, noaniq",
+    "example": "The negotiators reached a tentative peace agreement pending parliamentary approval."
+  },
+  {
+    "id": 130,
+    "unit": 6,
+    "word": "merely",
+    "raw_word": "merely",
+    "pos": "adv.",
+    "definition": "only; just",
+    "synonyms": [
+      "simply",
+      "only",
+      "purely",
+      "just"
+    ],
+    "uzbek": "shunchaki, faqatgina",
+    "example": "He insisted that his critical remarks were merely intended to provide constructive feedback."
+  },
+  {
+    "id": 131,
+    "unit": 6,
+    "word": "deceive",
+    "raw_word": "deceive",
+    "pos": "verb",
+    "definition": "to trick or mislead someone",
+    "synonyms": [
+      "mislead",
+      "delude",
+      "trick",
+      "beguile"
+    ],
+    "uzbek": "aldamoq, chalg'itmoq",
+    "example": "The fraudulent investment firm conspired to deceive naive investors out of their life savings."
+  },
+  {
+    "id": 132,
+    "unit": 6,
+    "word": "trifling",
+    "raw_word": "trifling",
+    "pos": "adj.",
+    "definition": "unimportant, insignificant",
+    "synonyms": [
+      "insignificant",
+      "trivial",
+      "minor",
+      "petty"
+    ],
+    "uzbek": "arzimagan, mayda, ahamiyatsiz",
+    "example": "She refused to quarrel over a trifling sum of money with an old friend."
+  },
+  {
+    "id": 133,
+    "unit": 6,
+    "word": "labyrinthine",
+    "raw_word": "labyrinthine",
+    "pos": "adj.",
+    "definition": "complicated or confusing",
+    "synonyms": [
+      "convoluted",
+      "complex",
+      "intricate",
+      "winding"
+    ],
+    "uzbek": "chigal, labirintsimon, murakkab",
+    "example": "Tourists quickly lost their way inside the labyrinthine alleys of the ancient bazaar."
+  },
+  {
+    "id": 134,
+    "unit": 6,
+    "word": "decrepit",
+    "raw_word": "decrepit",
+    "pos": "adj.",
+    "definition": "1) weak, disabled 2) in a run-down state, decayed",
+    "synonyms": [
+      "dilapidated",
+      "feeble",
+      "rickety",
+      "ramshackle"
+    ],
+    "uzbek": "1) qarigan, darmonsiz 2) eskirgan, xaroba",
+    "example": "The village elders gathered inside a decrepit wooden hall that had survived two wars."
+  },
+  {
+    "id": 135,
+    "unit": 6,
+    "word": "corroborate",
+    "raw_word": "corroborate",
+    "pos": "verb",
+    "definition": "to confirm, to verify",
+    "synonyms": [
+      "confirm",
+      "verify",
+      "substantiate",
+      "validate"
+    ],
+    "uzbek": "tasdiqlamoq, qo'llab-quvvatlamoq",
+    "example": "Satellite imagery corroborated the meteorological team's warning about the incoming storm."
+  },
+  {
+    "id": 136,
+    "unit": 6,
+    "word": "obstinacy",
+    "raw_word": "obstinacy",
+    "pos": "noun",
+    "definition": "stubbornness, unwilling to change",
+    "synonyms": [
+      "stubbornness",
+      "inflexibility",
+      "tenacity",
+      "pigheadedness"
+    ],
+    "uzbek": "qaysarlik, o'jarlik",
+    "example": "His sheer obstinacy prevented any mutual compromise during the labor contract negotiations."
+  },
+  {
+    "id": 137,
+    "unit": 6,
+    "word": "confinement",
+    "raw_word": "confinement",
+    "pos": "noun",
+    "definition": "imprisonment, captivity",
+    "synonyms": [
+      "imprisonment",
+      "captivity",
+      "detention",
+      "isolation"
+    ],
+    "uzbek": "qamoq, cheklash, bandilik",
+    "example": "Solitary confinement often induces severe psychological distress in inmates."
+  },
+  {
+    "id": 138,
+    "unit": 6,
+    "word": "monotony",
+    "raw_word": "monotony",
+    "pos": "noun",
+    "definition": "boredom, dullness, lack of variety",
+    "synonyms": [
+      "tedium",
+      "boredom",
+      "sameness",
+      "dullness"
+    ],
+    "uzbek": "bir xillik, zerikarlilik",
+    "example": "The monotony of assembly line work led many workers to experience extreme burnout."
+  },
+  {
+    "id": 139,
+    "unit": 6,
+    "word": "degrade",
+    "raw_word": "degrade",
+    "pos": "verb",
+    "definition": "treat with disrespect",
+    "synonyms": [
+      "demean",
+      "humiliate",
+      "devalue",
+      "diminish"
+    ],
+    "uzbek": "kamsitmoq, qadrini tushirmoq",
+    "example": "Cruel bullying is designed to degrade a person's self-esteem and dignity."
+  },
+  {
+    "id": 140,
+    "unit": 6,
+    "word": "dilemma",
+    "raw_word": "dilemma",
+    "pos": "noun",
+    "definition": "a situation in which a difficult choice has to be made between 2 or more alternatives",
+    "synonyms": [
+      "predicament",
+      "quandary",
+      "puzzle",
+      "crossroads"
+    ],
+    "uzbek": "muqobil qiyin tanlov, dilemma",
+    "example": "The doctor faced an ethical dilemma when allocating scarce life-saving medication."
+  },
+  {
+    "id": 141,
+    "unit": 6,
+    "word": "conventional",
+    "raw_word": "conventional",
+    "pos": "adj.",
+    "definition": "traditional, accepted, mainstream, standard",
+    "synonyms": [
+      "traditional",
+      "customary",
+      "standard",
+      "orthodox"
+    ],
+    "uzbek": "an'anaviy, odatiy",
+    "example": "She rejected conventional career advice and chose instead to pursue environmental art."
+  },
+  {
+    "id": 142,
+    "unit": 6,
+    "word": "proliferate",
+    "raw_word": "proliferate",
+    "pos": "verb",
+    "definition": "increase or grow rapidly",
+    "synonyms": [
+      "multiply",
+      "expand",
+      "burgeon",
+      "escalate"
+    ],
+    "uzbek": "bolalamoq, tez ko'paymoq",
+    "example": "Digital learning platforms proliferated dramatically following the pandemic lockdown."
+  },
+  {
+    "id": 143,
+    "unit": 6,
+    "word": "aesthetic",
+    "raw_word": "aesthetic",
+    "pos": "adj. / noun",
+    "definition": "concerned with beauty or the appreciation of beauty",
+    "synonyms": [
+      "artistic",
+      "tasteful",
+      "visual",
+      "appealing"
+    ],
+    "uzbek": "estetik, go'zallikka oid",
+    "example": "The modernist building was praised for its minimalist architecture and aesthetic beauty."
+  },
+  {
+    "id": 144,
+    "unit": 6,
+    "word": "prominent",
+    "raw_word": "prominent",
+    "pos": "adj.",
+    "definition": "important; famous",
+    "synonyms": [
+      "conspicuous",
+      "eminent",
+      "notable",
+      "distinguished"
+    ],
+    "uzbek": "ko'zga ko'ringan, mashhur, yetakchi",
+    "example": "Several prominent scientists urged international leaders to ratify the climate pact."
+  },
+  {
+    "id": 145,
+    "unit": 6,
+    "word": "unwieldy",
+    "raw_word": "unwieldy",
+    "pos": "adj.",
+    "definition": "difficult to carry or move",
+    "synonyms": [
+      "cumbersome",
+      "bulky",
+      "awkward",
+      "ungainly"
+    ],
+    "uzbek": "noqulay, qo'pol, boshqarish qiyin",
+    "example": "Moving the heavy, unwieldy oak dining table required three strong movers."
+  },
+  {
+    "id": 146,
+    "unit": 6,
+    "word": "unilaterally",
+    "raw_word": "unilaterally",
+    "pos": "adv.",
+    "definition": "used to indicate that something is done by only one person or group, without the agreement of others",
+    "synonyms": [
+      "independently",
+      "solely",
+      "autonomously"
+    ],
+    "uzbek": "bir tomonlama ravishda",
+    "example": "The country was criticized for unilaterally withdrawing from the international trade agreement."
+  },
+  {
+    "id": 147,
+    "unit": 6,
+    "word": "stimulate",
+    "raw_word": "stimulate",
+    "pos": "verb",
+    "definition": "to trigger, spark, or activate; to excite",
+    "synonyms": [
+      "encourage",
+      "inspire",
+      "energize",
+      "invigorate"
+    ],
+    "uzbek": "rag'batlantirmoq, jonlantirmoq",
+    "example": "Tax incentives were specifically designed to stimulate private investment in green technology."
+  },
+  {
+    "id": 148,
+    "unit": 6,
+    "word": "abate",
+    "raw_word": "abate",
+    "pos": "verb",
+    "definition": "to become less intense or widespread",
+    "synonyms": [
+      "subside",
+      "lessen",
+      "diminish",
+      "wane"
+    ],
+    "uzbek": "kamaymoq, pasaymoq, bosilmoq",
+    "example": "As the fierce wind began to abate, emergency crews ventured outside to assess the damage."
+  },
+  {
+    "id": 149,
+    "unit": 6,
+    "word": "diligent",
+    "raw_word": "diligent",
+    "pos": "adj.",
+    "definition": "hard-working",
+    "synonyms": [
+      "hardworking",
+      "industrious",
+      "conscientious",
+      "assiduous"
+    ],
+    "uzbek": "mehnatsevar, tirishqoq, sinchkov",
+    "example": "Thanks to diligent archival research, the historian uncovered previously unknown letters."
+  },
+  {
+    "id": 150,
+    "unit": 6,
+    "word": "relegate",
+    "raw_word": "relegate",
+    "pos": "verb",
+    "definition": "to downgrade, to lower in rank or status",
+    "synonyms": [
+      "demote",
+      "downgrade",
+      "banish",
+      "marginalize"
+    ],
+    "uzbek": "quyi darajaga tushirmoq, chetlatmoq",
+    "example": "Following the embarrassing defeat, the prestigious football club was relegated to the second division."
+  },
+  {
+    "id": 151,
+    "unit": 7,
+    "word": "demur",
+    "raw_word": "demur",
+    "pos": "verb / noun",
+    "definition": "to raise doubts or to protest",
+    "synonyms": [
+      "object",
+      "protest",
+      "hesitate",
+      "demurral"
+    ],
+    "uzbek": "e'tiroz bildirmoq, ikkilanmoq",
+    "example": "While most committee members voted in favor, two senior advisors respectfully demurred."
+  },
+  {
+    "id": 152,
+    "unit": 7,
+    "word": "novel",
+    "raw_word": "novel",
+    "pos": "adj. / noun",
+    "definition": "new or unusual in an interesting way",
+    "synonyms": [
+      "original",
+      "innovative",
+      "fresh",
+      "unprecedented"
+    ],
+    "uzbek": "yangi, noodatiy; roman",
+    "example": "The biochemist proposed a novel method for synthesizing insulin at room temperature."
+  },
+  {
+    "id": 153,
+    "unit": 7,
+    "word": "abstract",
+    "raw_word": "abstract",
+    "pos": "adj. / noun",
+    "definition": "existing in thought or as an idea but not having a physical or concrete existence; conceptual",
+    "synonyms": [
+      "theoretical",
+      "conceptual",
+      "intangible"
+    ],
+    "uzbek": "mavhum, abstrakt; tezis",
+    "example": "Philosophy often deals with abstract principles that have no concrete physical form."
+  },
+  {
+    "id": 154,
+    "unit": 7,
+    "word": "vestigial",
+    "raw_word": "vestigial",
+    "pos": "adj.",
+    "definition": "undeveloped, nonfunctional",
+    "synonyms": [
+      "residual",
+      "rudimentary",
+      "primitive",
+      "surviving"
+    ],
+    "uzbek": "qoldiq, rudimentar, so'ngan",
+    "example": "Human wisdom teeth are considered vestigial structures inherited from our ancient ancestors."
+  },
+  {
+    "id": 155,
+    "unit": 7,
+    "word": "preoccupied with",
+    "raw_word": "preoccupied with",
+    "pos": "adj. phrase",
+    "definition": "obsessed with something",
+    "synonyms": [
+      "absorbed in",
+      "engrossed in",
+      "obsessed with"
+    ],
+    "uzbek": "boshi band, butun diqqati qaratilgan",
+    "example": "He was so deeply preoccupied with his research that he forgot to eat lunch."
+  },
+  {
+    "id": 156,
+    "unit": 7,
+    "word": "optimistic",
+    "raw_word": "optimistic",
+    "pos": "adj.",
+    "definition": "hopeful and confident about the future",
+    "synonyms": [
+      "hopeful",
+      "positive",
+      "sanguine",
+      "buoyant"
+    ],
+    "uzbek": "nekbin, umidbaxsh, optimistik",
+    "example": "Despite initial setbacks, the founders remained optimistic about the future of their company."
+  },
+  {
+    "id": 157,
+    "unit": 7,
+    "word": "remembrance",
+    "raw_word": "remembrance",
+    "pos": "noun",
+    "definition": "the act of remembering something; a memory",
+    "synonyms": [
+      "memorial",
+      "recollection",
+      "token",
+      "tribute"
+    ],
+    "uzbek": "xotira, yodga olish, esdalik",
+    "example": "A silent candlelit vigil was held in solemn remembrance of the disaster victims."
+  },
+  {
+    "id": 158,
+    "unit": 7,
+    "word": "retain",
+    "raw_word": "retain",
+    "pos": "verb",
+    "definition": "to keep, to hold on to",
+    "synonyms": [
+      "keep",
+      "preserve",
+      "maintain",
+      "hold"
+    ],
+    "uzbek": "saqlab qolmoq, o'zida olib qolmoq",
+    "example": "Despite rigorous cross-examination, she managed to retain her composure in court."
+  },
+  {
+    "id": 159,
+    "unit": 7,
+    "word": "susceptible",
+    "raw_word": "susceptible",
+    "pos": "adj.",
+    "definition": "easily influenced or harmed by something; vulnerable",
+    "synonyms": [
+      "vulnerable",
+      "prone",
+      "exposed",
+      "sensitive"
+    ],
+    "uzbek": "moyil, ta'sirchan, himoyasiz",
+    "example": "Elderly individuals and young children are particularly susceptible to respiratory infections."
+  },
+  {
+    "id": 160,
+    "unit": 7,
+    "word": "strenuous",
+    "raw_word": "strenuous",
+    "pos": "adj.",
+    "definition": "difficult, exhausting",
+    "synonyms": [
+      "arduous",
+      "demanding",
+      "exhausting",
+      "taxing"
+    ],
+    "uzbek": "mashaqqatli, ko'p kuch talab qiladigan",
+    "example": "Climbing the steep peak required six hours of strenuous hiking through rugged terrain."
+  },
+  {
+    "id": 161,
+    "unit": 7,
+    "word": "enchantment",
+    "raw_word": "enchantment",
+    "pos": "noun",
+    "definition": "magic, charm, fascination",
+    "synonyms": [
+      "magic",
+      "fascination",
+      "charm",
+      "allure"
+    ],
+    "uzbek": "sehr, joziba, maftunkorlik",
+    "example": "The fairy tale forest possessed a mystical enchantment that captivated young visitors."
+  },
+  {
+    "id": 162,
+    "unit": 7,
+    "word": "subservient",
+    "raw_word": "subservient",
+    "pos": "adj.",
+    "definition": "prepared to obey others, submissive, less important",
+    "synonyms": [
+      "submissive",
+      "subordinate",
+      "compliant",
+      "servile"
+    ],
+    "uzbek": "bo'ysunuvchi, qaram, tobe",
+    "example": "The authoritarian governor expected his cabinet ministers to be obedient and subservient."
+  },
+  {
+    "id": 163,
+    "unit": 7,
+    "word": "empirical",
+    "raw_word": "empirical",
+    "pos": "adj.",
+    "definition": "based on experience rather than theory or pure logic",
+    "synonyms": [
+      "experimental",
+      "observational",
+      "practical",
+      "factual"
+    ],
+    "uzbek": "empirik, tajribaga asoslangan",
+    "example": "Scientific theories must be validated by rigorous, verifiable empirical evidence."
+  },
+  {
+    "id": 164,
+    "unit": 7,
+    "word": "hostile",
+    "raw_word": "hostile",
+    "pos": "adj.",
+    "definition": "unfriendly, threatening",
+    "synonyms": [
+      "unfriendly",
+      "antagonistic",
+      "aggressive",
+      "belligerent"
+    ],
+    "uzbek": "dushmanona, adovatli",
+    "example": "The Arctic expedition was forced to retreat due to harsh, hostile weather conditions."
+  },
+  {
+    "id": 165,
+    "unit": 7,
+    "word": "promulgate",
+    "raw_word": "promulgate",
+    "pos": "verb",
+    "definition": "to make widely known, to publicize",
+    "synonyms": [
+      "proclaim",
+      "broadcast",
+      "declare",
+      "announce"
+    ],
+    "uzbek": "keng e'lon qilmoq, ommaga yoymoq",
+    "example": "The newly elected government promulgated a sweeping set of democratic reforms."
+  },
+  {
+    "id": 166,
+    "unit": 7,
+    "word": "enact",
+    "raw_word": "enact",
+    "pos": "verb",
+    "definition": "to make law, to put into practice (a belief, idea, or suggestion)",
+    "synonyms": [
+      "pass",
+      "legislate",
+      "decree",
+      "implement"
+    ],
+    "uzbek": "qonun sifatida qabul qilmoq, ijro etmoq",
+    "example": "Congress enacted comprehensive legislation to protect endangered wildlife habitats."
+  },
+  {
+    "id": 167,
+    "unit": 7,
+    "word": "abject",
+    "raw_word": "abject",
+    "pos": "adj.",
+    "definition": "miserable, hopeless, awful",
+    "synonyms": [
+      "wretched",
+      "miserable",
+      "hopeless",
+      "degraded"
+    ],
+    "uzbek": "juda ayanchli, xor, nochor",
+    "example": "The war refugees survived under conditions of abject poverty and deprivation."
+  },
+  {
+    "id": 168,
+    "unit": 7,
+    "word": "expend",
+    "raw_word": "expend",
+    "pos": "verb",
+    "definition": "to use up, to consume",
+    "synonyms": [
+      "spend",
+      "consume",
+      "exhaust",
+      "use up"
+    ],
+    "uzbek": "sarflamoq, ketkazmoq (kuch, resurs)",
+    "example": "Athletes expend enormous amounts of metabolic energy during an Olympic marathon."
+  },
+  {
+    "id": 169,
+    "unit": 7,
+    "word": "yielding",
+    "raw_word": "yielding",
+    "pos": "adj.",
+    "definition": "giving in to or complying with the requests of others",
+    "synonyms": [
+      "compliant",
+      "submissive",
+      "flexible",
+      "malleable"
+    ],
+    "uzbek": "itoatkor, egiluvchan, yon beruvchi",
+    "example": "Her gentle and yielding demeanor hid an inner resolve of extraordinary strength."
+  },
+  {
+    "id": 170,
+    "unit": 7,
+    "word": "ignominious",
+    "raw_word": "ignominious",
+    "pos": "adj.",
+    "definition": "embarrassing, shameful",
+    "synonyms": [
+      "shameful",
+      "disgraceful",
+      "humiliating",
+      "dishonorable"
+    ],
+    "uzbek": "sharmandali, isnodli",
+    "example": "The corrupt general suffered an ignominious defeat and fled across the border."
+  },
+  {
+    "id": 171,
+    "unit": 7,
+    "word": "naive",
+    "raw_word": "naive",
+    "pos": "adj.",
+    "definition": "showing a lack of experience, wisdom, or judgment",
+    "synonyms": [
+      "innocent",
+      "gullible",
+      "ingenuous",
+      "inexperienced"
+    ],
+    "uzbek": "sodda, go'l, laqma",
+    "example": "It was naive of him to assume that everyone on the internet tells the truth."
+  },
+  {
+    "id": 172,
+    "unit": 7,
+    "word": "acquisition",
+    "raw_word": "acquisition",
+    "pos": "noun",
+    "definition": "something that is bought or obtained, an act of purchase",
+    "synonyms": [
+      "purchase",
+      "procurement",
+      "gain",
+      "attainment"
+    ],
+    "uzbek": "qo'lga kiritish, xarid; sotib olingan narsa",
+    "example": "The tech giant finalized its multi-billion-dollar acquisition of the promising artificial intelligence startup."
+  },
+  {
+    "id": 173,
+    "unit": 7,
+    "word": "affluent",
+    "raw_word": "affluent",
+    "pos": "adj.",
+    "definition": "wealthy",
+    "synonyms": [
+      "wealthy",
+      "prosperous",
+      "rich",
+      "opulent"
+    ],
+    "uzbek": "boy, badavlat, farovon",
+    "example": "Private yacht clubs and designer boutiques lined the streets of the affluent coastal enclave."
+  },
+  {
+    "id": 174,
+    "unit": 7,
+    "word": "consolidate",
+    "raw_word": "consolidate",
+    "pos": "verb",
+    "definition": "1) strengthen 2) combine or unite",
+    "synonyms": [
+      "strengthen",
+      "merge",
+      "unite",
+      "fortify"
+    ],
+    "uzbek": "1) mustahkamlamoq 2) birlashtirmoq",
+    "example": "The emperor moved swiftly to consolidate his political power and eliminate regional rivals."
+  },
+  {
+    "id": 175,
+    "unit": 7,
+    "word": "pious",
+    "raw_word": "pious",
+    "pos": "adj.",
+    "definition": "very religious or spiritual",
+    "synonyms": [
+      "devout",
+      "religious",
+      "spiritual",
+      "reverent"
+    ],
+    "uzbek": "taqvodor, xudojo'y",
+    "example": "The pious pilgrim dedicated her life to fasting, charitable deeds, and daily prayer."
+  },
+  {
+    "id": 176,
+    "unit": 8,
+    "word": "aggregate",
+    "raw_word": "aggregate",
+    "pos": "noun / verb / adj.",
+    "definition": "collection or sum total",
+    "synonyms": [
+      "total",
+      "sum",
+      "cluster",
+      "combine"
+    ],
+    "uzbek": "umumiy yig'indi, jami; to'plamoq",
+    "example": "The aggregate wealth of the nation's top billionaires surpassed previous historical records."
+  },
+  {
+    "id": 177,
+    "unit": 8,
+    "word": "scatterbrained",
+    "raw_word": "scatterbrained",
+    "pos": "adj.",
+    "definition": "disorganized, forgetful",
+    "synonyms": [
+      "disorganized",
+      "flighty",
+      "forgetful",
+      "absentminded"
+    ],
+    "uzbek": "parokanda, parishonxotir, besaranjom",
+    "example": "Her scatterbrained roommate repeatedly lost her apartment keys and student ID."
+  },
+  {
+    "id": 178,
+    "unit": 8,
+    "word": "yearn",
+    "raw_word": "yearn",
+    "pos": "verb",
+    "definition": "to have an intense feeling of longing for something",
+    "synonyms": [
+      "crave",
+      "long for",
+      "desire",
+      "pine"
+    ],
+    "uzbek": "orziqib kutmoq, qattiq sog'inmoq",
+    "example": "Exiled from his homeland, the poet yearned for the peaceful hills of his childhood."
+  },
+  {
+    "id": 179,
+    "unit": 8,
+    "word": "consummate",
+    "raw_word": "consummate (adj.)",
+    "pos": "adj.",
+    "definition": "complete or perfect, having a high degree of skill",
+    "synonyms": [
+      "complete",
+      "masterful",
+      "flawless",
+      "supreme"
+    ],
+    "uzbek": "mukammal, yuksak mahoratli",
+    "example": "The pianist performed the difficult concerto with consummate artistry and grace."
+  },
+  {
+    "id": 180,
+    "unit": 8,
+    "word": "endorse",
+    "raw_word": "endorse",
+    "pos": "verb",
+    "definition": "to support",
+    "synonyms": [
+      "support",
+      "advocate",
+      "approve",
+      "back"
+    ],
+    "uzbek": "qo'llab-quvvatlamoq, ma'qullamoq",
+    "example": "The environmental coalition voted enthusiastically to endorse the clean energy bill."
+  },
+  {
+    "id": 181,
+    "unit": 8,
+    "word": "ascertain",
+    "raw_word": "ascertain",
+    "pos": "verb",
+    "definition": "to find (something) out for certain",
+    "synonyms": [
+      "determine",
+      "discover",
+      "find out",
+      "confirm"
+    ],
+    "uzbek": "aniqlamoq, bilib olmoq",
+    "example": "Forensic investigators worked to ascertain the exact cause of the building fire."
+  },
+  {
+    "id": 182,
+    "unit": 8,
+    "word": "onerous",
+    "raw_word": "onerous",
+    "pos": "adj.",
+    "definition": "involving a lot of effort, difficult",
+    "synonyms": [
+      "burdensome",
+      "taxing",
+      "arduous",
+      "oppressive"
+    ],
+    "uzbek": "og'ir, mashaqqatli, zahmatli",
+    "example": "Fulfilling the onerous administrative duties consumed most of the young manager's workday."
+  },
+  {
+    "id": 183,
+    "unit": 8,
+    "word": "objective",
+    "raw_word": "objective (adj.)",
+    "pos": "adj.",
+    "definition": "fair-minded, not influenced by personal feelings",
+    "synonyms": [
+      "impartial",
+      "unbiased",
+      "fair",
+      "neutral"
+    ],
+    "uzbek": "xolis, ob'ektiv, betaraf",
+    "example": "Reporters are trained to deliver objective journalism free of ideological prejudice."
+  },
+  {
+    "id": 184,
+    "unit": 8,
+    "word": "aspire",
+    "raw_word": "aspire",
+    "pos": "verb",
+    "definition": "to hope to achieve something or be successful",
+    "synonyms": [
+      "aim",
+      "seek",
+      "hope",
+      "strive"
+    ],
+    "uzbek": "intilmoq, orzu qilmoq",
+    "example": "Many young scientists aspire to make discoveries that alleviate human suffering."
+  },
+  {
+    "id": 185,
+    "unit": 8,
+    "word": "obsolete",
+    "raw_word": "obsolete",
+    "pos": "adj.",
+    "definition": "no longer produced or used; out of date",
+    "synonyms": [
+      "outdated",
+      "archaic",
+      "antiquated",
+      "defunct"
+    ],
+    "uzbek": "eskirgan, urfdan qolgan",
+    "example": "Typewriters became largely obsolete with the advent of personal computers and printers."
+  },
+  {
+    "id": 186,
+    "unit": 8,
+    "word": "inflammatory",
+    "raw_word": "inflammatory",
+    "pos": "adj.",
+    "definition": "arousing angry or violent feelings",
+    "synonyms": [
+      "provocative",
+      "incendiary",
+      "seditious",
+      "stirring"
+    ],
+    "uzbek": "g'alayonga soluvchi, fitna uyg'otuvchi",
+    "example": "The speaker was accused of using inflammatory rhetoric to incite racial hostility."
+  },
+  {
+    "id": 187,
+    "unit": 8,
+    "word": "sentiment",
+    "raw_word": "sentiment",
+    "pos": "noun",
+    "definition": "a view of or attitude towards a situation or event; a general feeling or opinion",
+    "synonyms": [
+      "feeling",
+      "view",
+      "attitude",
+      "opinion"
+    ],
+    "uzbek": "fikr, hissiyot, munosabat",
+    "example": "Public sentiment turned sharply against the war following investigative journalistic reports."
+  },
+  {
+    "id": 188,
+    "unit": 8,
+    "word": "candor",
+    "raw_word": "candor",
+    "pos": "noun",
+    "definition": "honesty",
+    "synonyms": [
+      "honesty",
+      "frankness",
+      "openness",
+      "sincerity"
+    ],
+    "uzbek": "samimiylik, ochiqko'ngillik, to'g'riso'zlik",
+    "example": "The CEO's refreshing candor regarding the company's mistakes earned widespread respect."
+  },
+  {
+    "id": 189,
+    "unit": 8,
+    "word": "materialistic",
+    "raw_word": "materialistic",
+    "pos": "adj.",
+    "definition": "excessively concerned with material possessions or money",
+    "synonyms": [
+      "consumerist",
+      "greedy",
+      "worldly",
+      "acquisitive"
+    ],
+    "uzbek": "moddaparast, faqat boylikka o'ch",
+    "example": "The philosopher criticized our overly materialistic culture for neglecting spiritual well-being."
+  },
+  {
+    "id": 190,
+    "unit": 8,
+    "word": "prejudice",
+    "raw_word": "prejudice",
+    "pos": "noun / verb",
+    "definition": "a dislike or unfair opinion (of someone) that is not based on reason or actual experience",
+    "synonyms": [
+      "bias",
+      "discrimination",
+      "preconception",
+      "intolerance"
+    ],
+    "uzbek": "noto'g'ri tushuncha, xurofot, asossiz adovat",
+    "example": "Education plays a critical role in dismantling racial and cultural prejudice."
+  },
+  {
+    "id": 191,
+    "unit": 8,
+    "word": "distinct",
+    "raw_word": "distinct",
+    "pos": "adj.",
+    "definition": "clearly separate and different",
+    "synonyms": [
+      "distinguishable",
+      "clear",
+      "discrete",
+      "unique"
+    ],
+    "uzbek": "aniq-ravshan, ajralib turadigan, o'zgacha",
+    "example": "Each regional dialect exhibits distinct grammatical rules and rhythmic intonations."
+  },
+  {
+    "id": 192,
+    "unit": 8,
+    "word": "deference",
+    "raw_word": "deference",
+    "pos": "noun",
+    "definition": "respect",
+    "synonyms": [
+      "respect",
+      "reverence",
+      "esteem",
+      "submission"
+    ],
+    "uzbek": "hurmat, ehtirom ko'rsatish",
+    "example": "Out of deference to the visiting dignitaries, all audience members stood in silence."
+  },
+  {
+    "id": 193,
+    "unit": 8,
+    "word": "extensive",
+    "raw_word": "extensive",
+    "pos": "adj.",
+    "definition": "large in amount or scale",
+    "synonyms": [
+      "broad",
+      "wide-ranging",
+      "comprehensive",
+      "vast"
+    ],
+    "uzbek": "keng ko'lamli, ulkan, chuqur",
+    "example": "The author carried out extensive research in primary archives before writing the biography."
+  },
+  {
+    "id": 194,
+    "unit": 8,
+    "word": "impose",
+    "raw_word": "impose",
+    "pos": "verb",
+    "definition": "1) to force the acceptance of something 2) to cause inconvenience to someone",
+    "synonyms": [
+      "enforce",
+      "inflict",
+      "levy",
+      "burden"
+    ],
+    "uzbek": "1) majburan joriy qilmoq 2) yuk bo'lmoq",
+    "example": "The federal government decided to impose strict sanctions on the rogue state."
+  },
+  {
+    "id": 195,
+    "unit": 8,
+    "word": "articulate",
+    "raw_word": "articulate",
+    "pos": "adj. / verb",
+    "definition": "having the ability to speak fluently and persuasively",
+    "synonyms": [
+      "eloquent",
+      "fluent",
+      "expressive",
+      "clear"
+    ],
+    "uzbek": "fikrini ravon ifoda eta oladigan; ravon aytmoq",
+    "example": "She was an articulate defender of civil liberties whose arguments were difficult to refute."
+  },
+  {
+    "id": 196,
+    "unit": 8,
+    "word": "pristine",
+    "raw_word": "pristine",
+    "pos": "adj.",
+    "definition": "original and pure; not spoiled or worn from use",
+    "synonyms": [
+      "unspoiled",
+      "immaculate",
+      "pure",
+      "untouched"
+    ],
+    "uzbek": "tegizilmagan, bokira, top-toza",
+    "example": "The secluded bay featured pristine white beaches and crystalline turquoise water."
+  },
+  {
+    "id": 197,
+    "unit": 8,
+    "word": "veranda",
+    "raw_word": "veranda",
+    "pos": "noun",
+    "definition": "a porch or balcony",
+    "synonyms": [
+      "porch",
+      "balcony",
+      "terrace",
+      "deck"
+    ],
+    "uzbek": "ayvon, veranda, ayvoncha",
+    "example": "We sat on the shaded veranda drinking iced tea while watching the sun set over the hills."
+  },
+  {
+    "id": 198,
+    "unit": 8,
+    "word": "atypical",
+    "raw_word": "atypical",
+    "pos": "adj.",
+    "definition": "unusual, uncommon",
+    "synonyms": [
+      "unusual",
+      "uncommon",
+      "abnormal",
+      "anomalous"
+    ],
+    "uzbek": "noodatiy, tipik bo'lmagan",
+    "example": "Snowfall in late May is highly atypical for this temperate geographic region."
+  },
+  {
+    "id": 199,
+    "unit": 8,
+    "word": "subjugate",
+    "raw_word": "subjugate",
+    "pos": "verb",
+    "definition": "to bring under domination or control, to conquer",
+    "synonyms": [
+      "conquer",
+      "suppress",
+      "subdue",
+      "vanquish"
+    ],
+    "uzbek": "bo'ysundirmoq, tobe qilmoq",
+    "example": "The colonizing empire sought to subjugate indigenous populations and extract minerals."
+  },
+  {
+    "id": 200,
+    "unit": 8,
+    "word": "ubiquitous",
+    "raw_word": "ubiquitous",
+    "pos": "adj.",
+    "definition": "everywhere, universal",
+    "synonyms": [
+      "omnipresent",
+      "pervasive",
+      "everywhere",
+      "widespread"
+    ],
+    "uzbek": "hamma joyda mavjud, har yerda uchraydigan",
+    "example": "Smartphones have become so ubiquitous that nearly every adult carries one daily."
+  },
+  {
+    "id": 201,
+    "unit": 9,
+    "word": "altercation",
+    "raw_word": "altercation",
+    "pos": "noun",
+    "definition": "a noisy argument or disagreement",
+    "synonyms": [
+      "quarrel",
+      "brawl",
+      "clash",
+      "squabble"
+    ],
+    "uzbek": "shiddatli tortishuv, to'polonli nizo",
+    "example": "A heated verbal altercation broke out between the two rival political partisans."
+  },
+  {
+    "id": 202,
+    "unit": 9,
+    "word": "robust",
+    "raw_word": "robust",
+    "pos": "adj.",
+    "definition": "strong and healthy, durable",
+    "synonyms": [
+      "sturdy",
+      "strong",
+      "vigorous",
+      "resilient"
+    ],
+    "uzbek": "baquvvat, mustahkam, bardoshli",
+    "example": "The cybersecurity team built a robust network architecture capable of repelling attacks."
+  },
+  {
+    "id": 203,
+    "unit": 9,
+    "word": "subvert",
+    "raw_word": "subvert",
+    "pos": "verb",
+    "definition": "to damage or weaken the authority of an established system",
+    "synonyms": [
+      "undermine",
+      "sabotage",
+      "destabilize",
+      "overthrow"
+    ],
+    "uzbek": "putur yetkazmoq, ostidan buzmoq",
+    "example": "Corrupt actors sought to subvert the democratic election process through disinformation."
+  },
+  {
+    "id": 204,
+    "unit": 9,
+    "word": "melodramatic",
+    "raw_word": "melodramatic",
+    "pos": "adj.",
+    "definition": "exaggerated, sensationalized, or overemotional",
+    "synonyms": [
+      "overemotional",
+      "sensational",
+      "histrionic",
+      "dramatic"
+    ],
+    "uzbek": "o'ta bo'rttirilgan, teatrnamo",
+    "example": "Her melodramatic reaction to a small scratch made everyone in the room chuckle."
+  },
+  {
+    "id": 205,
+    "unit": 9,
+    "word": "glut",
+    "raw_word": "glut",
+    "pos": "noun / verb",
+    "definition": "an excess supply of something",
+    "synonyms": [
+      "surplus",
+      "excess",
+      "overabundance",
+      "plethora"
+    ],
+    "uzbek": "me'yoridan ortiqlik, haddan ziyod ko'plik",
+    "example": "A sudden glut of crude oil in the global market caused wholesale gasoline prices to plunge."
+  },
+  {
+    "id": 206,
+    "unit": 9,
+    "word": "antipathy",
+    "raw_word": "antipathy",
+    "pos": "noun",
+    "definition": "hatred, dislike",
+    "synonyms": [
+      "hostility",
+      "aversion",
+      "animosity",
+      "dislike"
+    ],
+    "uzbek": "kuchli yoqtirmaslik, adovat, antipatiya",
+    "example": "The two corporate moguls had a long-standing personal antipathy toward one another."
+  },
+  {
+    "id": 207,
+    "unit": 9,
+    "word": "perilous",
+    "raw_word": "perilous",
+    "pos": "adj.",
+    "definition": "dangerous",
+    "synonyms": [
+      "hazardous",
+      "dangerous",
+      "treacherous",
+      "risky"
+    ],
+    "uzbek": "o'ta xavfli, xatarli",
+    "example": "The mountaineers embarked on a perilous ascent up the icy northern ridge."
+  },
+  {
+    "id": 208,
+    "unit": 9,
+    "word": "conception",
+    "raw_word": "conception",
+    "pos": "noun",
+    "definition": "1) origin or beginning 2) an idea or concept",
+    "synonyms": [
+      "origin",
+      "beginning",
+      "idea",
+      "notion"
+    ],
+    "uzbek": "1) paydo bo'lish, boshlanish 2) tushuncha, g'oya",
+    "example": "From its very conception, the space telescope was envisioned as an international endeavor."
+  },
+  {
+    "id": 209,
+    "unit": 9,
+    "word": "repose",
+    "raw_word": "repose",
+    "pos": "noun / verb",
+    "definition": "rest, relaxation",
+    "synonyms": [
+      "rest",
+      "relaxation",
+      "peace",
+      "serenity"
+    ],
+    "uzbek": "orom, xotirjamlik, dam olish; dam olmoq",
+    "example": "After a grueling week of surgery, the doctor sought quiet repose at his countryside cabin."
+  },
+  {
+    "id": 210,
+    "unit": 9,
+    "word": "impede",
+    "raw_word": "impede",
+    "pos": "verb",
+    "definition": "to create difficulties for someone or something, resulting in delay",
+    "synonyms": [
+      "hinder",
+      "obstruct",
+      "hamper",
+      "delay"
+    ],
+    "uzbek": "to'sqinlik qilmoq, yo'lini to'smoq",
+    "example": "Heavy snowfall threatened to impede the delivery of critical relief supplies."
+  },
+  {
+    "id": 211,
+    "unit": 9,
+    "word": "contradiction",
+    "raw_word": "contradiction",
+    "pos": "noun",
+    "definition": "a combination of statements or ideas that are opposed to one another; inconsistency",
+    "synonyms": [
+      "paradox",
+      "inconsistency",
+      "conflict",
+      "discrepancy"
+    ],
+    "uzbek": "ziddiyat, qarama-qarshilik",
+    "example": "There was an obvious contradiction between his public speeches and private financial dealings."
+  },
+  {
+    "id": 212,
+    "unit": 9,
+    "word": "judgmental",
+    "raw_word": "judgmental",
+    "pos": "adj.",
+    "definition": "having an excessively critical point of view; disapproving",
+    "synonyms": [
+      "critical",
+      "censorious",
+      "disapproving",
+      "fault-finding"
+    ],
+    "uzbek": "tez hukm chiqaruvchi, birovni ayblashga moyil",
+    "example": "Try to listen with an open mind instead of adopting an instantly judgmental attitude."
+  },
+  {
+    "id": 213,
+    "unit": 9,
+    "word": "dismal",
+    "raw_word": "dismal",
+    "pos": "adj.",
+    "definition": "depressing, gloomy",
+    "synonyms": [
+      "gloomy",
+      "bleak",
+      "dreary",
+      "depressing"
+    ],
+    "uzbek": "g'amgin, tushkun, umidsiz",
+    "example": "The financial forecast for the struggling retail sector remained dismal."
+  },
+  {
+    "id": 214,
+    "unit": 9,
+    "word": "ambiguous",
+    "raw_word": "ambiguous",
+    "pos": "adj.",
+    "definition": "open to more than one interpretation; unclear",
+    "synonyms": [
+      "unclear",
+      "vague",
+      "equivocal",
+      "obscure"
+    ],
+    "uzbek": "noaniq, ikki xil tushunsa bo'ladigan",
+    "example": "The contract's ambiguous phrasing led to an expensive lawsuit between the partners."
+  },
+  {
+    "id": 215,
+    "unit": 9,
+    "word": "wayward",
+    "raw_word": "wayward",
+    "pos": "adj.",
+    "definition": "difficult to control or predict because of unusual behavior",
+    "synonyms": [
+      "unruly",
+      "disobedient",
+      "willful",
+      "erratic"
+    ],
+    "uzbek": "qaysar, o'zboshimcha, quloq solmaydigan",
+    "example": "The wayward child repeatedly disregarded parental curfews and school rules."
+  },
+  {
+    "id": 216,
+    "unit": 9,
+    "word": "implication",
+    "raw_word": "implication",
+    "pos": "noun",
+    "definition": "1) a conclusion that can be drawn from something 2) a consequence or result",
+    "synonyms": [
+      "consequence",
+      "ramification",
+      "inference",
+      "meaning"
+    ],
+    "uzbek": "1) xulosa, mantiqiy oqibat 2) ishora",
+    "example": "The scientific breakthrough carries profound ethical implications for genetic engineering."
+  },
+  {
+    "id": 217,
+    "unit": 9,
+    "word": "deploy",
+    "raw_word": "deploy",
+    "pos": "verb",
+    "definition": "to bring into effective action",
+    "synonyms": [
+      "station",
+      "position",
+      "utilize",
+      "marshal"
+    ],
+    "uzbek": "safga tizmoq, ishga tushirmoq, joylashtirmoq",
+    "example": "The military commander decided to deploy peacekeeping battalions along the border."
+  },
+  {
+    "id": 218,
+    "unit": 9,
+    "word": "credibility",
+    "raw_word": "credibility",
+    "pos": "noun",
+    "definition": "believability, authority",
+    "synonyms": [
+      "believability",
+      "plausibility",
+      "trustworthiness",
+      "reputation"
+    ],
+    "uzbek": "ishonchlilik, e'tibor qozonganlik",
+    "example": "The witness's conflicting statements severely damaged her credibility on the witness stand."
+  },
+  {
+    "id": 219,
+    "unit": 9,
+    "word": "complacent",
+    "raw_word": "complacent",
+    "pos": "adj.",
+    "definition": "overly satisfied or pleased with oneself",
+    "synonyms": [
+      "self-satisfied",
+      "smug",
+      "unconcerned",
+      "lazy"
+    ],
+    "uzbek": "o'zidan mamnun, xotirjamlikka berilgan",
+    "example": "A champion can never afford to become complacent, as hungry rivals are always improving."
+  },
+  {
+    "id": 220,
+    "unit": 9,
+    "word": "convoke",
+    "raw_word": "convoke",
+    "pos": "verb",
+    "definition": "to summon, to call together",
+    "synonyms": [
+      "summon",
+      "assemble",
+      "convene",
+      "call"
+    ],
+    "uzbek": "chaqirmoq, to'plamoq (majlisga)",
+    "example": "The prime minister decided to convoke a special parliamentary session to address the crisis."
+  },
+  {
+    "id": 221,
+    "unit": 9,
+    "word": "mocking",
+    "raw_word": "mocking",
+    "pos": "adj. / verb",
+    "definition": "making fun of someone or something in a cruel way",
+    "synonyms": [
+      "taunting",
+      "derisive",
+      "ridiculing",
+      "sardonic"
+    ],
+    "uzbek": "masxaraomuz, kalaka qiluvchi",
+    "example": "He greeted his opponent's wild assertions with a mocking smile and arched eyebrows."
+  },
+  {
+    "id": 222,
+    "unit": 9,
+    "word": "prospect",
+    "raw_word": "prospect",
+    "pos": "noun",
+    "definition": "the possibility or likelihood of some future event occurring",
+    "synonyms": [
+      "outlook",
+      "possibility",
+      "future",
+      "expectation"
+    ],
+    "uzbek": "istiqbol, kutilayotgan imkoniyat",
+    "example": "Graduating with honors greatly enhances one's career prospects in the competitive job market."
+  },
+  {
+    "id": 223,
+    "unit": 9,
+    "word": "amicable",
+    "raw_word": "amicable",
+    "pos": "adj.",
+    "definition": "friendly",
+    "synonyms": [
+      "friendly",
+      "cordial",
+      "peaceful",
+      "harmonious"
+    ],
+    "uzbek": "do'stona, ahil, murosa bilan",
+    "example": "Despite their divorce, the couple maintained an amicable relationship for their children."
+  },
+  {
+    "id": 224,
+    "unit": 9,
+    "word": "predecessor",
+    "raw_word": "predecessor",
+    "pos": "noun",
+    "definition": "someone or something that came before",
+    "synonyms": [
+      "ancestor",
+      "forerunner",
+      "precursor",
+      "antecedent"
+    ],
+    "uzbek": "o'tmishdosh, oldingi rahbar/namuna",
+    "example": "The new president reversed several controversial executive orders signed by her predecessor."
+  },
+  {
+    "id": 225,
+    "unit": 9,
+    "word": "deter",
+    "raw_word": "deter",
+    "pos": "verb",
+    "definition": "to discourage (someone) from doing something",
+    "synonyms": [
+      "discourage",
+      "dissuade",
+      "prevent",
+      "inhibit"
+    ],
+    "uzbek": "qaytarmoq, yo'ldan to'xtatmoq, cho'chitmoq",
+    "example": "High penalties and rigorous inspections are designed to deter companies from polluting rivers."
+  },
+  {
+    "id": 226,
+    "unit": 10,
+    "word": "indignation",
+    "raw_word": "indignation",
+    "pos": "noun",
+    "definition": "anger or annoyance",
+    "synonyms": [
+      "righteous anger",
+      "resentment",
+      "fury",
+      "outrage"
+    ],
+    "uzbek": "adolatsizlikdan g'azablanish, nafrat",
+    "example": "Citizens expressed righteous indignation at the revelation of systemic embezzlement."
+  },
+  {
+    "id": 227,
+    "unit": 10,
+    "word": "fetter",
+    "raw_word": "fetter",
+    "pos": "noun / verb",
+    "definition": "to restrict or restrain, to put in chains",
+    "synonyms": [
+      "shackle",
+      "chain",
+      "restrain",
+      "bind"
+    ],
+    "uzbek": "kishan, zanjir; kishanlamoq, cheklamoq",
+    "example": "Excessive bureaucracy should not fetter creative entrepreneurship in our universities."
+  },
+  {
+    "id": 228,
+    "unit": 10,
+    "word": "rigid",
+    "raw_word": "rigid",
+    "pos": "adj.",
+    "definition": "stiff, firm, unchangeable",
+    "synonyms": [
+      "inflexible",
+      "stiff",
+      "strict",
+      "unbending"
+    ],
+    "uzbek": "qattiq, egilmas, o'zgarmas",
+    "example": "A rigid mindset prevents individuals from adapting to changing professional environments."
+  },
+  {
+    "id": 229,
+    "unit": 10,
+    "word": "cultivate",
+    "raw_word": "cultivate",
+    "pos": "verb",
+    "definition": "to grow, to develop",
+    "synonyms": [
+      "foster",
+      "nurture",
+      "develop",
+      "encourage"
+    ],
+    "uzbek": "o'stirmoq, rivojlantirmoq, parvarishlamoq",
+    "example": "Schools should actively cultivate critical thinking skills rather than relying on rote memorization."
+  },
+  {
+    "id": 230,
+    "unit": 10,
+    "word": "juvenile",
+    "raw_word": "juvenile",
+    "pos": "adj. / noun",
+    "definition": "young, childish, immature",
+    "synonyms": [
+      "childish",
+      "immature",
+      "adolescent",
+      "youthful"
+    ],
+    "uzbek": "o'smirlarga xos, yoshlikka oid; bolalarcha",
+    "example": "His juvenile sense of humor included pulling childish pranks on office coworkers."
+  },
+  {
+    "id": 231,
+    "unit": 10,
+    "word": "convulsion",
+    "raw_word": "convulsion",
+    "pos": "noun",
+    "definition": "a sudden, violent, irregular movement of the body",
+    "synonyms": [
+      "spasm",
+      "seizure",
+      "upheaval",
+      "tremor"
+    ],
+    "uzbek": "tutqanoq, talvasa; keskin silkinish",
+    "example": "The financial panic caused severe convulsions throughout international equity markets."
+  },
+  {
+    "id": 232,
+    "unit": 10,
+    "word": "devise",
+    "raw_word": "devise",
+    "pos": "verb",
+    "definition": "to plan or invent by careful thought",
+    "synonyms": [
+      "invent",
+      "formulate",
+      "design",
+      "create"
+    ],
+    "uzbek": "o'ylab topmoq, ishlab chiqmoq",
+    "example": "Engineers worked overtime to devise an emergency bypass system for the cooling tower."
+  },
+  {
+    "id": 233,
+    "unit": 10,
+    "word": "immure",
+    "raw_word": "immure",
+    "pos": "verb",
+    "definition": "to imprison someone against their will",
+    "synonyms": [
+      "imprison",
+      "confine",
+      "incarcerate",
+      "enclose"
+    ],
+    "uzbek": "qamamoq, devor ichiga band qilmoq",
+    "example": "The tyrant sought to immure all political dissidents in an isolated fortress."
+  },
+  {
+    "id": 234,
+    "unit": 10,
+    "word": "perturb",
+    "raw_word": "perturb",
+    "pos": "verb",
+    "definition": "to make someone anxious or unsettled; to disturb",
+    "synonyms": [
+      "disturb",
+      "agitate",
+      "unsettle",
+      "fluster"
+    ],
+    "uzbek": "tashvishga solmoq, bezovta qilmoq",
+    "example": "The sudden dip in the company's stock price did not perturb the unflappable CEO."
+  },
+  {
+    "id": 235,
+    "unit": 10,
+    "word": "solicitude",
+    "raw_word": "solicitude",
+    "pos": "noun",
+    "definition": "care or concern for someone or something",
+    "synonyms": [
+      "care",
+      "concern",
+      "solicitude",
+      "attentiveness"
+    ],
+    "uzbek": "g'amxo'rlik, kuyunchaklik, e'tibor",
+    "example": "The hospice nurse attended to her elderly patients with touching tenderness and solicitude."
+  },
+  {
+    "id": 236,
+    "unit": 10,
+    "word": "pervasive",
+    "raw_word": "pervasive",
+    "pos": "adj.",
+    "definition": "spreading widely throughout an area or group of people",
+    "synonyms": [
+      "widespread",
+      "pervasive",
+      "permeating",
+      "prevalent"
+    ],
+    "uzbek": "hamma yoqqa tarqalgan, singib ketgan",
+    "example": "A pervasive scent of fresh jasmine drifted through the palace corridors."
+  },
+  {
+    "id": 237,
+    "unit": 10,
+    "word": "tyranny",
+    "raw_word": "tyranny",
+    "pos": "noun",
+    "definition": "cruel and abusive government or rule",
+    "synonyms": [
+      "despotism",
+      "oppression",
+      "autocracy",
+      "dictatorship"
+    ],
+    "uzbek": "zulm, mustabidlik, zolim hokimiyat",
+    "example": "Generations of revolutionaries gave their lives to liberate their homeland from foreign tyranny."
+  },
+  {
+    "id": 238,
+    "unit": 10,
+    "word": "apprehensive",
+    "raw_word": "apprehensive",
+    "pos": "adj.",
+    "definition": "anxious or fearful that something bad or unpleasant will happen",
+    "synonyms": [
+      "anxious",
+      "nervous",
+      "fearful",
+      "uneasy"
+    ],
+    "uzbek": "xavotirlangan, hadiksiragan",
+    "example": "First-time skydivers are naturally apprehensive before leaping into the open sky."
+  },
+  {
+    "id": 239,
+    "unit": 10,
+    "word": "provision",
+    "raw_word": "provision",
+    "pos": "noun",
+    "definition": "1) a condition or requirement in a legal document 2) the act of providing services or resources",
+    "synonyms": [
+      "clause",
+      "condition",
+      "stipulation",
+      "supply"
+    ],
+    "uzbek": "1) shart, band (hujjatda) 2) ta'minlash",
+    "example": "A specific provision in the contract allowed either party to terminate with thirty days' notice."
+  },
+  {
+    "id": 240,
+    "unit": 10,
+    "word": "insolent",
+    "raw_word": "insolent",
+    "pos": "adj.",
+    "definition": "showing a rude lack of respect",
+    "synonyms": [
+      "rude",
+      "disrespectful",
+      "impertinent",
+      "brash"
+    ],
+    "uzbek": "odobsiz, behurmat, surbet",
+    "example": "The insolent student was asked to leave the lecture hall after shouting at the professor."
+  },
+  {
+    "id": 241,
+    "unit": 10,
+    "word": "consensus",
+    "raw_word": "consensus",
+    "pos": "noun",
+    "definition": "general agreement",
+    "synonyms": [
+      "agreement",
+      "accord",
+      "harmony",
+      "unanimity"
+    ],
+    "uzbek": "umumiy yakdillik, konsensus",
+    "example": "After hours of deliberation, the committee reached a general consensus on the budget."
+  },
+  {
+    "id": 242,
+    "unit": 10,
+    "word": "discord",
+    "raw_word": "discord",
+    "pos": "noun",
+    "definition": "disagreement between people",
+    "synonyms": [
+      "strife",
+      "conflict",
+      "friction",
+      "disharmony"
+    ],
+    "uzbek": "kelishmovchilik, ixtilof, nizo",
+    "example": "Petty jealousy sowed discord among the otherwise cooperative research staff."
+  },
+  {
+    "id": 243,
+    "unit": 10,
+    "word": "complement",
+    "raw_word": "complement (verb)",
+    "pos": "verb",
+    "definition": "to add to (something) in a way that enhances or completes it",
+    "synonyms": [
+      "enhance",
+      "complete",
+      "supplement",
+      "integrate"
+    ],
+    "uzbek": "to'ldirmoq, mos tushmoq",
+    "example": "The rich tomato sauce was selected to complement the subtle herbal flavors of the grilled fish."
+  },
+  {
+    "id": 244,
+    "unit": 10,
+    "word": "mortify",
+    "raw_word": "mortify",
+    "pos": "verb",
+    "definition": "to cause (someone) to feel embarrassed, ashamed, or humiliated",
+    "synonyms": [
+      "humiliate",
+      "embarrass",
+      "shame",
+      "abash"
+    ],
+    "uzbek": "qattiq uyaltirmoq, xijolat qilmoq",
+    "example": "He was thoroughly mortified when he realized he had accidentally sent the private memo to the entire staff."
+  },
+  {
+    "id": 245,
+    "unit": 10,
+    "word": "dissipate",
+    "raw_word": "dissipate",
+    "pos": "verb",
+    "definition": "to disappear or evaporate",
+    "synonyms": [
+      "disperse",
+      "scatter",
+      "vanish",
+      "squander"
+    ],
+    "uzbek": "tarqab ketmoq, yo'q bo'lmoq; behuda sarflamoq",
+    "example": "Morning fog began to dissipate rapidly as the blazing sun rose above the horizon."
+  },
+  {
+    "id": 246,
+    "unit": 10,
+    "word": "doctrine",
+    "raw_word": "doctrine",
+    "pos": "noun",
+    "definition": "a belief or set of beliefs",
+    "synonyms": [
+      "creed",
+      "tenet",
+      "dogma",
+      "philosophy"
+    ],
+    "uzbek": "ta'limot, aqida, doktrina",
+    "example": "The political party adhered strictly to the economic doctrines of free-market capitalism."
+  },
+  {
+    "id": 247,
+    "unit": 10,
+    "word": "incomprehensible",
+    "raw_word": "incomprehensible",
+    "pos": "adj.",
+    "definition": "not able to be understood",
+    "synonyms": [
+      "unfathomable",
+      "baffling",
+      "inscrutable",
+      "opaque"
+    ],
+    "uzbek": "tushunib bo'lmas, aql yetmas",
+    "example": "To a non-specialist, quantum physics formulas appear completely incomprehensible."
+  },
+  {
+    "id": 248,
+    "unit": 10,
+    "word": "recount",
+    "raw_word": "recount",
+    "pos": "verb",
+    "definition": "to tell someone about something, to give a report of an event",
+    "synonyms": [
+      "narrate",
+      "tell",
+      "relate",
+      "detail"
+    ],
+    "uzbek": "birma-bir aytib bermoq, hikoya qilmoq",
+    "example": "The veteran explorer gathered the villagers to recount his adventures in the uncharted wilderness."
+  },
+  {
+    "id": 249,
+    "unit": 10,
+    "word": "inefficacious",
+    "raw_word": "inefficacious",
+    "pos": "adj.",
+    "definition": "unable to produce the intended result",
+    "synonyms": [
+      "ineffective",
+      "fruitless",
+      "futile",
+      "unsuccessful"
+    ],
+    "uzbek": "samarasiz, naf bermaydigan",
+    "example": "The antiquated remedy proved entirely inefficacious against the aggressive bacterial strain."
+  },
+  {
+    "id": 250,
+    "unit": 10,
+    "word": "adversary",
+    "raw_word": "adversary",
+    "pos": "noun",
+    "definition": "one's opponent or enemy",
+    "synonyms": [
+      "opponent",
+      "rival",
+      "foe",
+      "enemy"
+    ],
+    "uzbek": "raqib, g'anim, muxolif",
+    "example": "In the courtroom, she faced a formidable adversary who had never lost a case."
+  },
+  {
+    "id": 251,
+    "unit": 11,
+    "word": "endow",
+    "raw_word": "endow",
+    "pos": "verb",
+    "definition": "to provide, to supply",
+    "synonyms": [
+      "bestow",
+      "gift",
+      "fund",
+      "equip"
+    ],
+    "uzbek": "in'om etmoq, baxsh etmoq, mablag' ajratmoq",
+    "example": "Nature had endowed her with a brilliant intellect and profound musical intuition."
+  },
+  {
+    "id": 252,
+    "unit": 11,
+    "word": "confound",
+    "raw_word": "confound",
+    "pos": "verb",
+    "definition": "to cause surprise or confusion in someone",
+    "synonyms": [
+      "confuse",
+      "baffle",
+      "perplex",
+      "mystify"
+    ],
+    "uzbek": "dovdiratib qo'ymoq, sarosimaga solmoq",
+    "example": "The magician's inexplicable sleight of hand confounded even the sharpest skeptics."
+  },
+  {
+    "id": 253,
+    "unit": 11,
+    "word": "assert",
+    "raw_word": "assert",
+    "pos": "verb",
+    "definition": "to state a fact or belief confidently and forcefully",
+    "synonyms": [
+      "declare",
+      "claim",
+      "maintain",
+      "affirm"
+    ],
+    "uzbek": "qat'iy ta'kidlamoq, tasdiqlamoq",
+    "example": "The defendant continued to assert his total innocence throughout the high-profile trial."
+  },
+  {
+    "id": 254,
+    "unit": 11,
+    "word": "undermine",
+    "raw_word": "undermine",
+    "pos": "verb",
+    "definition": "to gradually damage or weaken someone or something",
+    "synonyms": [
+      "weaken",
+      "subvert",
+      "damage",
+      "erode"
+    ],
+    "uzbek": "putur yetkazmoq, zaiflashtirmoq",
+    "example": "Constant gossip can slowly undermine workplace morale and mutual trust among colleagues."
+  },
+  {
+    "id": 255,
+    "unit": 11,
+    "word": "paradox",
+    "raw_word": "paradox",
+    "pos": "noun",
+    "definition": "a statement or situation that may be true but seems impossible or difficult to understand because it contains two opposite facts or characteristics",
+    "synonyms": [
+      "contradiction",
+      "anomaly",
+      "puzzle",
+      "enigma"
+    ],
+    "uzbek": "paradoks, ziddek tuyuluvchi haqiqat",
+    "example": "It is a cruel paradox that starving populations often live on land rich in natural resources."
+  },
+  {
+    "id": 256,
+    "unit": 11,
+    "word": "apt",
+    "raw_word": "apt",
+    "pos": "adj.",
+    "definition": "appropriate or suitable in the circumstances",
+    "synonyms": [
+      "suitable",
+      "fitting",
+      "appropriate",
+      "prone"
+    ],
+    "uzbek": "mos, munosib; qobiliyatli",
+    "example": "The literary critic selected an apt quotation to illustrate the poet's melancholy tone."
+  },
+  {
+    "id": 257,
+    "unit": 11,
+    "word": "competent",
+    "raw_word": "competent",
+    "pos": "adj.",
+    "definition": "having the necessary ability, knowledge, or skill to do something successfully",
+    "synonyms": [
+      "capable",
+      "proficient",
+      "skilled",
+      "qualified"
+    ],
+    "uzbek": "malakali, yetarli bilimga ega",
+    "example": "Only a thoroughly competent surgeon should undertake such an intricate cardiac procedure."
+  },
+  {
+    "id": 258,
+    "unit": 11,
+    "word": "severity",
+    "raw_word": "severity",
+    "pos": "noun",
+    "definition": "the quality of being very unpleasant, unkind, or difficult",
+    "synonyms": [
+      "harshness",
+      "rigor",
+      "intensity",
+      "strictness"
+    ],
+    "uzbek": "qattiqlik, og'irlik, keskinlik",
+    "example": "The sheer severity of the winter blizzard forced regional airports to shut down."
+  },
+  {
+    "id": 259,
+    "unit": 11,
+    "word": "dismay",
+    "raw_word": "dismay",
+    "pos": "noun / verb",
+    "definition": "a feeling of shock and unhappiness",
+    "synonyms": [
+      "distress",
+      "alarm",
+      "consternation",
+      "disappointment"
+    ],
+    "uzbek": "sarosima, tushkunlik; xafsalasini pir qilmoq",
+    "example": "To the dismay of conservationists, the ancient redwood forest was approved for logging."
+  },
+  {
+    "id": 260,
+    "unit": 11,
+    "word": "usurp",
+    "raw_word": "usurp",
+    "pos": "verb",
+    "definition": "to take power or control of something by force or without the right to do so",
+    "synonyms": [
+      "seize",
+      "arrogate",
+      "commandeer",
+      "take over"
+    ],
+    "uzbek": "noqonuniy egallab olmoq, tortib olmoq",
+    "example": "The rogue general attempted to usurp presidential power through a swift military coup."
+  },
+  {
+    "id": 261,
+    "unit": 11,
+    "word": "nostalgic",
+    "raw_word": "nostalgic",
+    "pos": "adj.",
+    "definition": "feeling happy and also slightly sad when you think about things that happened in the past",
+    "synonyms": [
+      "wistful",
+      "reminiscent",
+      "sentimental",
+      "homesick"
+    ],
+    "uzbek": "o'tmishni qo'msaydigan, nostaljik",
+    "example": "Listening to songs from high school filled him with a nostalgic longing for simpler days."
+  },
+  {
+    "id": 262,
+    "unit": 11,
+    "word": "ornate",
+    "raw_word": "ornate",
+    "pos": "adj.",
+    "definition": "having a lot of complex patterns or decoration",
+    "synonyms": [
+      "elaborate",
+      "fancy",
+      "embellished",
+      "decorative"
+    ],
+    "uzbek": "bezakdor, serhasham, gulli-qatorli",
+    "example": "The cathedral featured ornate gold altars and stunning stained-glass windows."
+  },
+  {
+    "id": 263,
+    "unit": 11,
+    "word": "hierarchy",
+    "raw_word": "hierarchy",
+    "pos": "noun",
+    "definition": "a system in which people or things are put at various levels or ranks according to their importance",
+    "synonyms": [
+      "ranking",
+      "pecking order",
+      "chain of command"
+    ],
+    "uzbek": "ierarxiya, martabalar tizimi",
+    "example": "Military discipline relies fundamentally on strict adherence to a chain of command and hierarchy."
+  },
+  {
+    "id": 264,
+    "unit": 11,
+    "word": "irrational",
+    "raw_word": "irrational",
+    "pos": "adj.",
+    "definition": "not logical or reasonable",
+    "synonyms": [
+      "illogical",
+      "unreasonable",
+      "absurd",
+      "senseless"
+    ],
+    "uzbek": "mantiqsiz, aqlga to'g'ri kelmaydigan",
+    "example": "Phobias often involve an intense, irrational dread of completely harmless objects."
+  },
+  {
+    "id": 265,
+    "unit": 11,
+    "word": "bluster",
+    "raw_word": "bluster",
+    "pos": "noun / verb",
+    "definition": "talk intended to seem important or threatening but which is not taken seriously and has little effect",
+    "synonyms": [
+      "rant",
+      "swagger",
+      "bluff",
+      "bravado"
+    ],
+    "uzbek": "quruq do'q-po'pisa; po'pisa qilmoq",
+    "example": "Behind the politician's bluster lay an acute fear of losing the impending election."
+  },
+  {
+    "id": 266,
+    "unit": 11,
+    "word": "subordinate",
+    "raw_word": "subordinate",
+    "pos": "adj. / noun",
+    "definition": "having a lower or less important position",
+    "synonyms": [
+      "inferior",
+      "secondary",
+      "subservient",
+      "junior"
+    ],
+    "uzbek": "quyi martabadagi, tobe",
+    "example": "In corporate decision-making, personal preferences must remain subordinate to collective goals."
+  },
+  {
+    "id": 267,
+    "unit": 11,
+    "word": "malicious",
+    "raw_word": "malicious",
+    "pos": "adj.",
+    "definition": "intending to cause harm; evil",
+    "synonyms": [
+      "spiteful",
+      "malevolent",
+      "venomous",
+      "hostile"
+    ],
+    "uzbek": "yovuz niyatli, g'arazli",
+    "example": "The hacker designed malicious software intended to compromise sensitive financial records."
+  },
+  {
+    "id": 268,
+    "unit": 11,
+    "word": "amend",
+    "raw_word": "amend",
+    "pos": "verb",
+    "definition": "to revise, to make changes",
+    "synonyms": [
+      "modify",
+      "revise",
+      "alter",
+      "improve"
+    ],
+    "uzbek": "o'zgartirish kiritmoq, tuzatmoq",
+    "example": "Lawmakers voted overwhelmingly to amend the tax code in order to close loopholes."
+  },
+  {
+    "id": 269,
+    "unit": 11,
+    "word": "conform",
+    "raw_word": "conform",
+    "pos": "verb",
+    "definition": "to behave according to an expectation or rule",
+    "synonyms": [
+      "comply",
+      "follow",
+      "adapt",
+      "yield"
+    ],
+    "uzbek": "moslashmoq, qoidalarga rioya qilmoq",
+    "example": "Pressure to conform to social expectations often stifles artistic originality."
+  },
+  {
+    "id": 270,
+    "unit": 11,
+    "word": "tout",
+    "raw_word": "tout",
+    "pos": "verb",
+    "definition": "to advertise or praise something (often to sell it)",
+    "synonyms": [
+      "promote",
+      "praise",
+      "advertise",
+      "extol"
+    ],
+    "uzbek": "maqtamoq, ko'z-ko'z qilmoq",
+    "example": "Tech promoters eagerly touted the experimental device as the future of personal computing."
+  },
+  {
+    "id": 271,
+    "unit": 11,
+    "word": "permeate",
+    "raw_word": "permeate",
+    "pos": "verb",
+    "definition": "to spread throughout something",
+    "synonyms": [
+      "penetrate",
+      "suffuse",
+      "pervade",
+      "saturate"
+    ],
+    "uzbek": "singib ketmoq, har tarafga yoyilmoq",
+    "example": "The tantalizing aroma of freshly baked bread permeated the entire neighborhood."
+  },
+  {
+    "id": 272,
+    "unit": 11,
+    "word": "incantation",
+    "raw_word": "incantation",
+    "pos": "noun",
+    "definition": "a series of words said as a magic spell or charm",
+    "synonyms": [
+      "spell",
+      "chant",
+      "charm",
+      "hex"
+    ],
+    "uzbek": "sehrli so'zlar, afsun, duo",
+    "example": "The tribal shaman muttered a rhythmic incantation to ward off malevolent spirits."
+  },
+  {
+    "id": 273,
+    "unit": 11,
+    "word": "impervious",
+    "raw_word": "impervious",
+    "pos": "adj.",
+    "definition": "not able to be influenced, hurt, or damaged",
+    "synonyms": [
+      "impenetrable",
+      "immune",
+      "resistant",
+      "unaffected"
+    ],
+    "uzbek": "o'tkazmaydigan, ta'sir qilmaydigan",
+    "example": "The scientist's waterproof jacket proved entirely impervious to the driving rainstorm."
+  },
+  {
+    "id": 274,
+    "unit": 11,
+    "word": "actuate",
+    "raw_word": "actuate",
+    "pos": "verb",
+    "definition": "1) to cause (a machine or device) to operate 2) to cause (someone) to act in a particular way",
+    "synonyms": [
+      "activate",
+      "motivate",
+      "prompt",
+      "trigger"
+    ],
+    "uzbek": "1) harakatga keltirmoq (mashinani) 2) undamoq (odamni)",
+    "example": "A sensor is installed to actuate the automatic sprinkler system whenever smoke is detected."
+  },
+  {
+    "id": 275,
+    "unit": 11,
+    "word": "versatility",
+    "raw_word": "versatility",
+    "pos": "noun",
+    "definition": "ability to adapt to many different functions or activities",
+    "synonyms": [
+      "adaptability",
+      "flexibility",
+      "resourcefulness"
+    ],
+    "uzbek": "ko'pqirralilik, ko'p sohalarga moslik",
+    "example": "The actor was celebrated for his versatility, moving effortlessly from tragedy to slapstick comedy."
+  },
+  {
+    "id": 276,
+    "unit": 12,
+    "word": "proclaim",
+    "raw_word": "proclaim",
+    "pos": "verb",
+    "definition": "to announce officially or publicly",
+    "synonyms": [
+      "declare",
+      "announce",
+      "herald",
+      "broadcast"
+    ],
+    "uzbek": "tantanali e'lon qilmoq, ommaga aytmoq",
+    "example": "The monarch stood upon the balcony to proclaim a national day of thanksgiving."
+  },
+  {
+    "id": 277,
+    "unit": 12,
+    "word": "obeisance",
+    "raw_word": "obeisance",
+    "pos": "noun",
+    "definition": "deep respect",
+    "synonyms": [
+      "homage",
+      "deference",
+      "respect",
+      "bow"
+    ],
+    "uzbek": "ta'zim, ehtirom, hurmat bajo keltirish",
+    "example": "Knights knelt low in humble obeisance before the newly crowned queen."
+  },
+  {
+    "id": 278,
+    "unit": 12,
+    "word": "modest",
+    "raw_word": "modest",
+    "pos": "adj.",
+    "definition": "1) humble, not showy 2) not large in size or amount",
+    "synonyms": [
+      "humble",
+      "unpretentious",
+      "moderate",
+      "small"
+    ],
+    "uzbek": "1) kamtar, kibrsiz 2) o'rtacha, katta bo'lmagan",
+    "example": "Despite earning millions, the novelist lived in a modest two-bedroom bungalow."
+  },
+  {
+    "id": 279,
+    "unit": 12,
+    "word": "adorn",
+    "raw_word": "adorn",
+    "pos": "verb",
+    "definition": "to decorate",
+    "synonyms": [
+      "decorate",
+      "embellish",
+      "ornament",
+      "beautify"
+    ],
+    "uzbek": "bezatmoq, zeb bermoq",
+    "example": "Fresco paintings and elaborate tapestries adorned the great dining hall."
+  },
+  {
+    "id": 280,
+    "unit": 12,
+    "word": "solitude",
+    "raw_word": "solitude",
+    "pos": "noun",
+    "definition": "the state or situation of being alone",
+    "synonyms": [
+      "isolation",
+      "seclusion",
+      "privacy",
+      "peace"
+    ],
+    "uzbek": "yolg'izlik, hilvatlik (tinchlantiruvchi)",
+    "example": "The poet retreated to an isolated mountain cabin to write in uninterrupted solitude."
+  },
+  {
+    "id": 281,
+    "unit": 12,
+    "word": "deplete",
+    "raw_word": "deplete",
+    "pos": "verb",
+    "definition": "to use up the supply or resources of",
+    "synonyms": [
+      "exhaust",
+      "drain",
+      "empty",
+      "use up"
+    ],
+    "uzbek": "tugatmoq, sarflab quritmoq",
+    "example": "Intensive irrigation threatened to deplete the region's subterranean water reserves."
+  },
+  {
+    "id": 282,
+    "unit": 12,
+    "word": "solemn",
+    "raw_word": "solemn",
+    "pos": "adj.",
+    "definition": "having or showing serious purpose and determination; formal",
+    "synonyms": [
+      "grave",
+      "serious",
+      "somber",
+      "dignified"
+    ],
+    "uzbek": "vazmin, tantanali, jiddiy",
+    "example": "The memorial service was conducted in an atmosphere of solemn reverence."
+  },
+  {
+    "id": 283,
+    "unit": 12,
+    "word": "proponent",
+    "raw_word": "proponent",
+    "pos": "noun",
+    "definition": "a person who supports an idea, plan, or cause",
+    "synonyms": [
+      "advocate",
+      "supporter",
+      "champion",
+      "promoter"
+    ],
+    "uzbek": "tarafdor, himoyachi, qo'llovchi",
+    "example": "She was a vocal proponent of renewable energy and electric public transportation."
+  },
+  {
+    "id": 284,
+    "unit": 12,
+    "word": "keen",
+    "raw_word": "keen",
+    "pos": "adj.",
+    "definition": "sharp; highly developed (usually the senses)",
+    "synonyms": [
+      "sharp",
+      "astute",
+      "eager",
+      "acute"
+    ],
+    "uzbek": "o'tkir, sezgir; ishtiyoqmand",
+    "example": "Dogs have a remarkably keen sense of smell that allows them to track scents over miles."
+  },
+  {
+    "id": 285,
+    "unit": 12,
+    "word": "engulf",
+    "raw_word": "engulf",
+    "pos": "verb",
+    "definition": "to surround and cover completely",
+    "synonyms": [
+      "swallow up",
+      "consume",
+      "inundate",
+      "submerge"
+    ],
+    "uzbek": "qamrab olmoq, yutib yubormoq",
+    "example": "Massive ocean waves threatened to engulf the stranded fishing vessel."
+  },
+  {
+    "id": 286,
+    "unit": 12,
+    "word": "diverge",
+    "raw_word": "diverge",
+    "pos": "verb",
+    "definition": "to go in different directions from the same point, to become different",
+    "synonyms": [
+      "separate",
+      "deviate",
+      "branch off",
+      "part"
+    ],
+    "uzbek": "ayrilmoq, boshqa yo'nalishga burilmoq",
+    "example": "Although they started as close friends, their ideological paths began to diverge in university."
+  },
+  {
+    "id": 287,
+    "unit": 12,
+    "word": "squalid",
+    "raw_word": "squalid",
+    "pos": "adj.",
+    "definition": "extremely dirty, poor, and unpleasant",
+    "synonyms": [
+      "filthy",
+      "wretched",
+      "sordid",
+      "run-down"
+    ],
+    "uzbek": "iflos, abgor, g'aribona",
+    "example": "Undercover journalists exposed the squalid living conditions inside the unlicensed boarding home."
+  },
+  {
+    "id": 288,
+    "unit": 12,
+    "word": "hypothetical",
+    "raw_word": "hypothetical",
+    "pos": "adj.",
+    "definition": "imagined or suggested but not necessarily real or true",
+    "synonyms": [
+      "theoretical",
+      "supposed",
+      "conjectural"
+    ],
+    "uzbek": "faraziy, nazariy, gipotetik",
+    "example": "The professor proposed a hypothetical scenario to test the students' ethical reasoning."
+  },
+  {
+    "id": 289,
+    "unit": 12,
+    "word": "pressing",
+    "raw_word": "pressing",
+    "pos": "adj.",
+    "definition": "urgent or needing to be dealt with immediately",
+    "synonyms": [
+      "urgent",
+      "crucial",
+      "critical",
+      "burning"
+    ],
+    "uzbek": "kechiktirib bo'lmas, o'ta dolzarb",
+    "example": "Addressing global freshwater shortages has become one of humanity's most pressing concerns."
+  },
+  {
+    "id": 290,
+    "unit": 12,
+    "word": "solicitation",
+    "raw_word": "solicitation",
+    "pos": "noun",
+    "definition": "a request for money, information, or help",
+    "synonyms": [
+      "petition",
+      "appeal",
+      "plea",
+      "request"
+    ],
+    "uzbek": "iltimos, da'vat, so'rash (masalan, xayriya)",
+    "example": "The university sent a polite solicitation to alumni asking for contributions to the scholarship fund."
+  },
+  {
+    "id": 291,
+    "unit": 12,
+    "word": "meddle",
+    "raw_word": "meddle",
+    "pos": "verb",
+    "definition": "interfere in something that is not one's concern",
+    "synonyms": [
+      "interfere",
+      "pry",
+      "intrude",
+      "tamper"
+    ],
+    "uzbek": "birovning ishiga burnini tiqmoq",
+    "example": "Neighbors were cautioned not to meddle in domestic disputes better left to professionals."
+  },
+  {
+    "id": 292,
+    "unit": 12,
+    "word": "coarse",
+    "raw_word": "coarse",
+    "pos": "adj.",
+    "definition": "1) rough, not smooth 2) rude or offensive in manner or speech",
+    "synonyms": [
+      "rough",
+      "crude",
+      "unrefined",
+      "vulgar"
+    ],
+    "uzbek": "1) dag'al, g'adir-budur 2) qo'pol, madaniyatsiz",
+    "example": "His coarse manners and insensitive jokes alienated everyone at the formal dinner."
+  },
+  {
+    "id": 293,
+    "unit": 12,
+    "word": "reproach",
+    "raw_word": "reproach",
+    "pos": "verb / noun",
+    "definition": "to criticize or express disapproval with someone",
+    "synonyms": [
+      "rebuke",
+      "scold",
+      "criticize",
+      "admonish"
+    ],
+    "uzbek": "ta'na qilmoq, dashnom bermoq; malomat",
+    "example": "She gently reproached her younger brother for neglecting his chores throughout the week."
+  },
+  {
+    "id": 294,
+    "unit": 12,
+    "word": "immerse",
+    "raw_word": "immerse",
+    "pos": "verb",
+    "definition": "1) to put something completely under a liquid 2) to involve someone completely in an activity",
+    "synonyms": [
+      "submerge",
+      "plunge",
+      "absorb",
+      "engross"
+    ],
+    "uzbek": "1) botirmoq, cho'mdirmoq 2) butunlay sho'ng'imoq",
+    "example": "To master Italian quickly, she chose to immerse herself in the language by living in Florence."
+  },
+  {
+    "id": 295,
+    "unit": 12,
+    "word": "clout",
+    "raw_word": "clout",
+    "pos": "noun",
+    "definition": "power and influence (especially in politics or business)",
+    "synonyms": [
+      "influence",
+      "power",
+      "leverage",
+      "prestige"
+    ],
+    "uzbek": "ta'sir kuchi, obro'-e'tibor",
+    "example": "The influential lobbyist wielded tremendous political clout in legislative circles."
+  },
+  {
+    "id": 296,
+    "unit": 12,
+    "word": "exacerbate",
+    "raw_word": "exacerbate",
+    "pos": "verb",
+    "definition": "to make something that is already bad worse",
+    "synonyms": [
+      "worsen",
+      "aggravate",
+      "intensify",
+      "inflame"
+    ],
+    "uzbek": "yanada og'irlashtirmoq, kuchaytirmoq (yomon narsani)",
+    "example": "High interest rates threaten to exacerbate the already severe housing crisis."
+  },
+  {
+    "id": 297,
+    "unit": 12,
+    "word": "dubious",
+    "raw_word": "dubious",
+    "pos": "adj.",
+    "definition": "doubtful",
+    "synonyms": [
+      "doubtful",
+      "questionable",
+      "suspicious",
+      "uncertain"
+    ],
+    "uzbek": "shubhali, ishonchsiz",
+    "example": "The authenticity of the unsigned painting was considered highly dubious by art historians."
+  },
+  {
+    "id": 298,
+    "unit": 12,
+    "word": "plausible",
+    "raw_word": "plausible",
+    "pos": "adj.",
+    "definition": "possibly true, able to be believed, reasonable",
+    "synonyms": [
+      "credible",
+      "believable",
+      "feasible",
+      "reasonable"
+    ],
+    "uzbek": "ishonarli, haqiqatga yaqin",
+    "example": "Detectives searched for a plausible explanation for how the jewels vanished from the locked vault."
+  },
+  {
+    "id": 299,
+    "unit": 12,
+    "word": "notion",
+    "raw_word": "notion",
+    "pos": "noun",
+    "definition": "a belief or idea",
+    "synonyms": [
+      "concept",
+      "idea",
+      "belief",
+      "view"
+    ],
+    "uzbek": "tushuncha, fikr, qarash",
+    "example": "He rejected the outdated notion that artistic genius is exclusively an innate genetic gift."
+  },
+  {
+    "id": 300,
+    "unit": 12,
+    "word": "impartial",
+    "raw_word": "impartial",
+    "pos": "adj.",
+    "definition": "able to judge something fairly",
+    "synonyms": [
+      "unbiased",
+      "fair",
+      "neutral",
+      "objective"
+    ],
+    "uzbek": "xolis, beg'araz, odil",
+    "example": "A jury must remain strictly impartial and weigh only the evidence presented in the courtroom."
+  },
+  {
+    "id": 301,
+    "unit": 13,
+    "word": "swath",
+    "raw_word": "swath",
+    "pos": "noun",
+    "definition": "a long strip or area of something",
+    "synonyms": [
+      "strip",
+      "sweep",
+      "expanse",
+      "stretch"
+    ],
+    "uzbek": "keng maydon, poloska, ulkan qism",
+    "example": "A massive wildfire consumed vast swaths of pine forest across the northern province."
+  },
+  {
+    "id": 302,
+    "unit": 13,
+    "word": "dabble",
+    "raw_word": "dabble",
+    "pos": "verb",
+    "definition": "to try an activity in a casual way",
+    "synonyms": [
+      "tinker",
+      "flirt with",
+      "toy with",
+      "experiment"
+    ],
+    "uzbek": "havaskorona shug'ullanmoq, chala-yarim qiziqmoq",
+    "example": "In his free time, the software architect liked to dabble in oil painting and sculpture."
+  },
+  {
+    "id": 303,
+    "unit": 13,
+    "word": "earnest",
+    "raw_word": "earnest",
+    "pos": "adj.",
+    "definition": "sincere and serious",
+    "synonyms": [
+      "sincere",
+      "fervent",
+      "serious",
+      "heartfelt"
+    ],
+    "uzbek": "chin dildan, samimiy, jiddiy",
+    "example": "The student made an earnest plea to the faculty committee for an assignment extension."
+  },
+  {
+    "id": 304,
+    "unit": 13,
+    "word": "vitality",
+    "raw_word": "vitality",
+    "pos": "noun",
+    "definition": "life, energy, and strength",
+    "synonyms": [
+      "energy",
+      "vigor",
+      "liveliness",
+      "dynamism"
+    ],
+    "uzbek": "hayotiy kuch, jo'shqinlik, g'ayrat",
+    "example": "Regular physical exercise and balanced nutrition contribute to enduring youthful vitality."
+  },
+  {
+    "id": 305,
+    "unit": 13,
+    "word": "mimic",
+    "raw_word": "mimic",
+    "pos": "verb / noun",
+    "definition": "to imitate or copy (someone's actions or words)",
+    "synonyms": [
+      "imitate",
+      "copy",
+      "reproduce",
+      "echo"
+    ],
+    "uzbek": "taqlid qilmoq, o'xshatmoq; taqlidchi",
+    "example": "Certain harmless butterfly species mimic the vivid coloration of toxic monarchs for survival."
+  },
+  {
+    "id": 306,
+    "unit": 13,
+    "word": "agitate",
+    "raw_word": "agitate",
+    "pos": "verb",
+    "definition": "1) to make someone troubled or nervous 2) to campaign for something in public",
+    "synonyms": [
+      "disturb",
+      "provoke",
+      "campaign",
+      "stir up"
+    ],
+    "uzbek": "1) bezovta qilmoq 2) tashviqot qilmoq, targ'ib etmoq",
+    "example": "Labor activists began to agitate publicly for higher minimum wages and safer conditions."
+  },
+  {
+    "id": 307,
+    "unit": 13,
+    "word": "practical",
+    "raw_word": "practical",
+    "pos": "adj.",
+    "definition": "likely to succeed or be effective in real circumstances, relating to actual experience rather than knowledge only",
+    "synonyms": [
+      "pragmatic",
+      "functional",
+      "useful",
+      "feasible"
+    ],
+    "uzbek": "amaliy, foydali, reallashtirsa bo'ladigan",
+    "example": "Her practical approach to solving office disputes prevented long and bitter quarrels."
+  },
+  {
+    "id": 308,
+    "unit": 13,
+    "word": "ominous",
+    "raw_word": "ominous",
+    "pos": "adj.",
+    "definition": "suggesting something unpleasant will happen",
+    "synonyms": [
+      "foreboding",
+      "threatening",
+      "menacing",
+      "sinister"
+    ],
+    "uzbek": "xavfli, mash'um, yomonlikdan darak beruvchi",
+    "example": "Dark, swirling storm clouds cast an ominous shadow across the quiet coastal village."
+  },
+  {
+    "id": 309,
+    "unit": 13,
+    "word": "dominion",
+    "raw_word": "dominion",
+    "pos": "noun",
+    "definition": "1) control over a country or people 2) the land that belongs to a ruler",
+    "synonyms": [
+      "sovereignty",
+      "rule",
+      "territory",
+      "realm"
+    ],
+    "uzbek": "1) hukmronlik, nazorat 2) xudud, saltanat",
+    "example": "The Roman Empire exercised undisputed dominion over the Mediterranean basin for centuries."
+  },
+  {
+    "id": 310,
+    "unit": 13,
+    "word": "pretense",
+    "raw_word": "pretense",
+    "pos": "noun",
+    "definition": "a false display, an attempt to deceive",
+    "synonyms": [
+      "sham",
+      "facade",
+      "affectation",
+      "deception"
+    ],
+    "uzbek": "o'zini shunday ko'rsatish, yasama da'vo, bahona",
+    "example": "Behind his humble pretense lay an unbridled ambition for personal wealth and power."
+  },
+  {
+    "id": 311,
+    "unit": 13,
+    "word": "egocentric",
+    "raw_word": "egocentric",
+    "pos": "adj.",
+    "definition": "thinking only of oneself; self-centered",
+    "synonyms": [
+      "self-centered",
+      "selfish",
+      "narcissistic",
+      "egoistic"
+    ],
+    "uzbek": "o'zini o'ylaydigan, xudbin, xudpesand",
+    "example": "His egocentric worldview made it nearly impossible for him to appreciate others' sacrifices."
+  },
+  {
+    "id": 312,
+    "unit": 13,
+    "word": "exploit",
+    "raw_word": "exploit",
+    "pos": "verb / noun",
+    "definition": "to make full use of (a resource), to use (a person) in an unfair or selfish way",
+    "synonyms": [
+      "utilize",
+      "capitalize on",
+      "abuse",
+      "feat"
+    ],
+    "uzbek": "foydalanmoq; ekspluatatsiya qilmoq; jasorat",
+    "example": "Predatory lenders unfairly exploit economically vulnerable families through predatory interest rates."
+  },
+  {
+    "id": 313,
+    "unit": 13,
+    "word": "comprise",
+    "raw_word": "comprise",
+    "pos": "verb",
+    "definition": "to consist of or to be made up of",
+    "synonyms": [
+      "consist of",
+      "include",
+      "encompass",
+      "contain"
+    ],
+    "uzbek": "iborat bo'lmoq, o'z ichiga olmoq",
+    "example": "The research committee is comprised of distinguished scholars from six continents."
+  },
+  {
+    "id": 314,
+    "unit": 13,
+    "word": "plight",
+    "raw_word": "plight",
+    "pos": "noun",
+    "definition": "a dangerous, difficult, or otherwise unfortunate situation",
+    "synonyms": [
+      "predicament",
+      "hardship",
+      "quandary",
+      "misfortune"
+    ],
+    "uzbek": "achinarli ahvol, mushkul vaziyat",
+    "example": "International humanitarian agencies rallied to alleviate the desperate plight of drought victims."
+  },
+  {
+    "id": 315,
+    "unit": 13,
+    "word": "exemplify",
+    "raw_word": "exemplify",
+    "pos": "verb",
+    "definition": "to be a typical example of something",
+    "synonyms": [
+      "typify",
+      "illustrate",
+      "embody",
+      "represent"
+    ],
+    "uzbek": "yaqqol namuna bo'lmoq, ifodalamoq",
+    "example": "Her selfless dedication to community healthcare exemplifies the highest ideals of medicine."
+  },
+  {
+    "id": 316,
+    "unit": 13,
+    "word": "momentous",
+    "raw_word": "momentous",
+    "pos": "adj.",
+    "definition": "very important (in reference to a decision or event)",
+    "synonyms": [
+      "historic",
+      "significant",
+      "crucial",
+      "consequential"
+    ],
+    "uzbek": "ulkan ahamiyatga ega, taqdiriy",
+    "example": "The signing of the peace treaty was a momentous milestone in world history."
+  },
+  {
+    "id": 317,
+    "unit": 13,
+    "word": "reverberate",
+    "raw_word": "reverberate",
+    "pos": "verb",
+    "definition": "to continue to be heard; to echo repeatedly",
+    "synonyms": [
+      "resonate",
+      "echo",
+      "rebound",
+      "vibrate"
+    ],
+    "uzbek": "aks-sado bermoq, uzoq vaqt ta'sir ko'rsatmoq",
+    "example": "The economic collapse of the mega-bank reverberated throughout international financial markets."
+  },
+  {
+    "id": 318,
+    "unit": 13,
+    "word": "paternal",
+    "raw_word": "paternal",
+    "pos": "adj.",
+    "definition": "behaving or feeling as a father does toward his child",
+    "synonyms": [
+      "fatherly",
+      "protective",
+      "patriarchal"
+    ],
+    "uzbek": "otaga xos, otalarcha",
+    "example": "The elderly mentor treated the young apprentice with gentle paternal kindness."
+  },
+  {
+    "id": 319,
+    "unit": 13,
+    "word": "lament",
+    "raw_word": "lament",
+    "pos": "verb / noun",
+    "definition": "to express sadness and regret about something",
+    "synonyms": [
+      "mourn",
+      "grieve",
+      "deplore",
+      "bewail"
+    ],
+    "uzbek": "afsuslanmoq, motam tutmoq; nola",
+    "example": "Environmentalists bitterly lament the tragic loss of ancient rainforest biodiversity."
+  },
+  {
+    "id": 320,
+    "unit": 13,
+    "word": "mediation",
+    "raw_word": "mediation",
+    "pos": "noun",
+    "definition": "the process by which someone tries to end a disagreement by helping the two sides to talk about and agree on a solution",
+    "synonyms": [
+      "arbitration",
+      "negotiation",
+      "intervention",
+      "peacemaking"
+    ],
+    "uzbek": "vositachilik, hakamlik, yarashtirish",
+    "example": "Thanks to skillful third-party mediation, the hostile labor dispute was peacefully resolved."
+  },
+  {
+    "id": 321,
+    "unit": 13,
+    "word": "miser",
+    "raw_word": "miser",
+    "pos": "noun",
+    "definition": "someone who has a great desire to possess money and hates to spend it",
+    "synonyms": [
+      "hoarder",
+      "penny-pincher",
+      "skinflint"
+    ],
+    "uzbek": "xasis, baxil, ziqna odam",
+    "example": "Despite his immense fortune, the old miser refused even to heat his drafty house."
+  },
+  {
+    "id": 322,
+    "unit": 13,
+    "word": "supple",
+    "raw_word": "supple",
+    "pos": "adj.",
+    "definition": "bending or able to be bent easily; not stiff; flexible",
+    "synonyms": [
+      "flexible",
+      "limber",
+      "pliant",
+      "lithe"
+    ],
+    "uzbek": "egiluvchan, elastik, chaqqon",
+    "example": "Gymnasts must maintain extraordinarily supple muscles through daily stretching routines."
+  },
+  {
+    "id": 323,
+    "unit": 13,
+    "word": "oblivious",
+    "raw_word": "oblivious",
+    "pos": "adj.",
+    "definition": "not aware of what is happening around you",
+    "synonyms": [
+      "unaware",
+      "heedless",
+      "unmindful",
+      "ignorant"
+    ],
+    "uzbek": "bexabar, sezmaydigan, e'tiborsiz",
+    "example": "Engrossed in his podcast, he was completely oblivious to the sudden commotion nearby."
+  },
+  {
+    "id": 324,
+    "unit": 13,
+    "word": "sullen",
+    "raw_word": "sullen",
+    "pos": "adj.",
+    "definition": "silent and unpleasant; depressed; gloomy",
+    "synonyms": [
+      "glum",
+      "morose",
+      "sulky",
+      "surly"
+    ],
+    "uzbek": "qovog'i soliq, tund, xomush",
+    "example": "The disappointed adolescent sat in sullen silence after being denied permission to attend the party."
+  },
+  {
+    "id": 325,
+    "unit": 13,
+    "word": "imperative",
+    "raw_word": "imperative",
+    "pos": "adj. / noun",
+    "definition": "1) extremely important or urgent 2) something that needs to be done immediately",
+    "synonyms": [
+      "vital",
+      "crucial",
+      "essential",
+      "urgent"
+    ],
+    "uzbek": "1) o'ta muhim, kechiktirib bo'lmas 2) zarurat, buyruq",
+    "example": "In medical emergencies, it is imperative that doctors administer treatment without delay."
+  },
+  {
+    "id": 326,
+    "unit": 14,
+    "word": "reminisce",
+    "raw_word": "reminisce",
+    "pos": "verb",
+    "definition": "to talk about the past with pleasure",
+    "synonyms": [
+      "recall",
+      "recollect",
+      "remember",
+      "look back"
+    ],
+    "uzbek": "o'tmishni shirin xotirlamoq",
+    "example": "The childhood friends sat on the porch for hours to reminisce about their youth."
+  },
+  {
+    "id": 327,
+    "unit": 14,
+    "word": "tranquil",
+    "raw_word": "tranquil",
+    "pos": "adj.",
+    "definition": "calm, quiet, and peaceful",
+    "synonyms": [
+      "serene",
+      "peaceful",
+      "calm",
+      "placid"
+    ],
+    "uzbek": "sokin, tinch, osoyishta",
+    "example": "Early morning rowing across the tranquil alpine lake brought a deep sense of stillness."
+  },
+  {
+    "id": 328,
+    "unit": 14,
+    "word": "cleave",
+    "raw_word": "cleave",
+    "pos": "verb",
+    "definition": "to cut or split into at least two parts",
+    "synonyms": [
+      "split",
+      "sever",
+      "adhere",
+      "cling"
+    ],
+    "uzbek": "yormoq, bo'lmoq; qattiq yopishmoq",
+    "example": "A skilled lumberjack can cleave a thick log cleanly in two with a single axe swing."
+  },
+  {
+    "id": 329,
+    "unit": 14,
+    "word": "reluctance",
+    "raw_word": "reluctance",
+    "pos": "noun",
+    "definition": "an unwillingness to do something",
+    "synonyms": [
+      "hesitation",
+      "unwillingness",
+      "disinclination"
+    ],
+    "uzbek": "istamaslik, ikkilanish, norozilik",
+    "example": "Despite her initial reluctance, she agreed to participate in the public debate."
+  },
+  {
+    "id": 330,
+    "unit": 14,
+    "word": "misgiving",
+    "raw_word": "misgiving",
+    "pos": "noun",
+    "definition": "a feeling of doubt, uncertainty, or worry about a future event",
+    "synonyms": [
+      "doubt",
+      "qualm",
+      "apprehension",
+      "suspicion"
+    ],
+    "uzbek": "shubha, hadik, yurak g'ashligi",
+    "example": "He had serious misgivings about entering into a financial partnership with an untested stranger."
+  },
+  {
+    "id": 331,
+    "unit": 14,
+    "word": "sparse",
+    "raw_word": "sparse",
+    "pos": "adj.",
+    "definition": "small in number, often spread over a large area; scarce",
+    "synonyms": [
+      "scanty",
+      "thin",
+      "scattered",
+      "meager"
+    ],
+    "uzbek": "siyrak, tarqoq, oz sonli",
+    "example": "Vegetation becomes increasingly sparse as one ascends higher into the rocky alpine zone."
+  },
+  {
+    "id": 332,
+    "unit": 14,
+    "word": "progenitor",
+    "raw_word": "progenitor",
+    "pos": "noun",
+    "definition": "originator, creator, founder",
+    "synonyms": [
+      "ancestor",
+      "forefather",
+      "precursor",
+      "founder"
+    ],
+    "uzbek": "ajdod, boshlovchi, asoschi",
+    "example": "Biologists traced modern wolves and domestic dogs back to an extinct canine progenitor."
+  },
+  {
+    "id": 333,
+    "unit": 14,
+    "word": "absurd",
+    "raw_word": "absurd",
+    "pos": "adj.",
+    "definition": "ridiculous or completely unreasonable",
+    "synonyms": [
+      "ridiculous",
+      "ludicrous",
+      "preposterous",
+      "senseless"
+    ],
+    "uzbek": "bema'ni, kulgili, aqlsiz",
+    "example": "The suggestion that the Earth is hollow inside was dismissed as an absurd conspiracy."
+  },
+  {
+    "id": 334,
+    "unit": 14,
+    "word": "premise",
+    "raw_word": "premise",
+    "pos": "noun / verb",
+    "definition": "an idea or theory on which a statement or action is based; an assumption",
+    "synonyms": [
+      "assumption",
+      "postulate",
+      "basis",
+      "hypothesis"
+    ],
+    "uzbek": "asos, dastlabki fikr, premisa",
+    "example": "The detective's entire line of reasoning was built upon a false preliminary premise."
+  },
+  {
+    "id": 335,
+    "unit": 14,
+    "word": "scrutinize",
+    "raw_word": "scrutinize",
+    "pos": "verb",
+    "definition": "to examine someone or something very carefully",
+    "synonyms": [
+      "examine",
+      "inspect",
+      "audit",
+      "analyze"
+    ],
+    "uzbek": "sinchkovlik bilan tekshirmoq",
+    "example": "Tax inspectors gathered to scrutinize every detail of the corporation's offshore accounts."
+  },
+  {
+    "id": 336,
+    "unit": 14,
+    "word": "supplemental",
+    "raw_word": "supplemental",
+    "pos": "adj.",
+    "definition": "added to something else in order to improve it or complete it",
+    "synonyms": [
+      "additional",
+      "extra",
+      "auxiliary",
+      "complementary"
+    ],
+    "uzbek": "qo'shimcha, to'ldiruvchi",
+    "example": "The professor assigned supplemental reading materials to enhance classroom discussions."
+  },
+  {
+    "id": 337,
+    "unit": 14,
+    "word": "poignant",
+    "raw_word": "poignant",
+    "pos": "adj.",
+    "definition": "causing a feeling of sadness",
+    "synonyms": [
+      "touching",
+      "moving",
+      "emotional",
+      "heartbreaking"
+    ],
+    "uzbek": "yurakni ezuvchi, ta'sirli, g'amgin",
+    "example": "The war memorial featured poignant letters written by soldiers just hours before battle."
+  },
+  {
+    "id": 338,
+    "unit": 14,
+    "word": "obscure",
+    "raw_word": "obscure",
+    "pos": "adj. / verb",
+    "definition": "not known to many people, difficult to understand",
+    "synonyms": [
+      "unclear",
+      "enigmatic",
+      "vague",
+      "conceal"
+    ],
+    "uzbek": "tushunarsiz, noaniq; yashirmoq",
+    "example": "The author referenced an obscure 16th-century manuscript rarely studied by modern scholars."
+  },
+  {
+    "id": 339,
+    "unit": 14,
+    "word": "ancestral",
+    "raw_word": "ancestral",
+    "pos": "adj.",
+    "definition": "belonging to or inherited from one's ancestors",
+    "synonyms": [
+      "inherited",
+      "traditional",
+      "hereditary",
+      "lineage"
+    ],
+    "uzbek": "ajdodlarga xos, ota-bobolardan qolgan",
+    "example": "The family returned to celebrate harvest festivities in their ancestral Scottish estate."
+  },
+  {
+    "id": 340,
+    "unit": 14,
+    "word": "gregarious",
+    "raw_word": "gregarious",
+    "pos": "adj.",
+    "definition": "fond of company; sociable",
+    "synonyms": [
+      "sociable",
+      "outgoing",
+      "companionable",
+      "convivial"
+    ],
+    "uzbek": "odamovi bo'lmagan, kirishimli, jamoatsevar",
+    "example": "Known for his gregarious personality, he made friends effortlessly wherever he traveled."
+  },
+  {
+    "id": 341,
+    "unit": 14,
+    "word": "exert",
+    "raw_word": "exert",
+    "pos": "verb",
+    "definition": "to use power or the ability to make something happen",
+    "synonyms": [
+      "apply",
+      "wield",
+      "exercise",
+      "employ"
+    ],
+    "uzbek": "ishga solmoq, kuch qo'llamoq, sarflamoq",
+    "example": "Parents often exert subtle influence over their children's educational and career choices."
+  },
+  {
+    "id": 342,
+    "unit": 14,
+    "word": "vigorous",
+    "raw_word": "vigorous",
+    "pos": "adj.",
+    "definition": "strong, healthy, and full of energy",
+    "synonyms": [
+      "energetic",
+      "robust",
+      "strenuous",
+      "forceful"
+    ],
+    "uzbek": "g'ayratli, kuchli, shiddatli",
+    "example": "The doctor recommended thirty minutes of vigorous cardiovascular exercise each morning."
+  },
+  {
+    "id": 343,
+    "unit": 14,
+    "word": "entreat",
+    "raw_word": "entreat",
+    "pos": "verb",
+    "definition": "to ask someone sincerely or anxiously to do something",
+    "synonyms": [
+      "plead",
+      "implore",
+      "beg",
+      "beseech"
+    ],
+    "uzbek": "o'tinib so'ramoq, yolvormoq",
+    "example": "The desperate villagers entreated the king to provide emergency relief food during the famine."
+  },
+  {
+    "id": 344,
+    "unit": 14,
+    "word": "desolation",
+    "raw_word": "desolation",
+    "pos": "noun",
+    "definition": "a state of complete emptiness or destruction",
+    "synonyms": [
+      "bleakness",
+      "ruin",
+      "emptiness",
+      "devastation"
+    ],
+    "uzbek": "kimsasizlik, xarobalik, vayronagarchilik",
+    "example": "The catastrophic earthquake left behind a grim landscape of utter desolation and sorrow."
+  },
+  {
+    "id": 345,
+    "unit": 14,
+    "word": "notorious",
+    "raw_word": "notorious",
+    "pos": "adj.",
+    "definition": "famous for something bad",
+    "synonyms": [
+      "infamous",
+      "disreputable",
+      "ill-famed"
+    ],
+    "uzbek": "yomon ot bilan tanilgan, badnom",
+    "example": "The infamous prison was notorious for its inhumane treatment of political detainees."
+  },
+  {
+    "id": 346,
+    "unit": 14,
+    "word": "induce",
+    "raw_word": "induce",
+    "pos": "verb",
+    "definition": "1) to persuade someone to do something 2) to cause something to happen",
+    "synonyms": [
+      "persuade",
+      "prompt",
+      "cause",
+      "engender"
+    ],
+    "uzbek": "1) ko'ndirmoq 2) keltirib chiqarmoq, sabab bo'lmoq",
+    "example": "Doctors administered a mild sedative to induce restful sleep in the anxious patient."
+  },
+  {
+    "id": 347,
+    "unit": 14,
+    "word": "pompous",
+    "raw_word": "pompous",
+    "pos": "adj.",
+    "definition": "feeling that one is better or more important than other people",
+    "synonyms": [
+      "arrogant",
+      "pretentious",
+      "haughty",
+      "condescending"
+    ],
+    "uzbek": "kibrli, dimog'dor, o'zini katta tutuvchi",
+    "example": "His pompous speech about his own accomplishments bored everyone at the cocktail reception."
+  },
+  {
+    "id": 348,
+    "unit": 14,
+    "word": "disparage",
+    "raw_word": "disparage",
+    "pos": "verb",
+    "definition": "to criticize someone or something in a way that shows a lack of respect",
+    "synonyms": [
+      "belittle",
+      "denigrate",
+      "deprecate",
+      "demean"
+    ],
+    "uzbek": "kamsitmoq, qadr-qimmatini pasaytirmoq",
+    "example": "It is unprofessional for a supervisor to publicly disparage the honest efforts of an employee."
+  },
+  {
+    "id": 349,
+    "unit": 14,
+    "word": "intact",
+    "raw_word": "intact",
+    "pos": "adj.",
+    "definition": "complete and in the original state; not damaged",
+    "synonyms": [
+      "undamaged",
+      "unbroken",
+      "whole",
+      "complete"
+    ],
+    "uzbek": "butun, shikast yetmagan, omon qolgan",
+    "example": "Miraculously, the antique porcelain vase fell off the table and remained completely intact."
+  },
+  {
+    "id": 350,
+    "unit": 14,
+    "word": "verdict",
+    "raw_word": "verdict",
+    "pos": "noun",
+    "definition": "an opinion or judgment",
+    "synonyms": [
+      "decision",
+      "judgment",
+      "ruling",
+      "finding"
+    ],
+    "uzbek": "sud hukmi, qat'iy xulosa",
+    "example": "After three days of deliberation, the jury delivered a unanimous guilty verdict."
+  },
+  {
+    "id": 351,
+    "unit": 15,
+    "word": "mundane",
+    "raw_word": "mundane",
+    "pos": "adj.",
+    "definition": "ordinary and dull",
+    "synonyms": [
+      "routine",
+      "ordinary",
+      "pedestrian",
+      "commonplace"
+    ],
+    "uzbek": "oddiy, zerikarli, kundalik",
+    "example": "He longed to escape his mundane nine-to-five desk job and embark on international travels."
+  },
+  {
+    "id": 352,
+    "unit": 15,
+    "word": "spur",
+    "raw_word": "spur",
+    "pos": "verb / noun",
+    "definition": "to encourage an activity or development, to cause something to develop faster",
+    "synonyms": [
+      "stimulate",
+      "prompt",
+      "motivate",
+      "incentive"
+    ],
+    "uzbek": "turtki bermoq, jadallashtirmoq; turtki",
+    "example": "Tax incentives were designed to spur domestic manufacturing and create new jobs."
+  },
+  {
+    "id": 353,
+    "unit": 15,
+    "word": "sentinel",
+    "raw_word": "sentinel",
+    "pos": "noun",
+    "definition": "a guard whose job is to stand and keep watch",
+    "synonyms": [
+      "guard",
+      "lookout",
+      "watchman",
+      "sentry"
+    ],
+    "uzbek": "qorovul, posbon, soqchi",
+    "example": "A solitary armed sentinel stood guard at the ancient fortress gates through the night."
+  },
+  {
+    "id": 354,
+    "unit": 15,
+    "word": "convey",
+    "raw_word": "convey",
+    "pos": "verb",
+    "definition": "to make (an idea or feeling) known or understandable to someone; to communicate",
+    "synonyms": [
+      "communicate",
+      "express",
+      "transmit",
+      "impart"
+    ],
+    "uzbek": "yetkazmoq, anglatmoq, ifodalamoq",
+    "example": "Words could hardly convey the overwhelming gratitude she felt toward the doctors."
+  },
+  {
+    "id": 355,
+    "unit": 15,
+    "word": "render",
+    "raw_word": "render",
+    "pos": "verb",
+    "definition": "to cause someone or something to be in a particular state",
+    "synonyms": [
+      "make",
+      "cause to become",
+      "provide",
+      "depict"
+    ],
+    "uzbek": "aylantirmoq, holatga keltirmoq, taqdim etmoq",
+    "example": "The sudden power outage rendered the company's computer terminals completely useless."
+  },
+  {
+    "id": 356,
+    "unit": 15,
+    "word": "manifest",
+    "raw_word": "manifest",
+    "pos": "adj. / verb",
+    "definition": "to show something clearly, through signs or actions",
+    "synonyms": [
+      "apparent",
+      "evident",
+      "display",
+      "reveal"
+    ],
+    "uzbek": "yaqqol, ravshan; namoyon bo'lmoq",
+    "example": "The artist's immense grief was unmistakably manifest in the dark, chaotic brushstrokes."
+  },
+  {
+    "id": 357,
+    "unit": 15,
+    "word": "continuum",
+    "raw_word": "continuum",
+    "pos": "noun",
+    "definition": "a continuous sequence; a range",
+    "synonyms": [
+      "sequence",
+      "progression",
+      "spectrum",
+      "range"
+    ],
+    "uzbek": "uzluksiz ketma-ketlik, kontinuum",
+    "example": "Human consciousness exists along a dynamic continuum between deep sleep and hyper-alertness."
+  },
+  {
+    "id": 358,
+    "unit": 15,
+    "word": "redress",
+    "raw_word": "redress",
+    "pos": "verb / noun",
+    "definition": "to correct a wrong",
+    "synonyms": [
+      "remedy",
+      "correct",
+      "rectify",
+      "compensate"
+    ],
+    "uzbek": "tuzatmoq, o'rnini to'ldirmoq; tovon",
+    "example": "The tribunal was established to redress historical injustices and land confiscations."
+  },
+  {
+    "id": 359,
+    "unit": 15,
+    "word": "underscore",
+    "raw_word": "underscore",
+    "pos": "verb",
+    "definition": "to emphasize the importance something",
+    "synonyms": [
+      "emphasize",
+      "highlight",
+      "underline",
+      "stress"
+    ],
+    "uzbek": "ostiga chizmoq, alohida ta'kidlamoq",
+    "example": "Recent economic disruptions underscore the acute necessity for sustainable supply chains."
+  },
+  {
+    "id": 360,
+    "unit": 15,
+    "word": "enfeeble",
+    "raw_word": "enfeeble",
+    "pos": "verb",
+    "definition": "to make someone or something very weak",
+    "synonyms": [
+      "weaken",
+      "debilitate",
+      "drain",
+      "incapacitate"
+    ],
+    "uzbek": "zaiflashtirmoq, quvvatdan qoldirmoq",
+    "example": "A prolonged bout of typhoid fever had terribly enfeebled the elderly explorer."
+  },
+  {
+    "id": 361,
+    "unit": 15,
+    "word": "disdain",
+    "raw_word": "disdain",
+    "pos": "noun / verb",
+    "definition": "dislike of someone or something that one feels does not deserve respect",
+    "synonyms": [
+      "contempt",
+      "scorn",
+      "disrespect",
+      "derision"
+    ],
+    "uzbek": "nafrat, mensimaslik; mensimaslik qilmoq",
+    "example": "The snobbish aristocrat looked down upon common folk with undisguised disdain."
+  },
+  {
+    "id": 362,
+    "unit": 15,
+    "word": "flatter",
+    "raw_word": "flatter",
+    "pos": "verb",
+    "definition": "to praise someone in order to please him or her",
+    "synonyms": [
+      "praise insincerely",
+      "fawn",
+      "compliment",
+      "cajole"
+    ],
+    "uzbek": "xushomad qilmoq, ko'ngliga qaramoq",
+    "example": "Courtiers sought to flatter the insecure king with exaggerated compliments on his wisdom."
+  },
+  {
+    "id": 363,
+    "unit": 15,
+    "word": "posterity",
+    "raw_word": "posterity",
+    "pos": "noun",
+    "definition": "all future generations of people",
+    "synonyms": [
+      "future generations",
+      "descendants",
+      "offspring"
+    ],
+    "uzbek": "kelajak avlod, kelgusi nasllar",
+    "example": "National parks are preserved pristine so that posterity may enjoy unspoiled nature."
+  },
+  {
+    "id": 364,
+    "unit": 15,
+    "word": "sustain",
+    "raw_word": "sustain",
+    "pos": "verb",
+    "definition": "to strengthen or support; to keep alive",
+    "synonyms": [
+      "maintain",
+      "support",
+      "nourish",
+      "endure"
+    ],
+    "uzbek": "ta'minlamoq, ushlab turmoq, bardosh bermoq",
+    "example": "The desert oasis possessed enough water and vegetation to sustain a nomadic tribe."
+  },
+  {
+    "id": 365,
+    "unit": 15,
+    "word": "sheer",
+    "raw_word": "sheer",
+    "pos": "adj.",
+    "definition": "1) not mixed with anything else; pure or complete 2) very large",
+    "synonyms": [
+      "pure",
+      "absolute",
+      "steep",
+      "immense"
+    ],
+    "uzbek": "1) toza, sof, mutlaq 2) tik, o'ta ulkan",
+    "example": "Through sheer determination and perseverance, she overcame every obstacle in her path."
+  },
+  {
+    "id": 366,
+    "unit": 15,
+    "word": "assess",
+    "raw_word": "assess",
+    "pos": "verb",
+    "definition": "to judge the quality or importance of something",
+    "synonyms": [
+      "evaluate",
+      "judge",
+      "appraise",
+      "gauge"
+    ],
+    "uzbek": "baholamoq, tahlil qilmoq",
+    "example": "The committee met to assess the environmental impact of the proposed hydroelectric dam."
+  },
+  {
+    "id": 367,
+    "unit": 15,
+    "word": "artisan",
+    "raw_word": "artisan",
+    "pos": "noun",
+    "definition": "a person who does skilled work with his or her hands",
+    "synonyms": [
+      "craftsman",
+      "artificer",
+      "tradesman",
+      "maker"
+    ],
+    "uzbek": "hunarmand, usta",
+    "example": "The hand-carved leather saddle was created by an experienced village artisan."
+  },
+  {
+    "id": 368,
+    "unit": 15,
+    "word": "subtle",
+    "raw_word": "subtle",
+    "pos": "adj.",
+    "definition": "not loud, bright, noticeable, or obvious",
+    "synonyms": [
+      "delicate",
+      "understated",
+      "elusive",
+      "nuanced"
+    ],
+    "uzbek": "nozik, sezilar-sezilmas, uncha ko'zga tashlanmaydigan",
+    "example": "A subtle alteration in the formula made the chemical fragrance considerably softer."
+  },
+  {
+    "id": 369,
+    "unit": 15,
+    "word": "repudiate",
+    "raw_word": "repudiate",
+    "pos": "verb",
+    "definition": "to refuse to accept something or someone; to reject",
+    "synonyms": [
+      "reject",
+      "disown",
+      "renounce",
+      "dismiss"
+    ],
+    "uzbek": "rad etmoq, tan olmaslik, qat'iyan inkor qilmoq",
+    "example": "The politician was forced to repudiate his former controversial statements on taxes."
+  },
+  {
+    "id": 370,
+    "unit": 15,
+    "word": "meander",
+    "raw_word": "meander",
+    "pos": "verb",
+    "definition": "to follow a route that is not straight or direct",
+    "synonyms": [
+      "wander",
+      "ramble",
+      "wind",
+      "zigzag"
+    ],
+    "uzbek": "aylanib oqmoq, maqsadsiz aylanib yurmoq",
+    "example": "We watched the sparkling river meander peacefully through the pastoral countryside."
+  },
+  {
+    "id": 371,
+    "unit": 15,
+    "word": "effectual",
+    "raw_word": "effectual",
+    "pos": "adj.",
+    "definition": "successful in producing the intended results",
+    "synonyms": [
+      "effective",
+      "productive",
+      "successful",
+      "efficacious"
+    ],
+    "uzbek": "samarali, natija beradigan, nafli",
+    "example": "The medical researchers found an effectual treatment for the chronic respiratory ailment."
+  },
+  {
+    "id": 372,
+    "unit": 15,
+    "word": "meager",
+    "raw_word": "meager",
+    "pos": "adj.",
+    "definition": "very small in amount or number",
+    "synonyms": [
+      "scanty",
+      "sparse",
+      "insufficient",
+      "slender"
+    ],
+    "uzbek": "oz, kamtarona, yetarli bo'lmagan",
+    "example": "The impoverished family survived on a meager diet of boiled potatoes and bread."
+  },
+  {
+    "id": 373,
+    "unit": 15,
+    "word": "tedious",
+    "raw_word": "tedious",
+    "pos": "adj.",
+    "definition": "boring, slow, and tiring",
+    "synonyms": [
+      "boring",
+      "monotonous",
+      "wearisome",
+      "tiresome"
+    ],
+    "uzbek": "zerikarli, toliqtiradigan, cho'zilgan",
+    "example": "Entering thousands of survey responses into a spreadsheet was a tedious clerical job."
+  },
+  {
+    "id": 374,
+    "unit": 15,
+    "word": "calibrate",
+    "raw_word": "calibrate",
+    "pos": "verb",
+    "definition": "to carefully measure or adjust",
+    "synonyms": [
+      "adjust",
+      "tune",
+      "standardize",
+      "align"
+    ],
+    "uzbek": "sozlamoq, aniq me'yoriga keltirmoq",
+    "example": "Laboratory technicians must carefully calibrate sensitive instruments before every experiment."
+  },
+  {
+    "id": 375,
+    "unit": 15,
+    "word": "potent",
+    "raw_word": "potent",
+    "pos": "adj.",
+    "definition": "powerful, persuasive, or effective",
+    "synonyms": [
+      "powerful",
+      "strong",
+      "mighty",
+      "effective"
+    ],
+    "uzbek": "kuchli, ta'sirli, qudratli",
+    "example": "The experimental antibiotic proved to be an extraordinarily potent weapon against infections."
+  },
+  {
+    "id": 376,
+    "unit": 16,
+    "word": "conducive",
+    "raw_word": "conducive",
+    "pos": "adj.",
+    "definition": "providing the right conditions for something to happen or exist; to help bring about",
+    "synonyms": [
+      "beneficial",
+      "favorable",
+      "advantageous",
+      "helpful"
+    ],
+    "uzbek": "qulay, imkon yaratuvchi, foydali",
+    "example": "A peaceful and quiet environment is highly conducive to deep academic concentration."
+  },
+  {
+    "id": 377,
+    "unit": 16,
+    "word": "reserved",
+    "raw_word": "reserved",
+    "pos": "adj.",
+    "definition": "tending to keep feelings or thoughts private; quiet",
+    "synonyms": [
+      "quiet",
+      "restrained",
+      "reticent",
+      "composed"
+    ],
+    "uzbek": "kamgap, vazmin, o'zini tiygan",
+    "example": "Unlike her boisterous siblings, she was naturally reserved and preferred solitary reading."
+  },
+  {
+    "id": 378,
+    "unit": 16,
+    "word": "medley",
+    "raw_word": "medley",
+    "pos": "noun",
+    "definition": "a mixture of different things",
+    "synonyms": [
+      "mixture",
+      "assortment",
+      "potpourri",
+      "blend"
+    ],
+    "uzbek": "aralashma, to'plam, turfa narsalar jamlanmasi",
+    "example": "The orchestra performed a delightful medley of classic Broadway show tunes."
+  },
+  {
+    "id": 379,
+    "unit": 16,
+    "word": "advocate",
+    "raw_word": "advocate",
+    "pos": "verb / noun",
+    "definition": "1) to support an idea 2) a person who publicly supports an idea",
+    "synonyms": [
+      "champion",
+      "supporter",
+      "promote",
+      "endorse"
+    ],
+    "uzbek": "1) qo'llab-quvvatlamoq 2) tarafdor, himoyachi",
+    "example": "She continued to advocate tirelessly for increased public funding of early childhood education."
+  },
+  {
+    "id": 380,
+    "unit": 16,
+    "word": "undulate",
+    "raw_word": "undulate",
+    "pos": "verb",
+    "definition": "to move with a smooth wavelike motion",
+    "synonyms": [
+      "wave",
+      "ripple",
+      "surge",
+      "oscillate"
+    ],
+    "uzbek": "to'lqinlanmoq, tebranmoq, mavjlanmoq",
+    "example": "Golden wheat fields undulated gently in the cool autumn breeze."
+  },
+  {
+    "id": 381,
+    "unit": 16,
+    "word": "magnitude",
+    "raw_word": "magnitude",
+    "pos": "noun",
+    "definition": "1) the great size or importance of something 2) the extent or degree of something",
+    "synonyms": [
+      "size",
+      "scale",
+      "importance",
+      "grandeur"
+    ],
+    "uzbek": "1) kattalik, miqyos 2) muhimlik darajasi",
+    "example": "Few citizens grasped the true economic magnitude of the looming global financial crash."
+  },
+  {
+    "id": 382,
+    "unit": 16,
+    "word": "aggrandize",
+    "raw_word": "aggrandize",
+    "pos": "verb",
+    "definition": "to make someone more powerful or important",
+    "synonyms": [
+      "exalt",
+      "magnify",
+      "expand",
+      "inflate"
+    ],
+    "uzbek": "obro'sini / qudratini sun'iy oshirmoq, ko'paytirmoq",
+    "example": "The corrupt official used public treasury funds solely to aggrandize his personal wealth."
+  },
+  {
+    "id": 383,
+    "unit": 16,
+    "word": "pummel",
+    "raw_word": "pummel",
+    "pos": "verb",
+    "definition": "to hit someone or something repeatedly",
+    "synonyms": [
+      "batter",
+      "pound",
+      "strike",
+      "beat"
+    ],
+    "uzbek": "muttasil urmoq, mushtlamoq, zarba bermoq",
+    "example": "Relentless ocean waves continued to pummel the wooden sea wall throughout the hurricane."
+  },
+  {
+    "id": 384,
+    "unit": 16,
+    "word": "timid",
+    "raw_word": "timid",
+    "pos": "adj.",
+    "definition": "easily frightened; shy",
+    "synonyms": [
+      "fearful",
+      "shy",
+      "meek",
+      "hesitant"
+    ],
+    "uzbek": "qo'rqoq, jur'atsiz, tortinchoq",
+    "example": "The timid kitten peeked out from behind the velvet curtain before approaching cautiously."
+  },
+  {
+    "id": 385,
+    "unit": 16,
+    "word": "bias",
+    "raw_word": "bias",
+    "pos": "noun / verb",
+    "definition": "an unfair personal opinion that influences your judgment",
+    "synonyms": [
+      "prejudice",
+      "partiality",
+      "favoritism",
+      "slant"
+    ],
+    "uzbek": "tomonkashlik, biryoqlamalilik, xolis bo'lmaslik",
+    "example": "Scientific researchers must eliminate personal bias when interpreting empirical experimental data."
+  },
+  {
+    "id": 386,
+    "unit": 16,
+    "word": "refine",
+    "raw_word": "refine",
+    "pos": "verb",
+    "definition": "to improve something by making small changes",
+    "synonyms": [
+      "improve",
+      "polish",
+      "hone",
+      "perfect"
+    ],
+    "uzbek": "tozalamoq, sayqallamoq, takomillashtirmoq",
+    "example": "The author spent an entire year rewriting her novel to refine the plot and pacing."
+  },
+  {
+    "id": 387,
+    "unit": 16,
+    "word": "oscillate",
+    "raw_word": "oscillate",
+    "pos": "verb",
+    "definition": "to swing back and forth",
+    "synonyms": [
+      "waver",
+      "swing",
+      "fluctuate",
+      "vacillate"
+    ],
+    "uzbek": "tebranmoq, u yoqdan-bu yoqqa chayqalmoq",
+    "example": "The pendulum continued to oscillate steadily inside the ancient grandfather clock."
+  },
+  {
+    "id": 388,
+    "unit": 16,
+    "word": "esteem",
+    "raw_word": "esteem",
+    "pos": "noun / verb",
+    "definition": "respect and admiration for someone",
+    "synonyms": [
+      "respect",
+      "admiration",
+      "reverence",
+      "regard"
+    ],
+    "uzbek": "yuksak hurmat, ehtirom; hurmat qilmoq",
+    "example": "The veteran surgeon was held in highest esteem by both his students and hospital colleagues."
+  },
+  {
+    "id": 389,
+    "unit": 16,
+    "word": "displace",
+    "raw_word": "displace",
+    "pos": "verb",
+    "definition": "to force something or someone out of its usual or original place",
+    "synonyms": [
+      "relocate",
+      "uproot",
+      "dislodge",
+      "oust"
+    ],
+    "uzbek": "o'rnidan qo'zg'atmoq, siqib chiqarmoq",
+    "example": "The construction of the giant reservoir will unfortunately displace thousands of villagers."
+  },
+  {
+    "id": 390,
+    "unit": 16,
+    "word": "pulpit",
+    "raw_word": "pulpit",
+    "pos": "noun",
+    "definition": "a raised platform in a church from which the preacher speaks",
+    "synonyms": [
+      "podium",
+      "lectern",
+      "rostrum",
+      "dais"
+    ],
+    "uzbek": "minbar, voiz kursisi",
+    "example": "The minister stood upon the wooden pulpit to deliver his weekly sermon to the congregation."
+  },
+  {
+    "id": 391,
+    "unit": 16,
+    "word": "ingenious",
+    "raw_word": "ingenious",
+    "pos": "adj.",
+    "definition": "clever, original, and inventive (in reference to a person)",
+    "synonyms": [
+      "clever",
+      "inventive",
+      "creative",
+      "shrewd"
+    ],
+    "uzbek": "aqlli, topqir, o'tkir zukko",
+    "example": "The engineer devised an ingenious filtration system capable of purifying river water in seconds."
+  },
+  {
+    "id": 392,
+    "unit": 16,
+    "word": "constitute",
+    "raw_word": "constitute",
+    "pos": "verb",
+    "definition": "to be the parts that form something",
+    "synonyms": [
+      "form",
+      "compose",
+      "make up",
+      "represent"
+    ],
+    "uzbek": "tashkil etmoq, tarkib topmoq",
+    "example": "Undergraduate students constitute nearly eighty percent of the university's total population."
+  },
+  {
+    "id": 393,
+    "unit": 16,
+    "word": "insatiable",
+    "raw_word": "insatiable",
+    "pos": "adj.",
+    "definition": "impossible to satisfy",
+    "synonyms": [
+      "unquenchable",
+      "ravenous",
+      "greedy",
+      "insatiable"
+    ],
+    "uzbek": "to'ymas, qoniqmas, ochko'z",
+    "example": "The curious child had an insatiable appetite for books on astronomy and prehistoric dinosaurs."
+  },
+  {
+    "id": 394,
+    "unit": 16,
+    "word": "volition",
+    "raw_word": "volition",
+    "pos": "noun",
+    "definition": "the power to make one's own decisions",
+    "synonyms": [
+      "will",
+      "choice",
+      "discretion",
+      "autonomy"
+    ],
+    "uzbek": "iroda, o'z ixtiyori bilan qaror qilish",
+    "example": "He chose of his own free volition to resign from the lucrative corporate executive post."
+  },
+  {
+    "id": 395,
+    "unit": 16,
+    "word": "relish",
+    "raw_word": "relish",
+    "pos": "verb / noun",
+    "definition": "to like or enjoy something",
+    "synonyms": [
+      "enjoy",
+      "savor",
+      "delight in",
+      "appreciate"
+    ],
+    "uzbek": "huzurlanmoq, miriqib zavqlanmoq; lazzat",
+    "example": "Competitive sprinters relish the intense adrenaline rush right before the starting pistol fires."
+  },
+  {
+    "id": 396,
+    "unit": 16,
+    "word": "facilitate",
+    "raw_word": "facilitate",
+    "pos": "verb",
+    "definition": "to make (an action or process) possible or easier",
+    "synonyms": [
+      "ease",
+      "expedite",
+      "aid",
+      "promote"
+    ],
+    "uzbek": "osonlashtirmoq, imkoniyat yaratmoq",
+    "example": "Modern teleconferencing software has done much to facilitate international team collaboration."
+  },
+  {
+    "id": 397,
+    "unit": 16,
+    "word": "threshold",
+    "raw_word": "threshold",
+    "pos": "noun",
+    "definition": "the level or point at which something starts",
+    "synonyms": [
+      "doorway",
+      "brink",
+      "verge",
+      "starting point"
+    ],
+    "uzbek": "ostonasi, chegara, boshlanish nuqtasi",
+    "example": "Humanity currently stands on the threshold of a revolutionary era in artificial intelligence."
+  },
+  {
+    "id": 398,
+    "unit": 16,
+    "word": "reform",
+    "raw_word": "reform",
+    "pos": "verb / noun",
+    "definition": "to make changes in something in order to improve it",
+    "synonyms": [
+      "improve",
+      "overhaul",
+      "revamp",
+      "ameliorate"
+    ],
+    "uzbek": "isloh qilmoq, o'zgartirib yaxshilamoq; islohot",
+    "example": "The progressive government campaigned aggressively to reform the national public health system."
+  },
+  {
+    "id": 399,
+    "unit": 16,
+    "word": "sneer",
+    "raw_word": "sneer",
+    "pos": "verb / noun",
+    "definition": "to make a facial expression that shows disapproval or disrespect",
+    "synonyms": [
+      "smirk",
+      "scoff",
+      "jeer",
+      "mock"
+    ],
+    "uzbek": "istehzoli tirjaymoq, masxara qilish; masxara",
+    "example": "The arrogant aristocrat sneered disdainfully at the humble suggestions of the townspeople."
+  },
+  {
+    "id": 400,
+    "unit": 16,
+    "word": "profound",
+    "raw_word": "profound",
+    "pos": "adj.",
+    "definition": "1) intense, extreme 2) requiring deep thought",
+    "synonyms": [
+      "deep",
+      "intense",
+      "far-reaching",
+      "insightful"
+    ],
+    "uzbek": "1) chuqur, teran 2) o'ta kuchli, jo'shqin",
+    "example": "The philosopher's lectures had a profound and enduring impact on his generation of thinkers."
+  }
+]
