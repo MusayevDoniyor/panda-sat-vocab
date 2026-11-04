@@ -88,8 +88,8 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             : `${c.word} (${c.pos})`;
         const subText =
           promptType === 'word-to-synonyms'
-            ? `↳ O'zbekcha: ${c.uzbek}`
-            : `↳ Def: ${c.definition} • ${c.uzbek}`;
+            ? `↳ 🇺🇿 ${c.uzbek}`
+            : `↳ 🇺🇸 ${c.definition} • 🇺🇿 ${c.uzbek}`;
 
         return { id: i, text, subText, isCorrect, wordObj: c, hidden: false };
       });
@@ -396,6 +396,10 @@ export const QuizLearn: FC<QuizLearnProps> = ({
         <div className="mb-6">
           {currentQ.promptType === 'word-to-synonyms' ? (
             <div>
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 mb-2">
+                <span>🇺🇸</span>
+                <span>English SAT Word</span>
+              </div>
               <div className="flex items-baseline gap-3">
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                   {currentQ.targetWord.word}
@@ -407,8 +411,9 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             </div>
           ) : (
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
-                College Panda Definition & Synonyms:
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 mb-2">
+                <span>🇺🇸</span>
+                <span>College Panda Definition & Synonyms</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white leading-snug">
                 "{currentQ.targetWord.definition}"
@@ -483,18 +488,25 @@ export const QuizLearn: FC<QuizLearnProps> = ({
           <div className="mt-6 pt-5 border-t border-slate-200 dark:border-slate-800 space-y-3 animate-fadeIn">
             <div className="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-4 border border-slate-200 dark:border-slate-700/80">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">Word Review:</span>
+                <span className="text-xs font-black text-indigo-600 dark:text-indigo-400 flex items-center gap-1.5">
+                  <span>🇺🇸</span>
+                  <span>SAT Word Review:</span>
+                </span>
                 <span className="text-[11px] font-mono font-bold text-slate-500 dark:text-slate-400">ID #{currentQ.targetWord.id}</span>
               </div>
-              <p className="text-xs text-slate-800 dark:text-slate-300 leading-relaxed mb-2">
-                <strong className="text-slate-900 dark:text-white font-bold">{currentQ.targetWord.word}</strong>: {currentQ.targetWord.definition}
+              <p className="text-xs text-slate-800 dark:text-slate-300 leading-relaxed mb-2 flex items-start gap-1.5">
+                <span className="shrink-0">🇺🇸</span>
+                <span>
+                  <strong className="text-slate-900 dark:text-white font-bold">{currentQ.targetWord.word}</strong>: {currentQ.targetWord.definition}
+                </span>
               </p>
-              <p className="text-xs text-emerald-700 dark:text-emerald-300 font-bold mb-2">
-                O'zbekcha: {currentQ.targetWord.uzbek}
+              <p className="text-xs text-emerald-700 dark:text-emerald-300 font-bold mb-2 flex items-center gap-1.5">
+                <span>🇺🇿</span>
+                <span>O'zbekcha: {currentQ.targetWord.uzbek}</span>
               </p>
               {currentQ.targetWord.example && (
                 <p className="text-xs text-slate-600 dark:text-slate-400 italic">
-                  "{currentQ.targetWord.example}"
+                  📖 "{currentQ.targetWord.example}"
                 </p>
               )}
             </div>

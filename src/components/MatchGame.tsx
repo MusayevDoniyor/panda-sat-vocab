@@ -333,7 +333,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
       ) : (
         /* TILES GRID */
         <div
-          className={`grid gap-3.5 select-none ${
+          className={`grid gap-2.5 sm:gap-3.5 select-none ${
             gridSize === 4
               ? 'grid-cols-2 sm:grid-cols-4'
               : gridSize === 6
@@ -349,7 +349,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
               return (
                 <div
                   key={tile.id}
-                  className="h-28 sm:h-32 rounded-2xl border border-slate-200/40 dark:border-slate-800/20 bg-slate-100/10 dark:bg-slate-900/10 opacity-0 pointer-events-none transition-all duration-500"
+                  className="min-h-[96px] sm:h-32 rounded-2xl border border-slate-200/40 dark:border-slate-800/20 bg-slate-100/10 dark:bg-slate-900/10 opacity-0 pointer-events-none transition-all duration-500"
                 />
               );
             }
@@ -369,16 +369,28 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
               <button
                 key={tile.id}
                 onClick={() => handleTileClick(tile)}
-                className={`h-28 sm:h-32 p-3 sm:p-4 rounded-2xl border transition-all duration-150 flex flex-col justify-center items-center text-center cursor-pointer ${tileClasses}`}
+                className={`min-h-[96px] sm:h-32 p-2.5 sm:p-4 rounded-2xl border transition-all duration-150 flex flex-col justify-center items-center text-center cursor-pointer ${tileClasses}`}
               >
                 {tile.type === 'word' ? (
-                  <span className="text-base sm:text-xl font-black tracking-tight text-slate-900 dark:text-white">
-                    {tile.text}
-                  </span>
+                  <div className="flex flex-col items-center gap-1">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-1">
+                      <span>🇺🇸</span>
+                      <span>EN</span>
+                    </span>
+                    <span className="text-sm sm:text-lg font-black tracking-tight text-slate-900 dark:text-white">
+                      {tile.text}
+                    </span>
+                  </div>
                 ) : (
-                  <span className="text-xs sm:text-sm font-semibold leading-snug line-clamp-4 text-slate-700 dark:text-slate-200 whitespace-pre-line">
-                    {tile.text}
-                  </span>
+                  <div className="flex flex-col items-center gap-1">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                      <span>🇺🇿</span>
+                      <span>UZ</span>
+                    </span>
+                    <span className="text-xs sm:text-sm font-bold leading-snug line-clamp-3 text-slate-800 dark:text-slate-200 whitespace-pre-line">
+                      {tile.text}
+                    </span>
+                  </div>
                 )}
               </button>
             );

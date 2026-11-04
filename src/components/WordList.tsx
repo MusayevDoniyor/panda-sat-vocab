@@ -143,6 +143,7 @@ export const WordList: FC<WordListProps> = ({
 
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-sm">🇺🇸</span>
                         <span className="text-lg font-black text-slate-900 dark:text-white tracking-tight">
                           {w.word}
                         </span>
@@ -151,14 +152,15 @@ export const WordList: FC<WordListProps> = ({
                         </span>
                         <button
                           onClick={() => speakWord(w.word)}
-                          className="p-1 rounded-lg text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                          className="p-1 rounded-lg text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
                           title="Pronounce"
                         >
                           <Volume2 className="w-4 h-4" />
                         </button>
                       </div>
-                      <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400 mt-0.5">
-                        {w.uzbek}
+                      <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400 mt-1 flex items-center gap-1.5">
+                        <span>🇺🇿</span>
+                        <span>{w.uzbek}</span>
                       </div>
                     </div>
                   </div>

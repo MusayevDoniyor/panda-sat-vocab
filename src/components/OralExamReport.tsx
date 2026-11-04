@@ -59,7 +59,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
     const wordsListText = words
       .map(
         (w, i) =>
-          `${i + 1}. ${w.word} (${w.pos}) — ${w.uzbek}\n   ↳ Def: ${w.definition}`
+          `${i + 1}. 🇺🇸 ${w.word} (${w.pos}) — 🇺🇿 ${w.uzbek}\n   ↳ 📖 Def: ${w.definition}`
       )
       .join('\n');
 
@@ -200,13 +200,13 @@ export const OralExamReport: FC<OralExamReportProps> = ({
         </div>
 
         {/* 25 Words Checklist Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs border-collapse">
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full min-w-[600px] text-left text-xs border-collapse">
             <thead>
               <tr className="border-b border-slate-200 dark:border-slate-800 print:border-slate-300 text-slate-500 dark:text-slate-400 print:text-slate-600 font-bold uppercase tracking-wider text-[10px]">
                 <th className="py-2.5 px-2 w-10">#</th>
-                <th className="py-2.5 px-3">English SAT Word</th>
-                <th className="py-2.5 px-3">O'zbekcha Ma'nosi</th>
+                <th className="py-2.5 px-3">🇺🇸 English SAT Word</th>
+                <th className="py-2.5 px-3">🇺🇿 O'zbekcha Ma'nosi</th>
                 <th className="py-2.5 px-3">College Panda Definition & Synonyms</th>
                 <th className="py-2.5 px-2 text-center w-20">Oral Test</th>
               </tr>
@@ -228,13 +228,14 @@ export const OralExamReport: FC<OralExamReportProps> = ({
 
                     <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white print:text-black">
                       <div className="flex items-center gap-1.5">
+                        <span className="text-xs print:hidden">🇺🇸</span>
                         <span>{w.word}</span>
                         <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 print:text-slate-500">
                           ({w.pos})
                         </span>
                         <button
                           onClick={() => speakWord(w.word)}
-                          className="print:hidden text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                          className="print:hidden text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
                           title="Pronounce"
                         >
                           <Volume2 className="w-3.5 h-3.5" />
@@ -243,7 +244,10 @@ export const OralExamReport: FC<OralExamReportProps> = ({
                     </td>
 
                     <td className="py-2.5 px-3 font-bold text-emerald-700 dark:text-emerald-400 print:text-emerald-800">
-                      {w.uzbek}
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-xs print:hidden">🇺🇿</span>
+                        <span>{w.uzbek}</span>
+                      </div>
                     </td>
 
                     <td className="py-2.5 px-3 text-slate-700 dark:text-slate-300 print:text-slate-800 font-medium">

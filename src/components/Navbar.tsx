@@ -134,7 +134,7 @@ export const Navbar: FC<NavbarProps> = ({
                   className="fixed inset-0 z-40" 
                   onClick={() => setDropdownOpen(false)} 
                 />
-                <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 mt-2 w-72 max-h-96 overflow-y-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-2xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-700">
+                <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 mt-2 w-72 max-w-[calc(100vw-2rem)] max-h-96 overflow-y-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-2xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-700">
                   <div className="pb-1.5 space-y-1">
                     <button
                       onClick={() => { onSelectUnit(0); setDropdownOpen(false); }}
