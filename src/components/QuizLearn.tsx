@@ -396,7 +396,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
         <div className="mb-6">
           {currentQ.promptType === 'word-to-synonyms' ? (
             <div>
-              <div className="flex items-baseline gap-3 mb-2">
+              <div className="flex items-baseline gap-3">
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                   {currentQ.targetWord.word}
                 </h2>
@@ -404,21 +404,15 @@ export const QuizLearn: FC<QuizLearnProps> = ({
                   {currentQ.targetWord.pos}
                 </span>
               </div>
-              <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
-                O'zbekcha: {currentQ.targetWord.uzbek}
-              </div>
             </div>
           ) : (
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">
                 College Panda Definition & Synonyms:
               </div>
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2 leading-snug">
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white leading-snug">
                 "{currentQ.targetWord.definition}"
               </h2>
-              <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400">
-                O'zbekcha: {currentQ.targetWord.uzbek}
-              </div>
             </div>
           )}
         </div>
@@ -462,8 +456,8 @@ export const QuizLearn: FC<QuizLearnProps> = ({
                   </span>
                   <div>
                     <div className="text-sm font-bold leading-relaxed">{opt.text}</div>
-                    {opt.subText && (
-                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                    {isAnswered && opt.subText && (
+                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                         {opt.subText}
                       </div>
                     )}
