@@ -202,14 +202,14 @@ export const WordList: FC<WordListProps> = ({
                 </div>
 
                 {/* Definition */}
-                <div className="mt-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-11 font-medium">
-                  <span className="text-slate-400 dark:text-slate-500 font-bold mr-1">Def:</span>
-                  {w.definition}
+                <div className="mt-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-0 sm:pl-11 font-medium flex items-start gap-1.5">
+                  <span className="shrink-0 text-slate-400 dark:text-slate-500 font-bold">🇺🇸 Def:</span>
+                  <span>{w.definition}</span>
                 </div>
 
                 {/* Expanded Details */}
                 {isExpanded && (
-                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 pl-11 space-y-3 animate-fadeIn">
+                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 pl-0 sm:pl-11 space-y-3 animate-fadeIn">
                     {w.synonyms.length > 0 && (
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500">Synonyms:</span>

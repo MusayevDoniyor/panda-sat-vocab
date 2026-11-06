@@ -313,21 +313,28 @@ export const QuizLearn: FC<QuizLearnProps> = ({
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       {/* Quiz Header Bar with Order Mode Switcher */}
-      <div className="flex items-center justify-between gap-4 mb-4 text-xs font-bold flex-wrap">
-        <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
-          <span>Question {currentIdx + 1} of {questions.length}</span>
-          <span className="text-slate-300 dark:text-slate-600">•</span>
-          <span className="text-indigo-600 dark:text-indigo-400 font-mono font-bold">Word #{currentQ.targetWord.id}</span>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4 mb-4 text-xs font-bold">
+        <div className="flex items-center justify-between sm:justify-start gap-2 text-slate-500 dark:text-slate-400">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <span>Question {currentIdx + 1} of {questions.length}</span>
+            <span className="text-slate-300 dark:text-slate-600">•</span>
+            <span className="text-indigo-600 dark:text-indigo-400 font-mono font-bold">Word #{currentQ.targetWord.id}</span>
+          </div>
+
+          {/* On mobile, show score here on the right of row 1 */}
+          <span className="sm:hidden text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-0.5 rounded-lg border border-emerald-200 dark:border-emerald-500/30 text-xs">
+            Score: {score}
+          </span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between sm:justify-end gap-2 flex-wrap">
           {/* Order Toggle: Sequential (1->25) vs Shuffled */}
           <button
             onClick={() => {
               setIsShuffledOrder(!isShuffledOrder);
             }}
             title={isShuffledOrder ? 'Questions: Shuffled order (Click to make Sequential)' : 'Questions: Sequential order #1 to #25 (Click to Shuffle)'}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
+            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
               isShuffledOrder
                 ? 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300'
                 : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300'
@@ -337,38 +344,40 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             <span>{isShuffledOrder ? 'Shuffled' : 'Sequential 1→25'}</span>
           </button>
 
-          {/* Streak indicator */}
-          {streak >= 2 && (
-            <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-500/30 px-2.5 py-0.5 rounded-full text-xs font-bold animate-pulse">
-              <Flame className="w-3.5 h-3.5 fill-amber-500" />
-              <span>{streak} Streak!</span>
+          <div className="flex items-center gap-2">
+            {/* Streak indicator */}
+            {streak >= 2 && (
+              <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-500/30 px-2 py-0.5 rounded-full text-xs font-bold animate-pulse">
+                <Flame className="w-3.5 h-3.5 fill-amber-500" />
+                <span>{streak}</span>
+              </span>
+            )}
+
+            {/* 50/50 Lifeline Button */}
+            {!isAnswered && (
+              <button
+                onClick={handle5050Lifeline}
+                disabled={usedLifeline}
+                title="50/50 Lifeline (Press H)"
+                className={`px-3 py-1.5 rounded-xl border text-xs font-black transition-all cursor-pointer shadow-xs ${
+                  usedLifeline
+                    ? 'bg-slate-100 dark:bg-slate-800/40 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
+                    : 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/60'
+                }`}
+              >
+                50:50
+              </button>
+            )}
+
+            <span className="hidden sm:inline-block text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-500/30">
+              Score: {score}
             </span>
-          )}
-
-          {/* 50/50 Lifeline Button */}
-          {!isAnswered && (
-            <button
-              onClick={handle5050Lifeline}
-              disabled={usedLifeline}
-              title="50/50 Lifeline (Press H)"
-              className={`px-2.5 py-1 rounded-xl border text-xs font-black transition-all cursor-pointer shadow-xs ${
-                usedLifeline
-                  ? 'bg-slate-100 dark:bg-slate-800/40 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
-                  : 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/60'
-              }`}
-            >
-              50:50
-            </button>
-          )}
-
-          <span className="text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 rounded-xl border border-emerald-200 dark:border-emerald-500/30">
-            Score: {score}
-          </span>
+          </div>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 mb-6 overflow-hidden">
+      <div className="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 mb-5 sm:mb-6 overflow-hidden">
         <div
           className="bg-indigo-600 dark:bg-indigo-500 h-1.5 rounded-full transition-all duration-300"
           style={{ width: `${((currentIdx + 1) / questions.length) * 100}%` }}
@@ -376,7 +385,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
       </div>
 
       {/* Question Card */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg dark:shadow-2xl mb-6 transition-colors duration-200">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-4 sm:p-8 shadow-lg dark:shadow-2xl mb-6 transition-colors duration-200">
         <div className="flex items-center justify-between mb-4">
           <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
             {currentQ.promptType === 'word-to-synonyms'

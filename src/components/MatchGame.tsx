@@ -220,15 +220,15 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
         </div>
 
         {/* Controls & Metrics */}
-        <div className="flex items-center gap-3 flex-wrap">
+        <div className="flex items-center justify-between sm:justify-end gap-2 flex-wrap w-full sm:w-auto">
           {/* Difficulty / Grid Size Picker */}
           <div className="flex items-center bg-slate-100 dark:bg-slate-800/90 rounded-2xl p-1 border border-slate-200 dark:border-slate-700 text-xs font-bold">
-            <span className="px-2 text-slate-500 dark:text-slate-400 hidden sm:inline">Pairs:</span>
+            <span className="px-1.5 text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Pairs:</span>
             {[4, 6, 8].map((size) => (
               <button
                 key={size}
                 onClick={() => setGridSize(size as 4 | 6 | 8)}
-                className={`px-3 py-1 rounded-xl transition-all cursor-pointer ${
+                className={`px-2.5 sm:px-3 py-1 rounded-xl transition-all cursor-pointer ${
                   gridSize === size
                     ? 'bg-indigo-600 text-white shadow-xs'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
@@ -239,34 +239,36 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
             ))}
           </div>
 
-          {/* Live Timer with Penalty Indicator */}
-          <div className="relative flex items-center gap-2 px-3.5 py-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 shadow-xs">
-            <Timer className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            <span className="font-mono text-base font-black text-indigo-600 dark:text-indigo-300">
-              {totalEffectiveTime}s
-            </span>
-            {showPenaltyNotice && (
-              <span className="absolute -top-3 -right-2 bg-rose-600 text-white font-mono font-bold text-[10px] px-1.5 py-0.2 rounded-full animate-bounce shadow">
-                +1.0s
+          <div className="flex items-center gap-2">
+            {/* Live Timer with Penalty Indicator */}
+            <div className="relative flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 shadow-xs">
+              <Timer className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 dark:text-indigo-400" />
+              <span className="font-mono text-sm sm:text-base font-black text-indigo-600 dark:text-indigo-300">
+                {totalEffectiveTime}s
               </span>
-            )}
-          </div>
-
-          {/* Best Record */}
-          {bestTime !== null && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold">
-              <Trophy className="w-3.5 h-3.5" />
-              <span>Record: {bestTime.toFixed(1)}s</span>
+              {showPenaltyNotice && (
+                <span className="absolute -top-3 -right-2 bg-rose-600 text-white font-mono font-bold text-[10px] px-1.5 py-0.2 rounded-full animate-bounce shadow">
+                  +1.0s
+                </span>
+              )}
             </div>
-          )}
 
-          <button
-            onClick={initGame}
-            className="p-2 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 transition-colors cursor-pointer shadow-xs"
-            title="Restart Game"
-          >
-            <RotateCcw className="w-4 h-4" />
-          </button>
+            {/* Best Record */}
+            {bestTime !== null && (
+              <div className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold">
+                <Trophy className="w-3.5 h-3.5" />
+                <span>{bestTime.toFixed(1)}s</span>
+              </div>
+            )}
+
+            <button
+              onClick={initGame}
+              className="p-2 rounded-2xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 transition-colors cursor-pointer shadow-xs"
+              title="Restart Game"
+            >
+              <RotateCcw className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
 
