@@ -1,4 +1,4 @@
-import { useState, type ReactNode, type FC } from 'react';
+import { useState, useRef, useEffect, type ReactNode, type FC } from 'react';
 import type { StudyMode } from '../types';
 import type { Theme } from '../utils/theme';
 import { sounds } from '../utils/audio';
@@ -44,6 +44,27 @@ export const Navbar: FC<NavbarProps> = ({
 }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(sounds.enabled);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!dropdownOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [dropdownOpen]);
 
   const handleToggleSound = () => {
     const newState = sounds.toggleSound();
@@ -107,8 +128,106 @@ export const Navbar: FC<NavbarProps> = ({
           </div>
         </div>
 
+        {/* Center: Quick Unit Stepper & Selector */}
+        <div className="w-full sm:w-auto flex items-center justify-center space-x-1.5 bg-slate-100 dark:bg-slate-800 p-1 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs order-3 sm:order-none">
+          {/* Prev Unit Button */}
+          <button
+            onClick={handlePrevUnit}
+            title="Previous Unit"
+            className="p-1.5 sm:p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shrink-0"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+
+          {/* Unit Dropdown Button */}
+          <div ref={dropdownRef} className="relative flex-1 sm:flex-initial">
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="w-full sm:w-auto flex items-center justify-between sm:justify-center space-x-2 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-700/80 text-slate-900 dark:text-white text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs transition-all cursor-pointer"
+            >
+              <span className="font-bold">{getUnitLabel(currentUnit)}</span>
+              <ChevronDown className={`w-3.5 h-3.5 text-slate-500 dark:text-slate-400 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 w-[min(320px,calc(100vw-2rem))] max-h-80 overflow-y-auto bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-800/80 animate-fadeIn">
+                {/* Quick select: All & Starred */}
+                <div className="pb-2 space-y-1">
+                  <button
+                    onClick={() => { onSelectUnit(0); setDropdownOpen(false); }}
+                    className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
+                      currentUnit === 0 
+                        ? 'bg-indigo-600 text-white shadow-xs' 
+                        : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
+                    }`}
+                  >
+                    <span className="flex items-center gap-2">
+                      <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+                      <span>All 400 Words</span>
+                    </span>
+                    <span className="text-[10px] opacity-75 font-mono">Full Course</span>
+                  </button>
+                  <button
+                    onClick={() => { onSelectUnit(-1); setDropdownOpen(false); }}
+                    className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
+                      currentUnit === -1 
+                        ? 'bg-amber-600 text-white shadow-xs' 
+                        : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
+                    }`}
+                  >
+                    <span className="flex items-center gap-2">
+                      <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                      <span>Starred Words</span>
+                    </span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 font-bold">
+                      {totalStarred}
+                    </span>
+                  </button>
+                </div>
+
+                {/* 16 Teacher Units Grid */}
+                <div className="pt-2 space-y-1">
+                  <div className="px-1 text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                    Teacher Units (25 words each)
+                  </div>
+                  <div className="grid grid-cols-2 gap-1 pt-0.5">
+                    {Array.from({ length: 16 }, (_, i) => i + 1).map((u) => {
+                      const start = (u - 1) * 25 + 1;
+                      const end = Math.min(u * 25, 400);
+                      const isSelected = currentUnit === u;
+                      return (
+                        <button
+                          key={u}
+                          onClick={() => { onSelectUnit(u); setDropdownOpen(false); }}
+                          className={`px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
+                            isSelected 
+                              ? 'bg-indigo-600 text-white shadow-xs' 
+                              : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 bg-slate-50 dark:bg-slate-800/40 border border-slate-200/50 dark:border-slate-700/50'
+                          }`}
+                        >
+                          <span>Unit {u}</span>
+                          <span className="text-[10px] opacity-70 font-mono">#{start}-{end}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Next Unit Button */}
+          <button
+            onClick={handleNextUnit}
+            title="Next Unit"
+            className="p-1.5 sm:p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shrink-0"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+
         {/* Right Suite: Theme, Sound, PDF, Mastered Badge */}
-        <div className="flex items-center space-x-1.5 sm:space-x-2">
+        <div className="flex items-center space-x-1.5 sm:space-x-2 order-2 sm:order-none">
           {/* Mastered Badge */}
           <div className="hidden lg:flex items-center space-x-1.5 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-500/30 text-emerald-700 dark:text-emerald-400 px-3 py-1.5 rounded-xl text-xs font-bold">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -152,127 +271,6 @@ export const Navbar: FC<NavbarProps> = ({
             <FileDown className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
             <span>PDF</span>
           </a>
-        </div>
-
-        {/* Center: Quick Unit Stepper & Selector (full width on mobile, centered) */}
-        <div className="w-full sm:w-auto flex items-center justify-center space-x-1.5 bg-slate-100 dark:bg-slate-800 p-1 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xs order-last sm:order-none">
-          {/* Prev Unit Button */}
-          <button
-            onClick={handlePrevUnit}
-            title="Previous Unit"
-            className="p-1.5 sm:p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shrink-0"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-
-          {/* Unit Dropdown Button */}
-          <div className="relative flex-1 sm:flex-initial">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="w-full sm:w-auto flex items-center justify-between sm:justify-center space-x-2 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-700/80 text-slate-900 dark:text-white text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xs transition-all cursor-pointer"
-            >
-              <span className="font-bold">{getUnitLabel(currentUnit)}</span>
-              <ChevronDown className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
-            </button>
-
-            {dropdownOpen && (
-              <>
-                {/* Backdrop */}
-                <div 
-                  className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 animate-fadeIn" 
-                  onClick={() => setDropdownOpen(false)} 
-                />
-
-                {/* Mobile Bottom Sheet (fixed at bottom of screen) / Desktop Dropdown (absolute) */}
-                <div className="fixed inset-x-0 bottom-0 sm:bottom-auto sm:top-full sm:right-0 sm:inset-x-auto sm:absolute mt-0 sm:mt-2 w-full sm:w-80 max-h-[82vh] overflow-y-auto bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl z-50 p-4 sm:p-3 divide-y divide-slate-100 dark:divide-slate-800 animate-slideUp sm:animate-fadeIn">
-                  {/* Mobile drag handle & header */}
-                  <div className="sm:hidden pb-3">
-                    <div className="w-10 h-1 bg-slate-300 dark:bg-slate-700 rounded-full mx-auto mb-2.5" />
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-black text-slate-900 dark:text-white">Select Study Unit</span>
-                      <button 
-                        onClick={() => setDropdownOpen(false)}
-                        className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 p-1"
-                      >
-                        ✕ Close
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Quick select: All & Starred */}
-                  <div className="py-2 space-y-1.5">
-                    <button
-                      onClick={() => { onSelectUnit(0); setDropdownOpen(false); }}
-                      className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
-                        currentUnit === 0 
-                          ? 'bg-indigo-600 text-white shadow-xs' 
-                          : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
-                      }`}
-                    >
-                      <span className="flex items-center gap-2">
-                        <Sparkles className="w-4 h-4 text-indigo-400" />
-                        <span>All 400 Words</span>
-                      </span>
-                      <span className="text-[10px] opacity-75 font-mono">Full Course</span>
-                    </button>
-                    <button
-                      onClick={() => { onSelectUnit(-1); setDropdownOpen(false); }}
-                      className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
-                        currentUnit === -1 
-                          ? 'bg-amber-600 text-white shadow-xs' 
-                          : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
-                      }`}
-                    >
-                      <span className="flex items-center gap-2">
-                        <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
-                        <span>Starred Words</span>
-                      </span>
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 font-bold">
-                        {totalStarred}
-                      </span>
-                    </button>
-                  </div>
-
-                  {/* 16 Teacher Units Grid */}
-                  <div className="pt-2.5 space-y-1">
-                    <div className="px-1 text-[11px] font-black text-slate-400 dark:text-slate-400 uppercase tracking-wider">
-                      Teacher Units (25 words each)
-                    </div>
-                    <div className="grid grid-cols-2 gap-1.5 pt-1">
-                      {Array.from({ length: 16 }, (_, i) => i + 1).map((u) => {
-                        const start = (u - 1) * 25 + 1;
-                        const end = Math.min(u * 25, 400);
-                        const isSelected = currentUnit === u;
-                        return (
-                          <button
-                            key={u}
-                            onClick={() => { onSelectUnit(u); setDropdownOpen(false); }}
-                            className={`px-3 py-2.5 sm:py-2 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
-                              isSelected 
-                                ? 'bg-indigo-600 text-white shadow-xs' 
-                                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60'
-                            }`}
-                          >
-                            <span>Unit {u}</span>
-                            <span className="text-[10px] opacity-70 font-mono">#{start}-{end}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-
-          {/* Next Unit Button */}
-          <button
-            onClick={handleNextUnit}
-            title="Next Unit"
-            className="p-1.5 sm:p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-white transition-all cursor-pointer shrink-0"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
         </div>
       </div>
 
