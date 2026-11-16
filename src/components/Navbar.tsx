@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, type ReactNode, type FC } from 'react';
-import type { StudyMode } from '../types';
+import type { StudyMode, UnitSize } from '../types';
 import type { Theme } from '../utils/theme';
 import { sounds } from '../utils/audio';
 import { 
@@ -24,6 +24,8 @@ import {
 interface NavbarProps {
   currentUnit: number;
   onSelectUnit: (unit: number) => void;
+  unitSize: UnitSize;
+  onUnitSizeChange: (size: UnitSize) => void;
   currentMode: StudyMode;
   onSelectMode: (mode: StudyMode) => void;
   totalMastered: number;
@@ -35,6 +37,8 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = ({
   currentUnit,
   onSelectUnit,
+  unitSize,
+  onUnitSizeChange,
   currentMode,
   onSelectMode,
   totalMastered,
@@ -71,16 +75,18 @@ export const Navbar: FC<NavbarProps> = ({
     setSoundEnabled(newState);
   };
 
+  const totalUnits = unitSize === 20 ? 20 : 16;
+
   const handlePrevUnit = () => {
     if (currentUnit <= 1) {
-      onSelectUnit(16);
+      onSelectUnit(totalUnits);
     } else {
       onSelectUnit(currentUnit - 1);
     }
   };
 
   const handleNextUnit = () => {
-    if (currentUnit >= 16 || currentUnit <= 0) {
+    if (currentUnit >= totalUnits || currentUnit <= 0) {
       onSelectUnit(1);
     } else {
       onSelectUnit(currentUnit + 1);
@@ -90,8 +96,8 @@ export const Navbar: FC<NavbarProps> = ({
   const getUnitLabel = (u: number) => {
     if (u === 0) return 'All 400 Words';
     if (u === -1) return `Starred (${totalStarred})`;
-    const start = (u - 1) * 25 + 1;
-    const end = Math.min(u * 25, 400);
+    const start = (u - 1) * unitSize + 1;
+    const end = Math.min(u * unitSize, 400);
     return `Unit ${u} (${start}–${end})`;
   };
 
@@ -123,7 +129,7 @@ export const Navbar: FC<NavbarProps> = ({
               </span>
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block font-medium">
-              College Panda 400 Vocabulary • 25 Words per Lesson
+              College Panda 400 Vocabulary • {unitSize} Words per Lesson
             </p>
           </div>
         </div>
@@ -151,8 +157,44 @@ export const Navbar: FC<NavbarProps> = ({
 
             {dropdownOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 w-[min(320px,calc(100vw-2rem))] max-h-80 overflow-y-auto bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl z-50 p-2 divide-y divide-slate-100 dark:divide-slate-800/80 animate-fadeIn">
+                {/* Unit Size Toggle: 25 Words (Priority/Default) vs 20 Words */}
+                <div className="pb-2">
+                  <div className="flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1.5 px-0.5">
+                    <span>Lesson Size:</span>
+                    <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400">
+                      {unitSize === 25 ? '25 Words (16 Units)' : '20 Words (20 Units)'}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200/80 dark:border-slate-700/80 text-xs font-bold">
+                    <button
+                      type="button"
+                      onClick={() => onUnitSizeChange(25)}
+                      className={`py-1.5 px-2 rounded-lg text-center transition-all cursor-pointer flex items-center justify-center gap-1 ${
+                        unitSize === 25
+                          ? 'bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-xs border border-slate-200/60 dark:border-slate-700/60 font-black'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                      }`}
+                    >
+                      <span>25 Words</span>
+                      <span className="text-[10px] opacity-70 font-mono">(16U)</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => onUnitSizeChange(20)}
+                      className={`py-1.5 px-2 rounded-lg text-center transition-all cursor-pointer flex items-center justify-center gap-1 ${
+                        unitSize === 20
+                          ? 'bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-xs border border-slate-200/60 dark:border-slate-700/60 font-black'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                      }`}
+                    >
+                      <span>20 Words</span>
+                      <span className="text-[10px] opacity-70 font-mono">(20U)</span>
+                    </button>
+                  </div>
+                </div>
+
                 {/* Quick select: All & Starred */}
-                <div className="pb-2 space-y-1">
+                <div className="py-2 space-y-1">
                   <button
                     onClick={() => { onSelectUnit(0); setDropdownOpen(false); }}
                     className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-between cursor-pointer transition-all ${
@@ -185,15 +227,16 @@ export const Navbar: FC<NavbarProps> = ({
                   </button>
                 </div>
 
-                {/* 16 Teacher Units Grid */}
+                {/* Teacher Units Grid */}
                 <div className="pt-2 space-y-1">
-                  <div className="px-1 text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-                    Teacher Units (25 words each)
+                  <div className="px-1 text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-wider flex items-center justify-between">
+                    <span>Teacher Units ({unitSize} words each)</span>
+                    <span className="font-mono text-[9px] text-slate-400">Total: {totalUnits}</span>
                   </div>
                   <div className="grid grid-cols-2 gap-1 pt-0.5">
-                    {Array.from({ length: 16 }, (_, i) => i + 1).map((u) => {
-                      const start = (u - 1) * 25 + 1;
-                      const end = Math.min(u * 25, 400);
+                    {Array.from({ length: totalUnits }, (_, i) => i + 1).map((u) => {
+                      const start = (u - 1) * unitSize + 1;
+                      const end = Math.min(u * unitSize, 400);
                       const isSelected = currentUnit === u;
                       return (
                         <button

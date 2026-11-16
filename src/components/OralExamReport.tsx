@@ -1,4 +1,4 @@
-import { useState, type FC } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
 import { 
@@ -27,7 +27,11 @@ export const OralExamReport: FC<OralExamReportProps> = ({
   const [studentName, setStudentName] = useState('Doniyor');
   const [checkedWords, setCheckedWords] = useState<Record<number, boolean>>({});
   const [copiedTelegram, setCopiedTelegram] = useState(false);
-  const [teacherScore, setTeacherScore] = useState<string>('25');
+  const [teacherScore, setTeacherScore] = useState<string>(() => words.length ? String(words.length) : '25');
+
+  useEffect(() => {
+    setTeacherScore(words.length ? String(words.length) : '25');
+  }, [words.length]);
 
   const startId = words.length > 0 ? words[0].id : 1;
   const endId = words.length > 0 ? words[words.length - 1].id : 25;
@@ -70,7 +74,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
       `📅 Date: ${dateStr}\n` +
       `🎯 Practice Score: ${scoreText} (Ready for Oral Exam)\n` +
       `━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
-      `📝 25 Words Prepared for Oral Testing:\n` +
+      `📝 ${words.length} Words Prepared for Oral Testing:\n` +
       `${wordsListText}\n\n` +
       `✅ Ustoz, og'zaki so'rovga to'liq tayyorman!`;
 
@@ -127,7 +131,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
             Digital SAT Mastery & Oral Examination Report
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 print:text-slate-600 mt-1 font-medium">
-            College Panda 400 High-Frequency Vocabulary • 25 Words Unit System
+            College Panda 400 High-Frequency Vocabulary • {words.length} Words Unit System
           </p>
         </div>
 
@@ -185,7 +189,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
                 Ustoz uchun og'zaki so'rov bo'limi (Oral Exam Sheet):
               </span>
               <p className="text-slate-700 dark:text-slate-300 mt-0.5 font-medium">
-                Ustoz quyidagi 25 ta so'zdan ixtiyoriy so'zning ma'nosini (inglizcha ta'rif, o'zbekcha tarjima yoki sinonimlarini) so'rab, o'ng tarafdagi katakchani belgilashi mumkin.
+                Ustoz quyidagi {words.length} ta so'zdan ixtiyoriy so'zning ma'nosini (inglizcha ta'rif, o'zbekcha tarjima yoki sinonimlarini) so'rab, o'ng tarafdagi katakchani belgilashi mumkin.
               </p>
             </div>
             <div className="flex items-center gap-2 shrink-0 print:hidden">
@@ -286,7 +290,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
                 onChange={(e) => setTeacherScore(e.target.value)}
                 className="w-16 px-2 py-1 bg-white dark:bg-slate-900 print:bg-white border border-slate-300 dark:border-slate-700 print:border-slate-400 rounded-lg text-center font-bold text-slate-900 dark:text-white print:text-black"
               />
-              <span className="font-bold text-slate-700 dark:text-slate-300 print:text-slate-700">/ 25 Words</span>
+              <span className="font-bold text-slate-700 dark:text-slate-300 print:text-slate-700">/ {words.length} Words</span>
             </div>
             <div className="text-[11px] text-slate-500 dark:text-slate-400 print:text-slate-600 font-medium">
               Tested status: {checkedCount} / {words.length} words checked off

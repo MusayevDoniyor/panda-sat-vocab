@@ -328,12 +328,12 @@ export const QuizLearn: FC<QuizLearnProps> = ({
         </div>
 
         <div className="flex items-center justify-between sm:justify-end gap-2 flex-wrap">
-          {/* Order Toggle: Sequential (1->25) vs Shuffled */}
+          {/* Order Toggle: Sequential (1->N) vs Shuffled */}
           <button
             onClick={() => {
               setIsShuffledOrder(!isShuffledOrder);
             }}
-            title={isShuffledOrder ? 'Questions: Shuffled order (Click to make Sequential)' : 'Questions: Sequential order #1 to #25 (Click to Shuffle)'}
+            title={isShuffledOrder ? 'Questions: Shuffled order (Click to make Sequential)' : `Questions: Sequential order #1 to #${words.length} (Click to Shuffle)`}
             className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer shadow-xs ${
               isShuffledOrder
                 ? 'bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-500/30 text-purple-700 dark:text-purple-300'
@@ -341,7 +341,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             }`}
           >
             {isShuffledOrder ? <Shuffle className="w-3.5 h-3.5" /> : <ListOrdered className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />}
-            <span>{isShuffledOrder ? 'Shuffled' : 'Sequential 1→25'}</span>
+            <span>{isShuffledOrder ? 'Shuffled' : `Sequential 1→${words.length}`}</span>
           </button>
 
           <div className="flex items-center gap-2">

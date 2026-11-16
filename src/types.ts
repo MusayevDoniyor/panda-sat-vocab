@@ -1,6 +1,7 @@
 import type { VocabWord } from './data/vocabulary';
 
 export type StudyMode = 'flashcards' | 'quiz' | 'match' | 'spelling' | 'list' | 'oral';
+export type UnitSize = 20 | 25;
 
 export interface QuizQuestion {
   word: VocabWord;
