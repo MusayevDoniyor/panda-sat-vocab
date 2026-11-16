@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
 import { sounds } from '../utils/audio';
+import { FlagUS, FlagUZ } from './Flags';
 import confetti from 'canvas-confetti';
 import { 
   PenTool, 
@@ -189,14 +190,14 @@ export const SpellingMode: FC<SpellingModeProps> = ({ words, unitNumber }) => {
         {/* Prompt Card */}
         <div className="bg-slate-50 dark:bg-slate-800/60 rounded-2xl p-4 sm:p-5 border border-slate-200 dark:border-slate-700/60 mb-6">
           <div className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1 flex items-center gap-1.5">
-            <span className="text-sm">🇺🇿</span>
+            <FlagUZ className="w-4 h-3" />
             <span>O'zbekcha Ma'nosi:</span>
           </div>
           <div className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mb-2">
             {currentWord.uzbek}
           </div>
           <div className="text-xs text-slate-600 dark:text-slate-300 italic mb-3 font-medium flex items-center gap-1.5">
-            <span className="not-italic text-sm">🇺🇸</span>
+            <FlagUS className="w-4 h-3" />
             <span>"{currentWord.definition}"</span>
           </div>
           <div className="flex items-center gap-2 text-xs font-mono font-semibold text-slate-600 dark:text-slate-400 flex-wrap">

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
 import { sounds } from '../utils/audio';
+import { FlagUS, FlagUZ } from './Flags';
 import { 
   Volume2, 
   Star, 
@@ -194,16 +195,16 @@ export const Flashcards: FC<FlashcardsProps> = ({
           >
             {!swapSides ? (
               <>
-                <span className="text-sm leading-none">🇺🇸</span>
+                <FlagUS className="w-4 h-3" />
                 <span className="text-[11px] font-extrabold">EN ➔</span>
-                <span className="text-sm leading-none">🇺🇿</span>
+                <FlagUZ className="w-4 h-3" />
                 <span className="text-[11px] font-extrabold">UZ</span>
               </>
             ) : (
               <>
-                <span className="text-sm leading-none">🇺🇿</span>
+                <FlagUZ className="w-4 h-3" />
                 <span className="text-[11px] font-extrabold">UZ ➔</span>
-                <span className="text-sm leading-none">🇺🇸</span>
+                <FlagUS className="w-4 h-3" />
                 <span className="text-[11px] font-extrabold">EN</span>
               </>
             )}
@@ -295,7 +296,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
               {!swapSides ? (
                 <>
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 mb-3 shadow-2xs">
-                    <span>🇺🇸</span>
+                    <FlagUS className="w-4 h-3" />
                     <span>English SAT Word</span>
                   </div>
                   <h2 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-4">
@@ -315,7 +316,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
               ) : (
                 <>
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30 mb-3 shadow-2xs">
-                    <span>🇺🇿</span>
+                    <FlagUZ className="w-4 h-3" />
                     <span>O'zbekcha Ma'nosi</span>
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3">
@@ -360,7 +361,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
               {/* Uzbek Translation Card with Flag */}
               <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-500/30 rounded-2xl p-3 sm:p-4">
                 <div className="text-[11px] font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1 flex items-center gap-1.5">
-                  <span className="text-sm">🇺🇿</span>
+                  <FlagUZ className="w-4 h-3" />
                   <span>O'zbekcha Tarjimasi:</span>
                 </div>
                 <div className="text-sm sm:text-lg font-black text-emerald-950 dark:text-emerald-100">
@@ -371,7 +372,7 @@ export const Flashcards: FC<FlashcardsProps> = ({
               {/* English Definition with Flag */}
               <div className="bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 rounded-2xl p-3 sm:p-4">
                 <div className="text-[11px] font-black uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1 flex items-center gap-1.5">
-                  <span className="text-sm">🇺🇸</span>
+                  <FlagUS className="w-4 h-3" />
                   <span>College Panda Definition:</span>
                 </div>
                 <p className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed font-semibold">

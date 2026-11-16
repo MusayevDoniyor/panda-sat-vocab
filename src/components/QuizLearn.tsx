@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
 import { sounds } from '../utils/audio';
+import { FlagUS, FlagUZ } from './Flags';
 import confetti from 'canvas-confetti';
 import { 
   CheckCircle2, 
@@ -88,8 +89,8 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             : `${c.word} (${c.pos})`;
         const subText =
           promptType === 'word-to-synonyms'
-            ? `↳ 🇺🇿 ${c.uzbek}`
-            : `↳ 🇺🇸 ${c.definition} • 🇺🇿 ${c.uzbek}`;
+            ? c.uzbek
+            : `${c.definition} • ${c.uzbek}`;
 
         return { id: i, text, subText, isCorrect, wordObj: c, hidden: false };
       });
@@ -406,7 +407,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
           {currentQ.promptType === 'word-to-synonyms' ? (
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 mb-2">
-                <span>🇺🇸</span>
+                <FlagUS className="w-3.5 h-2.5" />
                 <span>English SAT Word</span>
               </div>
               <div className="flex items-baseline gap-3">
@@ -421,7 +422,7 @@ export const QuizLearn: FC<QuizLearnProps> = ({
           ) : (
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 mb-2">
-                <span>🇺🇸</span>
+                <FlagUS className="w-3.5 h-2.5" />
                 <span>College Panda Definition & Synonyms</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white leading-snug">
@@ -470,9 +471,23 @@ export const QuizLearn: FC<QuizLearnProps> = ({
                   </span>
                   <div>
                     <div className="text-sm font-bold leading-relaxed">{opt.text}</div>
-                    {isAnswered && opt.subText && (
-                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                        {opt.subText}
+                    {isAnswered && (
+                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5 flex-wrap">
+                        <span className="text-slate-400 font-bold">↳</span>
+                        {currentQ.promptType === 'word-to-synonyms' ? (
+                          <>
+                            <FlagUZ className="w-3.5 h-2.5" />
+                            <span>{opt.wordObj.uzbek}</span>
+                          </>
+                        ) : (
+                          <>
+                            <FlagUS className="w-3.5 h-2.5" />
+                            <span>{opt.wordObj.definition}</span>
+                            <span className="text-slate-300 dark:text-slate-600">•</span>
+                            <FlagUZ className="w-3.5 h-2.5" />
+                            <span>{opt.wordObj.uzbek}</span>
+                          </>
+                        )}
                       </div>
                     )}
                   </div>
@@ -498,19 +513,19 @@ export const QuizLearn: FC<QuizLearnProps> = ({
             <div className="bg-slate-50 dark:bg-slate-800/70 rounded-2xl p-4 border border-slate-200 dark:border-slate-700/80">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-black text-indigo-600 dark:text-indigo-400 flex items-center gap-1.5">
-                  <span>🇺🇸</span>
+                  <FlagUS className="w-3.5 h-2.5" />
                   <span>SAT Word Review:</span>
                 </span>
                 <span className="text-[11px] font-mono font-bold text-slate-500 dark:text-slate-400">ID #{currentQ.targetWord.id}</span>
               </div>
               <p className="text-xs text-slate-800 dark:text-slate-300 leading-relaxed mb-2 flex items-start gap-1.5">
-                <span className="shrink-0">🇺🇸</span>
+                <FlagUS className="w-3.5 h-2.5 mt-0.5 shrink-0" />
                 <span>
                   <strong className="text-slate-900 dark:text-white font-bold">{currentQ.targetWord.word}</strong>: {currentQ.targetWord.definition}
                 </span>
               </p>
               <p className="text-xs text-emerald-700 dark:text-emerald-300 font-bold mb-2 flex items-center gap-1.5">
-                <span>🇺🇿</span>
+                <FlagUZ className="w-3.5 h-2.5 shrink-0" />
                 <span>O'zbekcha: {currentQ.targetWord.uzbek}</span>
               </p>
               {currentQ.targetWord.example && (

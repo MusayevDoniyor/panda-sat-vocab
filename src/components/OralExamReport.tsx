@@ -1,6 +1,7 @@
 import { useState, useEffect, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
+import { FlagUS, FlagUZ } from './Flags';
 import { 
   Printer, 
   Copy, 
@@ -209,8 +210,18 @@ export const OralExamReport: FC<OralExamReportProps> = ({
             <thead>
               <tr className="border-b border-slate-200 dark:border-slate-800 print:border-slate-300 text-slate-500 dark:text-slate-400 print:text-slate-600 font-bold uppercase tracking-wider text-[10px]">
                 <th className="py-2.5 px-2 w-10">#</th>
-                <th className="py-2.5 px-3">🇺🇸 English SAT Word</th>
-                <th className="py-2.5 px-3">🇺🇿 O'zbekcha Ma'nosi</th>
+                <th className="py-2.5 px-3">
+                  <span className="flex items-center gap-1.5">
+                    <FlagUS className="w-3.5 h-2.5" />
+                    <span>English SAT Word</span>
+                  </span>
+                </th>
+                <th className="py-2.5 px-3">
+                  <span className="flex items-center gap-1.5">
+                    <FlagUZ className="w-3.5 h-2.5" />
+                    <span>O'zbekcha Ma'nosi</span>
+                  </span>
+                </th>
                 <th className="py-2.5 px-3">College Panda Definition & Synonyms</th>
                 <th className="py-2.5 px-2 text-center w-20">Oral Test</th>
               </tr>
@@ -232,7 +243,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
 
                     <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white print:text-black">
                       <div className="flex items-center gap-1.5">
-                        <span className="text-xs print:hidden">🇺🇸</span>
+                        <FlagUS className="w-3.5 h-2.5 print:hidden" />
                         <span>{w.word}</span>
                         <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 print:text-slate-500">
                           ({w.pos})
@@ -249,7 +260,7 @@ export const OralExamReport: FC<OralExamReportProps> = ({
 
                     <td className="py-2.5 px-3 font-bold text-emerald-700 dark:text-emerald-400 print:text-emerald-800">
                       <div className="flex items-center gap-1.5">
-                        <span className="text-xs print:hidden">🇺🇿</span>
+                        <FlagUZ className="w-3.5 h-2.5 print:hidden" />
                         <span>{w.uzbek}</span>
                       </div>
                     </td>

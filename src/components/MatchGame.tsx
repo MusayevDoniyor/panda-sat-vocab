@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
 import { sounds } from '../utils/audio';
+import { FlagUS, FlagUZ } from './Flags';
 import confetti from 'canvas-confetti';
 import { 
   Zap, 
@@ -376,7 +377,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
                 {tile.type === 'word' ? (
                   <div className="flex flex-col items-center gap-1">
                     <span className="text-[10px] font-black uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-1">
-                      <span>🇺🇸</span>
+                      <FlagUS className="w-3.5 h-2.5" />
                       <span>EN</span>
                     </span>
                     <span className="text-sm sm:text-lg font-black tracking-tight text-slate-900 dark:text-white">
@@ -386,7 +387,7 @@ export const MatchGame: FC<MatchGameProps> = ({ words, unitNumber }) => {
                 ) : (
                   <div className="flex flex-col items-center gap-1">
                     <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-                      <span>🇺🇿</span>
+                      <FlagUZ className="w-3.5 h-2.5" />
                       <span>UZ</span>
                     </span>
                     <span className="text-xs sm:text-sm font-bold leading-snug line-clamp-3 text-slate-800 dark:text-slate-200 whitespace-pre-line">

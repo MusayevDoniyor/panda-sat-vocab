@@ -1,6 +1,7 @@
 import { useState, useMemo, type FC } from 'react';
 import type { VocabWord } from '../data/vocabulary';
 import { speakWord } from '../utils/speech';
+import { FlagUS, FlagUZ } from './Flags';
 import { 
   Search, 
   Volume2, 
@@ -143,7 +144,7 @@ export const WordList: FC<WordListProps> = ({
 
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm">🇺🇸</span>
+                        <FlagUS className="w-4 h-3" />
                         <span className="text-lg font-black text-slate-900 dark:text-white tracking-tight">
                           {w.word}
                         </span>
@@ -159,7 +160,7 @@ export const WordList: FC<WordListProps> = ({
                         </button>
                       </div>
                       <div className="text-sm font-bold text-emerald-700 dark:text-emerald-400 mt-1 flex items-center gap-1.5">
-                        <span>🇺🇿</span>
+                        <FlagUZ className="w-4 h-3" />
                         <span>{w.uzbek}</span>
                       </div>
                     </div>
@@ -203,7 +204,10 @@ export const WordList: FC<WordListProps> = ({
 
                 {/* Definition */}
                 <div className="mt-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-0 sm:pl-11 font-medium flex items-start gap-1.5">
-                  <span className="shrink-0 text-slate-400 dark:text-slate-500 font-bold">🇺🇸 Def:</span>
+                  <span className="shrink-0 text-slate-400 dark:text-slate-500 font-bold flex items-center gap-1">
+                    <FlagUS className="w-3.5 h-2.5" />
+                    <span>Def:</span>
+                  </span>
                   <span>{w.definition}</span>
                 </div>
 
